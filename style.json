@@ -1,0 +1,2658 @@
+{
+  "version": 8,
+  "name": "style",
+  "sources": {
+    "my-vector-tiles": {
+      "type": "vector",
+      "url": "REPLACE_WITH_YOUR_TILE_URL"
+    }
+  },
+  "layers": [
+    {
+      "id": "background",
+      "type": "fill",
+      "source": "my-vector-tiles",
+      "source-layer": "background",
+      "paint": {
+        "fill-color": "rgba(0,0,0,0)",
+        "fill-outline-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "water-ocean",
+      "type": "fill",
+      "source": "my-vector-tiles",
+      "source-layer": "ocean",
+      "paint": {
+        "fill-color": "rgba(0,0,0,0)",
+        "fill-outline-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "land-glacier",
+      "type": "fill",
+      "source": "my-vector-tiles",
+      "source-layer": "water_polygons",
+      "paint": {
+        "fill-color": "rgba(0,0,0,0)",
+        "fill-outline-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "land-commercial",
+      "type": "fill",
+      "source": "my-vector-tiles",
+      "source-layer": "land",
+      "paint": {
+        "fill-color": "rgba(0,0,0,0)",
+        "fill-outline-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "land-industrial",
+      "type": "fill",
+      "source": "my-vector-tiles",
+      "source-layer": "land",
+      "paint": {
+        "fill-color": "rgba(0,0,0,0)",
+        "fill-outline-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "land-residential",
+      "type": "fill",
+      "source": "my-vector-tiles",
+      "source-layer": "land",
+      "paint": {
+        "fill-color": "rgba(0,0,0,0)",
+        "fill-outline-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "land-agriculture",
+      "type": "fill",
+      "source": "my-vector-tiles",
+      "source-layer": "land",
+      "paint": {
+        "fill-color": "rgba(0,0,0,0)",
+        "fill-outline-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "land-waste",
+      "type": "fill",
+      "source": "my-vector-tiles",
+      "source-layer": "land",
+      "paint": {
+        "fill-color": "rgba(0,0,0,0)",
+        "fill-outline-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "land-park",
+      "type": "fill",
+      "source": "my-vector-tiles",
+      "source-layer": "land",
+      "paint": {
+        "fill-color": "rgba(0,0,0,0)",
+        "fill-outline-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "land-garden",
+      "type": "fill",
+      "source": "my-vector-tiles",
+      "source-layer": "land",
+      "paint": {
+        "fill-color": "rgba(0,0,0,0)",
+        "fill-outline-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "land-burial",
+      "type": "fill",
+      "source": "my-vector-tiles",
+      "source-layer": "land",
+      "paint": {
+        "fill-color": "rgba(0,0,0,0)",
+        "fill-outline-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "land-leisure",
+      "type": "fill",
+      "source": "my-vector-tiles",
+      "source-layer": "land",
+      "paint": {
+        "fill-color": "rgba(0,0,0,0)",
+        "fill-outline-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "land-rock",
+      "type": "fill",
+      "source": "my-vector-tiles",
+      "source-layer": "land",
+      "paint": {
+        "fill-color": "rgba(0,0,0,0)",
+        "fill-outline-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "land-forest",
+      "type": "fill",
+      "source": "my-vector-tiles",
+      "source-layer": "land",
+      "paint": {
+        "fill-color": "rgba(0,0,0,0)",
+        "fill-outline-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "land-grass",
+      "type": "fill",
+      "source": "my-vector-tiles",
+      "source-layer": "land",
+      "paint": {
+        "fill-color": "rgba(0,0,0,0)",
+        "fill-outline-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "land-vegetation",
+      "type": "fill",
+      "source": "my-vector-tiles",
+      "source-layer": "land",
+      "paint": {
+        "fill-color": "rgba(0,0,0,0)",
+        "fill-outline-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "land-sand",
+      "type": "fill",
+      "source": "my-vector-tiles",
+      "source-layer": "land",
+      "paint": {
+        "fill-color": "rgba(0,0,0,0)",
+        "fill-outline-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "land-wetland",
+      "type": "fill",
+      "source": "my-vector-tiles",
+      "source-layer": "land",
+      "paint": {
+        "fill-color": "rgba(0,0,0,0)",
+        "fill-outline-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "water-river",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "water_lines",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "water-canal",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "water_lines",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "water-stream",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "water_lines",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "water-ditch",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "water_lines",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "water-area",
+      "type": "fill",
+      "source": "my-vector-tiles",
+      "source-layer": "water_polygons",
+      "paint": {
+        "fill-color": "rgba(0,0,0,0)",
+        "fill-outline-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "water-area-river",
+      "type": "fill",
+      "source": "my-vector-tiles",
+      "source-layer": "water_polygons",
+      "paint": {
+        "fill-color": "rgba(0,0,0,0)",
+        "fill-outline-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "water-area-small",
+      "type": "fill",
+      "source": "my-vector-tiles",
+      "source-layer": "water_polygons",
+      "paint": {
+        "fill-color": "rgba(0,0,0,0)",
+        "fill-outline-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "water-dam-area",
+      "type": "fill",
+      "source": "my-vector-tiles",
+      "source-layer": "dam_polygons",
+      "paint": {
+        "fill-color": "rgba(0,0,0,0)",
+        "fill-outline-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "water-dam",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "dam_lines",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.264583
+      }
+    },
+    {
+      "id": "water-pier-area",
+      "type": "fill",
+      "source": "my-vector-tiles",
+      "source-layer": "pier_polygons",
+      "paint": {
+        "fill-color": "rgba(0,0,0,0)",
+        "fill-outline-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "water-pier",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "pier_lines",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.264583
+      }
+    },
+    {
+      "id": "site-dangerarea",
+      "type": "fill",
+      "source": "my-vector-tiles",
+      "source-layer": "sites",
+      "paint": {
+        "fill-color": "rgba(0,0,0,0)",
+        "fill-outline-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "site-university",
+      "type": "fill",
+      "source": "my-vector-tiles",
+      "source-layer": "sites",
+      "paint": {
+        "fill-color": "rgba(0,0,0,0)",
+        "fill-outline-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "site-college",
+      "type": "fill",
+      "source": "my-vector-tiles",
+      "source-layer": "sites",
+      "paint": {
+        "fill-color": "rgba(0,0,0,0)",
+        "fill-outline-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "site-school",
+      "type": "fill",
+      "source": "my-vector-tiles",
+      "source-layer": "sites",
+      "paint": {
+        "fill-color": "rgba(0,0,0,0)",
+        "fill-outline-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "site-hospital",
+      "type": "fill",
+      "source": "my-vector-tiles",
+      "source-layer": "sites",
+      "paint": {
+        "fill-color": "rgba(0,0,0,0)",
+        "fill-outline-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "site-prison",
+      "type": "fill",
+      "source": "my-vector-tiles",
+      "source-layer": "sites",
+      "paint": {
+        "fill-color": "rgba(0,0,0,0)",
+        "fill-outline-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "site-parking",
+      "type": "fill",
+      "source": "my-vector-tiles",
+      "source-layer": "sites",
+      "paint": {
+        "fill-color": "rgba(0,0,0,0)",
+        "fill-outline-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "site-bicycleparking",
+      "type": "fill",
+      "source": "my-vector-tiles",
+      "source-layer": "sites",
+      "paint": {
+        "fill-color": "rgba(0,0,0,0)",
+        "fill-outline-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "site-construction",
+      "type": "fill",
+      "source": "my-vector-tiles",
+      "source-layer": "sites",
+      "paint": {
+        "fill-color": "rgba(0,0,0,0)",
+        "fill-outline-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "airport-area",
+      "type": "fill",
+      "source": "my-vector-tiles",
+      "source-layer": "street_polygons",
+      "paint": {
+        "fill-color": "rgba(0,0,0,0)",
+        "fill-outline-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "airport-taxiway:outline",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "airport-runway:outline",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "airport-taxiway",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "airport-runway",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "building:outline",
+      "type": "fill",
+      "source": "my-vector-tiles",
+      "source-layer": "buildings",
+      "paint": {
+        "fill-color": "rgba(0,0,0,0)",
+        "fill-outline-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "building",
+      "type": "fill",
+      "source": "my-vector-tiles",
+      "source-layer": "buildings",
+      "paint": {
+        "fill-color": "rgba(0,0,0,0)",
+        "fill-outline-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "tunnel-street-pedestrian-zone",
+      "type": "fill",
+      "source": "my-vector-tiles",
+      "source-layer": "street_polygons",
+      "paint": {
+        "fill-color": "rgba(0,0,0,0)",
+        "fill-outline-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "tunnel-way-footway:outline",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "tunnel-way-steps:outline",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "tunnel-way-path:outline",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "tunnel-way-cycleway:outline",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "tunnel-street-track:outline",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.529167
+      }
+    },
+    {
+      "id": "tunnel-street-pedestrian:outline",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.529167
+      }
+    },
+    {
+      "id": "tunnel-street-service:outline",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.264583
+      }
+    },
+    {
+      "id": "tunnel-street-livingstreet:outline",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.529167
+      }
+    },
+    {
+      "id": "tunnel-street-residential:outline",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.529167
+      }
+    },
+    {
+      "id": "tunnel-street-unclassified:outline",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.529167
+      }
+    },
+    {
+      "id": "tunnel-street-tertiary-link:outline",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.529167
+      }
+    },
+    {
+      "id": "tunnel-street-secondary-link:outline",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.529167
+      }
+    },
+    {
+      "id": "tunnel-street-primary-link:outline",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.529167
+      }
+    },
+    {
+      "id": "tunnel-street-trunk-link:outline",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.529167
+      }
+    },
+    {
+      "id": "tunnel-street-motorway-link:outline",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.529167
+      }
+    },
+    {
+      "id": "tunnel-street-tertiary:outline",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.529167
+      }
+    },
+    {
+      "id": "tunnel-street-secondary:outline",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.529167
+      }
+    },
+    {
+      "id": "tunnel-street-primary:outline",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "tunnel-street-trunk:outline",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "tunnel-street-motorway:outline",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "tunnel-way-footway",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "tunnel-way-steps",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "tunnel-way-path",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "tunnel-way-cycleway",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "tunnel-street-track",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.264583
+      }
+    },
+    {
+      "id": "tunnel-street-pedestrian",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.264583
+      }
+    },
+    {
+      "id": "tunnel-street-service",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.264583
+      }
+    },
+    {
+      "id": "tunnel-street-livingstreet",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.264583
+      }
+    },
+    {
+      "id": "tunnel-street-residential",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.264583
+      }
+    },
+    {
+      "id": "tunnel-street-unclassified",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.264583
+      }
+    },
+    {
+      "id": "tunnel-street-track-bicycle",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.264583
+      }
+    },
+    {
+      "id": "tunnel-street-pedestrian-bicycle",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.264583
+      }
+    },
+    {
+      "id": "tunnel-street-service-bicycle",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.264583
+      }
+    },
+    {
+      "id": "tunnel-street-livingstreet-bicycle",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.264583
+      }
+    },
+    {
+      "id": "tunnel-street-residential-bicycle",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.264583
+      }
+    },
+    {
+      "id": "tunnel-street-unclassified-bicycle",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.264583
+      }
+    },
+    {
+      "id": "tunnel-street-tertiary-link",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.264583
+      }
+    },
+    {
+      "id": "tunnel-street-secondary-link",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.264583
+      }
+    },
+    {
+      "id": "tunnel-street-primary-link",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.264583
+      }
+    },
+    {
+      "id": "tunnel-street-trunk-link",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.264583
+      }
+    },
+    {
+      "id": "tunnel-street-motorway-link",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.264583
+      }
+    },
+    {
+      "id": "tunnel-street-tertiary",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.264583
+      }
+    },
+    {
+      "id": "tunnel-street-secondary",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.264583
+      }
+    },
+    {
+      "id": "tunnel-street-primary",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "tunnel-street-trunk",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "tunnel-street-motorway",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "tunnel-transport-tram:outline",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "tunnel-transport-narrowgauge:outline",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "tunnel-transport-subway:outline",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "tunnel-transport-lightrail:outline",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.264583
+      }
+    },
+    {
+      "id": "tunnel-transport-lightrail-service:outline",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "tunnel-transport-rail:outline",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.264583
+      }
+    },
+    {
+      "id": "tunnel-transport-rail-service:outline",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "tunnel-transport-monorail:outline",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "tunnel-transport-funicular:outline",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "tunnel-transport-tram",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "tunnel-transport-narrowgauge",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "tunnel-transport-subway",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "tunnel-transport-lightrail",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "tunnel-transport-lightrail-service",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "tunnel-transport-rail",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "tunnel-transport-rail-service",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "tunnel-transport-monorail",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "tunnel-transport-funicular",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "bridge",
+      "type": "fill",
+      "source": "my-vector-tiles",
+      "source-layer": "bridges",
+      "paint": {
+        "fill-color": "rgba(0,0,0,0)",
+        "fill-outline-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "street-pedestrian-zone",
+      "type": "fill",
+      "source": "my-vector-tiles",
+      "source-layer": "street_polygons",
+      "paint": {
+        "fill-color": "rgba(0,0,0,0)",
+        "fill-outline-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "way-footway:outline",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "way-steps:outline",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "way-path:outline",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "way-cycleway:outline",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "street-track:outline",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.529167
+      }
+    },
+    {
+      "id": "street-pedestrian:outline",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.529167
+      }
+    },
+    {
+      "id": "street-service:outline",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.264583
+      }
+    },
+    {
+      "id": "street-livingstreet:outline",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.529167
+      }
+    },
+    {
+      "id": "street-residential:outline",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.529167
+      }
+    },
+    {
+      "id": "street-unclassified:outline",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.529167
+      }
+    },
+    {
+      "id": "street-tertiary-link:outline",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.529167
+      }
+    },
+    {
+      "id": "street-secondary-link:outline",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.529167
+      }
+    },
+    {
+      "id": "street-primary-link:outline",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.529167
+      }
+    },
+    {
+      "id": "street-trunk-link:outline",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.529167
+      }
+    },
+    {
+      "id": "street-motorway-link:outline",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.529167
+      }
+    },
+    {
+      "id": "street-tertiary:outline",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.529167
+      }
+    },
+    {
+      "id": "street-secondary:outline",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.529167
+      }
+    },
+    {
+      "id": "street-primary:outline",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "street-trunk:outline",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "street-motorway:outline",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "way-footway",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "way-steps",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "way-path",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "way-cycleway",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "street-track",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.264583
+      }
+    },
+    {
+      "id": "street-pedestrian",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.264583
+      }
+    },
+    {
+      "id": "street-service",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.264583
+      }
+    },
+    {
+      "id": "street-livingstreet",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.264583
+      }
+    },
+    {
+      "id": "street-residential",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.264583
+      }
+    },
+    {
+      "id": "street-unclassified",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.264583
+      }
+    },
+    {
+      "id": "street-track-bicycle",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.264583
+      }
+    },
+    {
+      "id": "street-pedestrian-bicycle",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.264583
+      }
+    },
+    {
+      "id": "street-service-bicycle",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.264583
+      }
+    },
+    {
+      "id": "street-livingstreet-bicycle",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.264583
+      }
+    },
+    {
+      "id": "street-residential-bicycle",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.264583
+      }
+    },
+    {
+      "id": "street-unclassified-bicycle",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.264583
+      }
+    },
+    {
+      "id": "street-tertiary-link",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.264583
+      }
+    },
+    {
+      "id": "street-secondary-link",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.26458
+      }
+    },
+    {
+      "id": "street-primary-link",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.26458
+      }
+    },
+    {
+      "id": "street-trunk-link",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.264583
+      }
+    },
+    {
+      "id": "street-motorway-link",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.264583
+      }
+    },
+    {
+      "id": "street-tertiary",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.264583
+      }
+    },
+    {
+      "id": "street-secondary",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.26458
+      }
+    },
+    {
+      "id": "street-primary",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "street-trunk",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "street-motorway",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "transport-tram:outline",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "transport-narrowgauge:outline",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "transport-subway:outline",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "transport-lightrail:outline",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.264583
+      }
+    },
+    {
+      "id": "transport-lightrail-service:outline",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "transport-rail:outline",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.264583
+      }
+    },
+    {
+      "id": "transport-rail-service:outline",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "transport-monorail:outline",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "transport-funicular:outline",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "transport-tram",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "transport-narrowgauge",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "transport-subway",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "transport-lightrail",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "transport-lightrail-service",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "transport-rail",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "transport-rail-service",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "transport-monorail",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "transport-funicular",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "transport-ferry",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "ferries",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.264583
+      }
+    },
+    {
+      "id": "bridge-way-footway:bridge",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "bridge-way-steps:bridge",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "bridge-way-path:bridge",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "bridge-way-cycleway:bridge",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "bridge-street-track:bridge",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.79375
+      }
+    },
+    {
+      "id": "bridge-street-pedestrian:bridge",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.79375
+      }
+    },
+    {
+      "id": "bridge-street-service:bridge",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.79375
+      }
+    },
+    {
+      "id": "bridge-street-livingstreet:bridge",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.79375
+      }
+    },
+    {
+      "id": "bridge-street-residential:bridge",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.79375
+      }
+    },
+    {
+      "id": "bridge-street-unclassified:bridge",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.79375
+      }
+    },
+    {
+      "id": "bridge-street-tertiary-link:bridge",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.79375
+      }
+    },
+    {
+      "id": "bridge-street-secondary-link:bridge",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.79375
+      }
+    },
+    {
+      "id": "bridge-street-primary-link:bridge",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.79375
+      }
+    },
+    {
+      "id": "bridge-street-trunk-link:bridge",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.79375
+      }
+    },
+    {
+      "id": "bridge-street-motorway-link:bridge",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.79375
+      }
+    },
+    {
+      "id": "bridge-street-tertiary:bridge",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.79375
+      }
+    },
+    {
+      "id": "bridge-street-secondary:bridge",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.79375
+      }
+    },
+    {
+      "id": "bridge-street-primary:bridge",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "bridge-street-trunk:bridge",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "bridge-street-motorway:bridge",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "bridge-street-pedestrian-zone",
+      "type": "fill",
+      "source": "my-vector-tiles",
+      "source-layer": "street_polygons",
+      "paint": {
+        "fill-color": "rgba(0,0,0,0)",
+        "fill-outline-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "bridge-way-footway:outline",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "bridge-way-steps:outline",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "bridge-way-path:outline",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "bridge-way-cycleway:outline",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "bridge-street-track:outline",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.529167
+      }
+    },
+    {
+      "id": "bridge-street-pedestrian:outline",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.529167
+      }
+    },
+    {
+      "id": "bridge-street-service:outline",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.264583
+      }
+    },
+    {
+      "id": "bridge-street-livingstreet:outline",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.529167
+      }
+    },
+    {
+      "id": "bridge-street-residential:outline",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.529167
+      }
+    },
+    {
+      "id": "bridge-street-unclassified:outline",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.529167
+      }
+    },
+    {
+      "id": "bridge-street-tertiary-link:outline",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.529167
+      }
+    },
+    {
+      "id": "bridge-street-secondary-link:outline",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.529167
+      }
+    },
+    {
+      "id": "bridge-street-primary-link:outline",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.529167
+      }
+    },
+    {
+      "id": "bridge-street-trunk-link:outline",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.529167
+      }
+    },
+    {
+      "id": "bridge-street-motorway-link:outline",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.529167
+      }
+    },
+    {
+      "id": "bridge-street-tertiary:outline",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.529167
+      }
+    },
+    {
+      "id": "bridge-street-secondary:outline",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.529167
+      }
+    },
+    {
+      "id": "bridge-street-primary:outline",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "bridge-street-trunk:outline",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "bridge-street-motorway:outline",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "bridge-way-footway",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "bridge-way-steps",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "bridge-way-path",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "bridge-way-cycleway",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "bridge-street-track",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.264583
+      }
+    },
+    {
+      "id": "bridge-street-pedestrian",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.264583
+      }
+    },
+    {
+      "id": "bridge-street-service",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.264583
+      }
+    },
+    {
+      "id": "bridge-street-livingstreet",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.264583
+      }
+    },
+    {
+      "id": "bridge-street-residential",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.264583
+      }
+    },
+    {
+      "id": "bridge-street-unclassified",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.264583
+      }
+    },
+    {
+      "id": "bridge-street-track-bicycle",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.264583
+      }
+    },
+    {
+      "id": "bridge-street-pedestrian-bicycle",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.264583
+      }
+    },
+    {
+      "id": "bridge-street-service-bicycle",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.264583
+      }
+    },
+    {
+      "id": "bridge-street-livingstreet-bicycle",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.264583
+      }
+    },
+    {
+      "id": "bridge-street-residential-bicycle",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.264583
+      }
+    },
+    {
+      "id": "bridge-street-unclassified-bicycle",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.264583
+      }
+    },
+    {
+      "id": "bridge-street-tertiary-link",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.264583
+      }
+    },
+    {
+      "id": "bridge-street-secondary-link",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.264583
+      }
+    },
+    {
+      "id": "bridge-street-primary-link",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.264583
+      }
+    },
+    {
+      "id": "bridge-street-trunk-link",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.264583
+      }
+    },
+    {
+      "id": "bridge-street-motorway-link",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.264583
+      }
+    },
+    {
+      "id": "bridge-street-tertiary",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.264583
+      }
+    },
+    {
+      "id": "bridge-street-secondary",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.264583
+      }
+    },
+    {
+      "id": "bridge-street-primary",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "bridge-street-trunk",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "bridge-street-motorway",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "bridge-transport-tram:outline",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "bridge-transport-narrowgauge:outline",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "bridge-transport-subway:outline",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "bridge-transport-lightrail:outline",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.264583
+      }
+    },
+    {
+      "id": "bridge-transport-lightrail-service:outline",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "bridge-transport-rail:outline",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)",
+        "line-width": 0.264583
+      }
+    },
+    {
+      "id": "bridge-transport-rail-service:outline",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "bridge-transport-monorail:outline",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "bridge-transport-funicular:outline",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "bridge-transport-tram",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "bridge-transport-narrowgauge",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "bridge-transport-subway",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "bridge-transport-lightrail",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "bridge-transport-lightrail-service",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "bridge-transport-rail",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "bridge-transport-rail-service",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "bridge-transport-monorail",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "bridge-transport-funicular",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "poi-amenity",
+      "type": "circle",
+      "source": "my-vector-tiles",
+      "source-layer": "pois",
+      "paint": {
+        "circle-radius": -0.25
+      }
+    },
+    {
+      "id": "poi-leisure",
+      "type": "circle",
+      "source": "my-vector-tiles",
+      "source-layer": "pois",
+      "paint": {
+        "circle-radius": -0.25
+      }
+    },
+    {
+      "id": "poi-tourism",
+      "type": "circle",
+      "source": "my-vector-tiles",
+      "source-layer": "pois",
+      "paint": {
+        "circle-radius": -0.25
+      }
+    },
+    {
+      "id": "poi-shop",
+      "type": "circle",
+      "source": "my-vector-tiles",
+      "source-layer": "pois",
+      "paint": {
+        "circle-radius": -0.25
+      }
+    },
+    {
+      "id": "poi-man_made",
+      "type": "circle",
+      "source": "my-vector-tiles",
+      "source-layer": "pois",
+      "paint": {
+        "circle-radius": -0.25
+      }
+    },
+    {
+      "id": "poi-historic",
+      "type": "circle",
+      "source": "my-vector-tiles",
+      "source-layer": "pois",
+      "paint": {
+        "circle-radius": -0.25
+      }
+    },
+    {
+      "id": "poi-emergency",
+      "type": "circle",
+      "source": "my-vector-tiles",
+      "source-layer": "pois",
+      "paint": {
+        "circle-radius": -0.25
+      }
+    },
+    {
+      "id": "boundary-country:outline",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "boundaries",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "boundary-country-disputed:outline",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "boundaries",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "boundary-state:outline",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "boundaries",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "boundary-country",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "boundaries",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "boundary-country-disputed",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "boundaries",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "boundary-state",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "boundaries",
+      "paint": {
+        "line-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "marking-oneway",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {}
+    },
+    {
+      "id": "marking-oneway-reverse",
+      "type": "line",
+      "source": "my-vector-tiles",
+      "source-layer": "streets",
+      "paint": {}
+    }
+  ]
+}
