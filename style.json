@@ -5,7 +5,7 @@
     "vector_source": {
       "type": "vector",
       "tiles": [
-        "YOUR_TILE_URL_PLACEHOLDER/{z}/{x}/{y}.pbf"
+        "https://tiles.versatiles.org/assets/glyphs/{fontstack}/{range}.pbf"
       ]
     }
   },
@@ -3288,3 +3288,4 @@
     }
   ]
 }
+
