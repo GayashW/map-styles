@@ -1,2658 +1,3290 @@
 {
   "version": 8,
-  "name": "style",
+  "name": "QGIS Converted Vector Tiles",
   "sources": {
-    "my-vector-tiles": {
+    "vector_source": {
       "type": "vector",
-      "url": "REPLACE_WITH_YOUR_TILE_URL"
+      "tiles": [
+        "YOUR_TILE_URL_PLACEHOLDER/{z}/{x}/{y}.pbf"
+      ]
     }
   },
   "layers": [
     {
-      "id": "background",
+      "id": "background-fill-0",
       "type": "fill",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "background",
       "paint": {
-        "fill-color": "rgba(0,0,0,0)",
-        "fill-outline-color": "rgba(0,0,0,0)"
-      }
+        "fill-color": "rgba(234, 234, 234, 1.0)"
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "water-ocean",
+      "id": "water-ocean-fill-1",
       "type": "fill",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "ocean",
       "paint": {
-        "fill-color": "rgba(0,0,0,0)",
-        "fill-outline-color": "rgba(0,0,0,0)"
-      }
+        "fill-color": "rgba(97, 170, 177, 1.0)"
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "land-glacier",
+      "id": "land-glacier-fill-2",
       "type": "fill",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "water_polygons",
       "paint": {
-        "fill-color": "rgba(0,0,0,0)",
-        "fill-outline-color": "rgba(0,0,0,0)"
-      }
+        "fill-color": "rgba(97, 170, 177, 1.0)"
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "land-commercial",
+      "id": "land-commercial-fill-3",
       "type": "fill",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "land",
       "paint": {
-        "fill-color": "rgba(0,0,0,0)",
-        "fill-outline-color": "rgba(0,0,0,0)"
-      }
+        "fill-color": "rgba(234, 234, 234, 1.0)"
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "land-industrial",
+      "id": "land-industrial-fill-4",
       "type": "fill",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "land",
       "paint": {
-        "fill-color": "rgba(0,0,0,0)",
-        "fill-outline-color": "rgba(0,0,0,0)"
-      }
+        "fill-color": "rgba(224, 224, 224, 1.0)"
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "land-residential",
+      "id": "land-residential-fill-5",
       "type": "fill",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "land",
       "paint": {
-        "fill-color": "rgba(0,0,0,0)",
-        "fill-outline-color": "rgba(0,0,0,0)"
-      }
+        "fill-color": "rgba(229, 229, 229, 1.0)"
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "land-agriculture",
+      "id": "land-agriculture-fill-6",
       "type": "fill",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "land",
       "paint": {
-        "fill-color": "rgba(0,0,0,0)",
-        "fill-outline-color": "rgba(0,0,0,0)"
-      }
+        "fill-color": "rgba(224, 224, 224, 1.0)"
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "land-waste",
+      "id": "land-waste-fill-7",
       "type": "fill",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "land",
       "paint": {
-        "fill-color": "rgba(0,0,0,0)",
-        "fill-outline-color": "rgba(0,0,0,0)"
-      }
+        "fill-color": "rgba(204, 204, 204, 1.0)"
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "land-park",
+      "id": "land-park-fill-8",
       "type": "fill",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "land",
       "paint": {
-        "fill-color": "rgba(0,0,0,0)",
-        "fill-outline-color": "rgba(0,0,0,0)"
-      }
+        "fill-color": "rgba(191, 191, 191, 1.0)"
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "land-garden",
+      "id": "land-garden-fill-9",
       "type": "fill",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "land",
       "paint": {
-        "fill-color": "rgba(0,0,0,0)",
-        "fill-outline-color": "rgba(0,0,0,0)"
-      }
+        "fill-color": "rgba(212, 217, 153, 1.0)"
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "land-burial",
+      "id": "land-burial-fill-10",
       "type": "fill",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "land",
       "paint": {
-        "fill-color": "rgba(0,0,0,0)",
-        "fill-outline-color": "rgba(0,0,0,0)"
-      }
+        "fill-color": "rgba(211, 211, 211, 1.0)"
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "land-leisure",
+      "id": "land-leisure-fill-11",
       "type": "fill",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "land",
       "paint": {
-        "fill-color": "rgba(0,0,0,0)",
-        "fill-outline-color": "rgba(0,0,0,0)"
-      }
+        "fill-color": "rgba(229, 229, 229, 1.0)"
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "land-rock",
+      "id": "land-rock-fill-12",
       "type": "fill",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "land",
       "paint": {
-        "fill-color": "rgba(0,0,0,0)",
-        "fill-outline-color": "rgba(0,0,0,0)"
-      }
+        "fill-color": "rgba(226, 226, 226, 1.0)"
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "land-forest",
+      "id": "land-forest-fill-13",
       "type": "fill",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "land",
       "paint": {
-        "fill-color": "rgba(0,0,0,0)",
-        "fill-outline-color": "rgba(0,0,0,0)"
-      }
+        "fill-color": "rgba(98, 157, 54, 1.0)"
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "land-grass",
+      "id": "land-grass-fill-14",
       "type": "fill",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "land",
       "paint": {
-        "fill-color": "rgba(0,0,0,0)",
-        "fill-outline-color": "rgba(0,0,0,0)"
-      }
+        "fill-color": "rgba(216, 232, 200, 1.0)"
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "land-vegetation",
+      "id": "land-vegetation-fill-15",
       "type": "fill",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "land",
       "paint": {
-        "fill-color": "rgba(0,0,0,0)",
-        "fill-outline-color": "rgba(0,0,0,0)"
-      }
+        "fill-color": "rgba(98, 157, 54, 1.0)"
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "land-sand",
+      "id": "land-sand-fill-16",
       "type": "fill",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "land",
       "paint": {
-        "fill-color": "rgba(0,0,0,0)",
-        "fill-outline-color": "rgba(0,0,0,0)"
-      }
+        "fill-color": "rgba(242, 242, 242, 1.0)"
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "land-wetland",
+      "id": "land-wetland-fill-17",
       "type": "fill",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "land",
       "paint": {
-        "fill-color": "rgba(0,0,0,0)",
-        "fill-outline-color": "rgba(0,0,0,0)"
-      }
+        "fill-color": "rgba(219, 219, 219, 1.0)"
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "water-river",
+      "id": "water-river-line-18",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "water_lines",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(216, 216, 216, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "water-canal",
+      "id": "water-canal-line-19",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "water_lines",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(216, 216, 216, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "water-stream",
+      "id": "water-stream-line-20",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "water_lines",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(216, 216, 216, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "water-ditch",
+      "id": "water-ditch-line-21",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "water_lines",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(216, 216, 216, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "water-area",
+      "id": "water-area-fill-22",
       "type": "fill",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "water_polygons",
       "paint": {
-        "fill-color": "rgba(0,0,0,0)",
-        "fill-outline-color": "rgba(0,0,0,0)"
-      }
+        "fill-color": "rgba(97, 170, 177, 1.0)"
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "water-area-river",
+      "id": "water-area-river-fill-23",
       "type": "fill",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "water_polygons",
       "paint": {
-        "fill-color": "rgba(0,0,0,0)",
-        "fill-outline-color": "rgba(0,0,0,0)"
-      }
+        "fill-color": "rgba(97, 170, 177, 1.0)"
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "water-area-small",
+      "id": "water-area-small-fill-24",
       "type": "fill",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "water_polygons",
       "paint": {
-        "fill-color": "rgba(0,0,0,0)",
-        "fill-outline-color": "rgba(0,0,0,0)"
-      }
+        "fill-color": "rgba(97, 170, 177, 1.0)"
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "water-dam-area",
+      "id": "water-dam-area-fill-25",
       "type": "fill",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "dam_polygons",
       "paint": {
-        "fill-color": "rgba(0,0,0,0)",
-        "fill-outline-color": "rgba(0,0,0,0)"
-      }
+        "fill-color": "rgba(242, 242, 242, 1.0)"
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "water-dam",
+      "id": "water-dam-line-26",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "dam_lines",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(216, 216, 216, 1.0)",
         "line-width": 0.264583
-      }
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "water-pier-area",
+      "id": "water-pier-area-fill-27",
       "type": "fill",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "pier_polygons",
       "paint": {
-        "fill-color": "rgba(0,0,0,0)",
-        "fill-outline-color": "rgba(0,0,0,0)"
-      }
+        "fill-color": "rgba(242, 242, 242, 1.0)"
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "water-pier",
+      "id": "water-pier-line-28",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "pier_lines",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(242, 242, 242, 1.0)",
         "line-width": 0.264583
-      }
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "site-dangerarea",
+      "id": "site-dangerarea-fill-29",
       "type": "fill",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "sites",
       "paint": {
-        "fill-color": "rgba(0,0,0,0)",
-        "fill-outline-color": "rgba(0,0,0,0)"
-      }
+        "fill-color": "rgba(0, 0, 255, 1.0)"
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "site-university",
+      "id": "site-university-fill-30",
       "type": "fill",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "sites",
       "paint": {
-        "fill-color": "rgba(0,0,0,0)",
-        "fill-outline-color": "rgba(0,0,0,0)"
-      }
+        "fill-color": "rgba(191, 191, 191, 1.0)"
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "site-college",
+      "id": "site-college-fill-31",
       "type": "fill",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "sites",
       "paint": {
-        "fill-color": "rgba(0,0,0,0)",
-        "fill-outline-color": "rgba(0,0,0,0)"
-      }
+        "fill-color": "rgba(191, 191, 191, 1.0)"
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "site-school",
+      "id": "site-school-fill-32",
       "type": "fill",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "sites",
       "paint": {
-        "fill-color": "rgba(0,0,0,0)",
-        "fill-outline-color": "rgba(0,0,0,0)"
-      }
+        "fill-color": "rgba(191, 191, 191, 1.0)"
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "site-hospital",
+      "id": "site-hospital-fill-33",
       "type": "fill",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "sites",
       "paint": {
-        "fill-color": "rgba(0,0,0,0)",
-        "fill-outline-color": "rgba(0,0,0,0)"
-      }
+        "fill-color": "rgba(178, 178, 178, 1.0)"
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "site-prison",
+      "id": "site-prison-fill-34",
       "type": "fill",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "sites",
       "paint": {
-        "fill-color": "rgba(0,0,0,0)",
-        "fill-outline-color": "rgba(0,0,0,0)"
-      }
+        "fill-color": "rgba(0, 0, 255, 1.0)"
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "site-parking",
+      "id": "site-parking-fill-35",
       "type": "fill",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "sites",
       "paint": {
-        "fill-color": "rgba(0,0,0,0)",
-        "fill-outline-color": "rgba(0,0,0,0)"
-      }
+        "fill-color": "rgba(232, 232, 232, 1.0)"
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "site-bicycleparking",
+      "id": "site-bicycleparking-fill-36",
       "type": "fill",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "sites",
       "paint": {
-        "fill-color": "rgba(0,0,0,0)",
-        "fill-outline-color": "rgba(0,0,0,0)"
-      }
+        "fill-color": "rgba(232, 232, 232, 1.0)"
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "site-construction",
+      "id": "site-construction-fill-37",
       "type": "fill",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "sites",
       "paint": {
-        "fill-color": "rgba(0,0,0,0)",
-        "fill-outline-color": "rgba(0,0,0,0)"
-      }
+        "fill-color": "rgba(0, 0, 255, 1.0)"
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "airport-area",
+      "id": "airport-area-fill-38",
       "type": "fill",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "street_polygons",
       "paint": {
-        "fill-color": "rgba(0,0,0,0)",
-        "fill-outline-color": "rgba(0,0,0,0)"
-      }
+        "fill-color": "rgba(255, 255, 255, 1.0)"
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "airport-taxiway:outline",
+      "id": "airport-taxiway:outline-line-39",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(204, 204, 204, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "airport-runway:outline",
+      "id": "airport-runway:outline-line-40",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(204, 204, 204, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "airport-taxiway",
+      "id": "airport-taxiway-line-41",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(255, 255, 255, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "airport-runway",
+      "id": "airport-runway-line-42",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(255, 255, 255, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "building:outline",
+      "id": "building:outline-fill-43",
       "type": "fill",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "buildings",
       "paint": {
-        "fill-color": "rgba(0,0,0,0)",
-        "fill-outline-color": "rgba(0,0,0,0)"
-      }
+        "fill-color": "rgba(219, 219, 219, 1.0)"
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "building",
+      "id": "building-fill-44",
       "type": "fill",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "buildings",
       "paint": {
-        "fill-color": "rgba(0,0,0,0)",
-        "fill-outline-color": "rgba(0,0,0,0)"
-      }
+        "fill-color": "rgba(255, 255, 255, 1.0)"
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "tunnel-street-pedestrian-zone",
+      "id": "tunnel-street-pedestrian-zone-fill-45",
       "type": "fill",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "street_polygons",
       "paint": {
-        "fill-color": "rgba(0,0,0,0)",
-        "fill-outline-color": "rgba(0,0,0,0)"
-      }
+        "fill-color": "rgba(247, 247, 247, 1.0)"
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "tunnel-way-footway:outline",
+      "id": "tunnel-way-footway:outline-line-46",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(219, 219, 219, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": 15,
+      "maxzoom": -1
     },
     {
-      "id": "tunnel-way-steps:outline",
+      "id": "tunnel-way-steps:outline-line-47",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(219, 219, 219, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": 15,
+      "maxzoom": -1
     },
     {
-      "id": "tunnel-way-path:outline",
+      "id": "tunnel-way-path:outline-line-48",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(219, 219, 219, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": 15,
+      "maxzoom": -1
     },
     {
-      "id": "tunnel-way-cycleway:outline",
+      "id": "tunnel-way-cycleway:outline-line-49",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(221, 221, 221, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": 15,
+      "maxzoom": -1
     },
     {
-      "id": "tunnel-street-track:outline",
+      "id": "tunnel-street-track:outline-line-50",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(222, 222, 222, 1.0)",
         "line-width": 0.529167
-      }
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "tunnel-street-pedestrian:outline",
+      "id": "tunnel-street-pedestrian:outline-line-51",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(222, 222, 222, 1.0)",
         "line-width": 0.529167
-      }
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "tunnel-street-service:outline",
+      "id": "tunnel-street-service:outline-line-52",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(220, 220, 220, 1.0)",
         "line-width": 0.264583
-      }
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "tunnel-street-livingstreet:outline",
+      "id": "tunnel-street-livingstreet:outline-line-53",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(222, 222, 222, 1.0)",
         "line-width": 0.529167
-      }
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "tunnel-street-residential:outline",
+      "id": "tunnel-street-residential:outline-line-54",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(222, 222, 222, 1.0)",
         "line-width": 0.529167
-      }
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "tunnel-street-unclassified:outline",
+      "id": "tunnel-street-unclassified:outline-line-55",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(222, 222, 222, 1.0)",
         "line-width": 0.529167
-      }
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "tunnel-street-tertiary-link:outline",
+      "id": "tunnel-street-tertiary-link:outline-line-56",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(222, 222, 222, 1.0)",
         "line-width": 0.529167
-      }
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "tunnel-street-secondary-link:outline",
+      "id": "tunnel-street-secondary-link:outline-line-57",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(180, 180, 180, 1.0)",
         "line-width": 0.529167
-      }
+      },
+      "minzoom": 13,
+      "maxzoom": -1
     },
     {
-      "id": "tunnel-street-primary-link:outline",
+      "id": "tunnel-street-primary-link:outline-line-58",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(180, 180, 180, 1.0)",
         "line-width": 0.529167
-      }
+      },
+      "minzoom": 13,
+      "maxzoom": -1
     },
     {
-      "id": "tunnel-street-trunk-link:outline",
+      "id": "tunnel-street-trunk-link:outline-line-59",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(180, 180, 180, 1.0)",
         "line-width": 0.529167
-      }
+      },
+      "minzoom": 13,
+      "maxzoom": -1
     },
     {
-      "id": "tunnel-street-motorway-link:outline",
+      "id": "tunnel-street-motorway-link:outline-line-60",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(180, 180, 180, 1.0)",
         "line-width": 0.529167
-      }
+      },
+      "minzoom": 12,
+      "maxzoom": -1
     },
     {
-      "id": "tunnel-street-tertiary:outline",
+      "id": "tunnel-street-tertiary:outline-line-61",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(222, 222, 222, 1.0)",
         "line-width": 0.529167
-      }
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "tunnel-street-secondary:outline",
+      "id": "tunnel-street-secondary:outline-line-62",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(180, 180, 180, 1.0)",
         "line-width": 0.529167
-      }
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "tunnel-street-primary:outline",
+      "id": "tunnel-street-primary:outline-line-63",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(180, 180, 180, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "tunnel-street-trunk:outline",
+      "id": "tunnel-street-trunk:outline-line-64",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(180, 180, 180, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "tunnel-street-motorway:outline",
+      "id": "tunnel-street-motorway:outline-line-65",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(180, 180, 180, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "tunnel-way-footway",
+      "id": "tunnel-way-footway-line-66",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(239, 239, 239, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": 15,
+      "maxzoom": -1
     },
     {
-      "id": "tunnel-way-steps",
+      "id": "tunnel-way-steps-line-67",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(239, 239, 239, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": 15,
+      "maxzoom": -1
     },
     {
-      "id": "tunnel-way-path",
+      "id": "tunnel-way-path-line-68",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(239, 239, 239, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": 15,
+      "maxzoom": -1
     },
     {
-      "id": "tunnel-way-cycleway",
+      "id": "tunnel-way-cycleway-line-69",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(242, 242, 242, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": 15,
+      "maxzoom": -1
     },
     {
-      "id": "tunnel-street-track",
+      "id": "tunnel-street-track-line-70",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(247, 247, 247, 1.0)",
         "line-width": 0.264583
-      }
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "tunnel-street-pedestrian",
+      "id": "tunnel-street-pedestrian-line-71",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(247, 247, 247, 1.0)",
         "line-width": 0.264583
-      }
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "tunnel-street-service",
+      "id": "tunnel-street-service-line-72",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(247, 247, 247, 1.0)",
         "line-width": 0.264583
-      }
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "tunnel-street-livingstreet",
+      "id": "tunnel-street-livingstreet-line-73",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(247, 247, 247, 1.0)",
         "line-width": 0.264583
-      }
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "tunnel-street-residential",
+      "id": "tunnel-street-residential-line-74",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(247, 247, 247, 1.0)",
         "line-width": 0.264583
-      }
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "tunnel-street-unclassified",
+      "id": "tunnel-street-unclassified-line-75",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(247, 247, 247, 1.0)",
         "line-width": 0.264583
-      }
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "tunnel-street-track-bicycle",
+      "id": "tunnel-street-track-bicycle-line-76",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(247, 247, 247, 1.0)",
         "line-width": 0.264583
-      }
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "tunnel-street-pedestrian-bicycle",
+      "id": "tunnel-street-pedestrian-bicycle-line-77",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(247, 247, 247, 1.0)",
         "line-width": 0.264583
-      }
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "tunnel-street-service-bicycle",
+      "id": "tunnel-street-service-bicycle-line-78",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(247, 247, 247, 1.0)",
         "line-width": 0.264583
-      }
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "tunnel-street-livingstreet-bicycle",
+      "id": "tunnel-street-livingstreet-bicycle-line-79",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(247, 247, 247, 1.0)",
         "line-width": 0.264583
-      }
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "tunnel-street-residential-bicycle",
+      "id": "tunnel-street-residential-bicycle-line-80",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(247, 247, 247, 1.0)",
         "line-width": 0.264583
-      }
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "tunnel-street-unclassified-bicycle",
+      "id": "tunnel-street-unclassified-bicycle-line-81",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(247, 247, 247, 1.0)",
         "line-width": 0.264583
-      }
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "tunnel-street-tertiary-link",
+      "id": "tunnel-street-tertiary-link-line-82",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(247, 247, 247, 1.0)",
         "line-width": 0.264583
-      }
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "tunnel-street-secondary-link",
+      "id": "tunnel-street-secondary-link-line-83",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(217, 217, 217, 1.0)",
         "line-width": 0.264583
-      }
+      },
+      "minzoom": 13,
+      "maxzoom": -1
     },
     {
-      "id": "tunnel-street-primary-link",
+      "id": "tunnel-street-primary-link-line-84",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(217, 217, 217, 1.0)",
         "line-width": 0.264583
-      }
+      },
+      "minzoom": 13,
+      "maxzoom": -1
     },
     {
-      "id": "tunnel-street-trunk-link",
+      "id": "tunnel-street-trunk-link-line-85",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(217, 217, 217, 1.0)",
         "line-width": 0.264583
-      }
+      },
+      "minzoom": 13,
+      "maxzoom": -1
     },
     {
-      "id": "tunnel-street-motorway-link",
+      "id": "tunnel-street-motorway-link-line-86",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(201, 201, 201, 1.0)",
         "line-width": 0.264583
-      }
+      },
+      "minzoom": 12,
+      "maxzoom": -1
     },
     {
-      "id": "tunnel-street-tertiary",
+      "id": "tunnel-street-tertiary-line-87",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(247, 247, 247, 1.0)",
         "line-width": 0.264583
-      }
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "tunnel-street-secondary",
+      "id": "tunnel-street-secondary-line-88",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(217, 217, 217, 1.0)",
         "line-width": 0.264583
-      }
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "tunnel-street-primary",
+      "id": "tunnel-street-primary-line-89",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(217, 217, 217, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "tunnel-street-trunk",
+      "id": "tunnel-street-trunk-line-90",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(217, 217, 217, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "tunnel-street-motorway",
+      "id": "tunnel-street-motorway-line-91",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(201, 201, 201, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "tunnel-transport-tram:outline",
+      "id": "tunnel-transport-tram:outline-line-92",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(186, 186, 186, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": 15,
+      "maxzoom": -1
     },
     {
-      "id": "tunnel-transport-narrowgauge:outline",
+      "id": "tunnel-transport-narrowgauge:outline-line-93",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(186, 186, 186, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": 15,
+      "maxzoom": -1
     },
     {
-      "id": "tunnel-transport-subway:outline",
+      "id": "tunnel-transport-subway:outline-line-94",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(183, 183, 183, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "tunnel-transport-lightrail:outline",
+      "id": "tunnel-transport-lightrail:outline-line-95",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(186, 186, 186, 1.0)",
         "line-width": 0.264583
-      }
+      },
+      "minzoom": 8,
+      "maxzoom": -1
     },
     {
-      "id": "tunnel-transport-lightrail-service:outline",
+      "id": "tunnel-transport-lightrail-service:outline-line-96",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(186, 186, 186, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": 14,
+      "maxzoom": -1
     },
     {
-      "id": "tunnel-transport-rail:outline",
+      "id": "tunnel-transport-rail:outline-line-97",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(186, 186, 186, 1.0)",
         "line-width": 0.264583
-      }
+      },
+      "minzoom": 8,
+      "maxzoom": -1
     },
     {
-      "id": "tunnel-transport-rail-service:outline",
+      "id": "tunnel-transport-rail-service:outline-line-98",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(186, 186, 186, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": 14,
+      "maxzoom": -1
     },
     {
-      "id": "tunnel-transport-monorail:outline",
+      "id": "tunnel-transport-monorail:outline-line-99",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(186, 186, 186, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": 15,
+      "maxzoom": -1
     },
     {
-      "id": "tunnel-transport-funicular:outline",
+      "id": "tunnel-transport-funicular:outline-line-100",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(186, 186, 186, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": 15,
+      "maxzoom": -1
     },
     {
-      "id": "tunnel-transport-tram",
+      "id": "tunnel-transport-tram-line-101",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(186, 186, 186, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": 13,
+      "maxzoom": -1
     },
     {
-      "id": "tunnel-transport-narrowgauge",
+      "id": "tunnel-transport-narrowgauge-line-102",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(186, 186, 186, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": 13,
+      "maxzoom": -1
     },
     {
-      "id": "tunnel-transport-subway",
+      "id": "tunnel-transport-subway-line-103",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(201, 201, 201, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "tunnel-transport-lightrail",
+      "id": "tunnel-transport-lightrail-line-104",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(204, 204, 204, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": 14,
+      "maxzoom": -1
     },
     {
-      "id": "tunnel-transport-lightrail-service",
+      "id": "tunnel-transport-lightrail-service-line-105",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(204, 204, 204, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": 15,
+      "maxzoom": -1
     },
     {
-      "id": "tunnel-transport-rail",
+      "id": "tunnel-transport-rail-line-106",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(204, 204, 204, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": 14,
+      "maxzoom": -1
     },
     {
-      "id": "tunnel-transport-rail-service",
+      "id": "tunnel-transport-rail-service-line-107",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(204, 204, 204, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": 15,
+      "maxzoom": -1
     },
     {
-      "id": "tunnel-transport-monorail",
+      "id": "tunnel-transport-monorail-line-108",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(186, 186, 186, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": 13,
+      "maxzoom": -1
     },
     {
-      "id": "tunnel-transport-funicular",
+      "id": "tunnel-transport-funicular-line-109",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(186, 186, 186, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": 13,
+      "maxzoom": -1
     },
     {
-      "id": "bridge",
+      "id": "bridge-fill-110",
       "type": "fill",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "bridges",
       "paint": {
-        "fill-color": "rgba(0,0,0,0)",
-        "fill-outline-color": "rgba(0,0,0,0)"
-      }
+        "fill-color": "rgba(239, 239, 239, 1.0)"
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "street-pedestrian-zone",
+      "id": "street-pedestrian-zone-fill-111",
       "type": "fill",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "street_polygons",
       "paint": {
-        "fill-color": "rgba(0,0,0,0)",
-        "fill-outline-color": "rgba(0,0,0,0)"
-      }
+        "fill-color": "rgba(245, 245, 245, 1.0)"
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "way-footway:outline",
+      "id": "way-footway:outline-line-112",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(220, 220, 220, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": 15,
+      "maxzoom": -1
     },
     {
-      "id": "way-steps:outline",
+      "id": "way-steps:outline-line-113",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(220, 220, 220, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": 15,
+      "maxzoom": -1
     },
     {
-      "id": "way-path:outline",
+      "id": "way-path:outline-line-114",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(220, 220, 220, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": 15,
+      "maxzoom": -1
     },
     {
-      "id": "way-cycleway:outline",
+      "id": "way-cycleway:outline-line-115",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(222, 222, 222, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": 15,
+      "maxzoom": -1
     },
     {
-      "id": "street-track:outline",
+      "id": "street-track:outline-line-116",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(204, 204, 204, 1.0)",
         "line-width": 0.529167
-      }
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "street-pedestrian:outline",
+      "id": "street-pedestrian:outline-line-117",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(204, 204, 204, 1.0)",
         "line-width": 0.529167
-      }
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "street-service:outline",
+      "id": "street-service:outline-line-118",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(220, 220, 220, 1.0)",
         "line-width": 0.264583
-      }
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "street-livingstreet:outline",
+      "id": "street-livingstreet:outline-line-119",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(204, 204, 204, 1.0)",
         "line-width": 0.529167
-      }
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "street-residential:outline",
+      "id": "street-residential:outline-line-120",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(204, 204, 204, 1.0)",
         "line-width": 0.529167
-      }
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "street-unclassified:outline",
+      "id": "street-unclassified:outline-line-121",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(204, 204, 204, 1.0)",
         "line-width": 0.529167
-      }
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "street-tertiary-link:outline",
+      "id": "street-tertiary-link:outline-line-122",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(204, 204, 204, 1.0)",
         "line-width": 0.529167
-      }
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "street-secondary-link:outline",
+      "id": "street-secondary-link:outline-line-123",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(175, 175, 175, 1.0)",
         "line-width": 0.529167
-      }
+      },
+      "minzoom": 13,
+      "maxzoom": -1
     },
     {
-      "id": "street-primary-link:outline",
+      "id": "street-primary-link:outline-line-124",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(175, 175, 175, 1.0)",
         "line-width": 0.529167
-      }
+      },
+      "minzoom": 13,
+      "maxzoom": -1
     },
     {
-      "id": "street-trunk-link:outline",
+      "id": "street-trunk-link:outline-line-125",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(175, 175, 175, 1.0)",
         "line-width": 0.529167
-      }
+      },
+      "minzoom": 13,
+      "maxzoom": -1
     },
     {
-      "id": "street-motorway-link:outline",
+      "id": "street-motorway-link:outline-line-126",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(175, 175, 175, 1.0)",
         "line-width": 0.529167
-      }
+      },
+      "minzoom": 12,
+      "maxzoom": -1
     },
     {
-      "id": "street-tertiary:outline",
+      "id": "street-tertiary:outline-line-127",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(204, 204, 204, 1.0)",
         "line-width": 0.529167
-      }
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "street-secondary:outline",
+      "id": "street-secondary:outline-line-128",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(175, 175, 175, 1.0)",
         "line-width": 0.529167
-      }
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "street-primary:outline",
+      "id": "street-primary:outline-line-129",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(175, 175, 175, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "street-trunk:outline",
+      "id": "street-trunk:outline-line-130",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(175, 175, 175, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "street-motorway:outline",
+      "id": "street-motorway:outline-line-131",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(175, 175, 175, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "way-footway",
+      "id": "way-footway-line-132",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(245, 245, 245, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": 15,
+      "maxzoom": -1
     },
     {
-      "id": "way-steps",
+      "id": "way-steps-line-133",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(245, 245, 245, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": 15,
+      "maxzoom": -1
     },
     {
-      "id": "way-path",
+      "id": "way-path-line-134",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(245, 245, 245, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": 15,
+      "maxzoom": -1
     },
     {
-      "id": "way-cycleway",
+      "id": "way-cycleway-line-135",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(247, 247, 247, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": 15,
+      "maxzoom": -1
     },
     {
-      "id": "street-track",
+      "id": "street-track-line-136",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(255, 255, 255, 1.0)",
         "line-width": 0.264583
-      }
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "street-pedestrian",
+      "id": "street-pedestrian-line-137",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(244, 244, 244, 1.0)",
         "line-width": 0.264583
-      }
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "street-service",
+      "id": "street-service-line-138",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(247, 247, 247, 1.0)",
         "line-width": 0.264583
-      }
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "street-livingstreet",
+      "id": "street-livingstreet-line-139",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(255, 255, 255, 1.0)",
         "line-width": 0.264583
-      }
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "street-residential",
+      "id": "street-residential-line-140",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(255, 255, 255, 1.0)",
         "line-width": 0.264583
-      }
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "street-unclassified",
+      "id": "street-unclassified-line-141",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(255, 255, 255, 1.0)",
         "line-width": 0.264583
-      }
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "street-track-bicycle",
+      "id": "street-track-bicycle-line-142",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(255, 255, 255, 1.0)",
         "line-width": 0.264583
-      }
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "street-pedestrian-bicycle",
+      "id": "street-pedestrian-bicycle-line-143",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(247, 247, 247, 1.0)",
         "line-width": 0.264583
-      }
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "street-service-bicycle",
+      "id": "street-service-bicycle-line-144",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(255, 255, 255, 1.0)",
         "line-width": 0.264583
-      }
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "street-livingstreet-bicycle",
+      "id": "street-livingstreet-bicycle-line-145",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(247, 247, 247, 1.0)",
         "line-width": 0.264583
-      }
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "street-residential-bicycle",
+      "id": "street-residential-bicycle-line-146",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(247, 247, 247, 1.0)",
         "line-width": 0.264583
-      }
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "street-unclassified-bicycle",
+      "id": "street-unclassified-bicycle-line-147",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(247, 247, 247, 1.0)",
         "line-width": 0.264583
-      }
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "street-tertiary-link",
+      "id": "street-tertiary-link-line-148",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(255, 255, 255, 1.0)",
         "line-width": 0.264583
-      }
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "street-secondary-link",
+      "id": "street-secondary-link-line-149",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(255, 255, 255, 1.0)",
         "line-width": 0.26458
-      }
+      },
+      "minzoom": 13,
+      "maxzoom": -1
     },
     {
-      "id": "street-primary-link",
+      "id": "street-primary-link-line-150",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(255, 255, 255, 1.0)",
         "line-width": 0.26458
-      }
+      },
+      "minzoom": 13,
+      "maxzoom": -1
     },
     {
-      "id": "street-trunk-link",
+      "id": "street-trunk-link-line-151",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(211, 211, 211, 1.0)",
         "line-width": 0.264583
-      }
+      },
+      "minzoom": 13,
+      "maxzoom": -1
     },
     {
-      "id": "street-motorway-link",
+      "id": "street-motorway-link-line-152",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(196, 196, 196, 1.0)",
         "line-width": 0.264583
-      }
+      },
+      "minzoom": 12,
+      "maxzoom": -1
     },
     {
-      "id": "street-tertiary",
+      "id": "street-tertiary-line-153",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(255, 255, 255, 1.0)",
         "line-width": 0.264583
-      }
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "street-secondary",
+      "id": "street-secondary-line-154",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(255, 255, 255, 1.0)",
         "line-width": 0.26458
-      }
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "street-primary",
+      "id": "street-primary-line-155",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(252, 252, 252, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "street-trunk",
+      "id": "street-trunk-line-156",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(255, 255, 255, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "street-motorway",
+      "id": "street-motorway-line-157",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(196, 196, 196, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "transport-tram:outline",
+      "id": "transport-tram:outline-line-158",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(186, 186, 186, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": 15,
+      "maxzoom": -1
     },
     {
-      "id": "transport-narrowgauge:outline",
+      "id": "transport-narrowgauge:outline-line-159",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(186, 186, 186, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": 15,
+      "maxzoom": -1
     },
     {
-      "id": "transport-subway:outline",
+      "id": "transport-subway:outline-line-160",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(183, 183, 183, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "transport-lightrail:outline",
+      "id": "transport-lightrail:outline-line-161",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(186, 186, 186, 1.0)",
         "line-width": 0.264583
-      }
+      },
+      "minzoom": 8,
+      "maxzoom": -1
     },
     {
-      "id": "transport-lightrail-service:outline",
+      "id": "transport-lightrail-service:outline-line-162",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(186, 186, 186, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": 14,
+      "maxzoom": -1
     },
     {
-      "id": "transport-rail:outline",
+      "id": "transport-rail:outline-line-163",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(186, 186, 186, 1.0)",
         "line-width": 0.264583
-      }
+      },
+      "minzoom": 8,
+      "maxzoom": -1
     },
     {
-      "id": "transport-rail-service:outline",
+      "id": "transport-rail-service:outline-line-164",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(186, 186, 186, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": 14,
+      "maxzoom": -1
     },
     {
-      "id": "transport-monorail:outline",
+      "id": "transport-monorail:outline-line-165",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(186, 186, 186, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": 15,
+      "maxzoom": -1
     },
     {
-      "id": "transport-funicular:outline",
+      "id": "transport-funicular:outline-line-166",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(186, 186, 186, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": 15,
+      "maxzoom": -1
     },
     {
-      "id": "transport-tram",
+      "id": "transport-tram-line-167",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(186, 186, 186, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": 13,
+      "maxzoom": -1
     },
     {
-      "id": "transport-narrowgauge",
+      "id": "transport-narrowgauge-line-168",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(186, 186, 186, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": 13,
+      "maxzoom": -1
     },
     {
-      "id": "transport-subway",
+      "id": "transport-subway-line-169",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(201, 201, 201, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "transport-lightrail",
+      "id": "transport-lightrail-line-170",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(204, 204, 204, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": 14,
+      "maxzoom": -1
     },
     {
-      "id": "transport-lightrail-service",
+      "id": "transport-lightrail-service-line-171",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(204, 204, 204, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": 15,
+      "maxzoom": -1
     },
     {
-      "id": "transport-rail",
+      "id": "transport-rail-line-172",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(204, 204, 204, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": 14,
+      "maxzoom": -1
     },
     {
-      "id": "transport-rail-service",
+      "id": "transport-rail-service-line-173",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(204, 204, 204, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": 15,
+      "maxzoom": -1
     },
     {
-      "id": "transport-monorail",
+      "id": "transport-monorail-line-174",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(186, 186, 186, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": 13,
+      "maxzoom": -1
     },
     {
-      "id": "transport-funicular",
+      "id": "transport-funicular-line-175",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(186, 186, 186, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": 13,
+      "maxzoom": -1
     },
     {
-      "id": "transport-ferry",
+      "id": "transport-ferry-line-176",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "ferries",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(195, 195, 195, 1.0)",
         "line-width": 0.264583
-      }
+      },
+      "minzoom": 10,
+      "maxzoom": -1
     },
     {
-      "id": "bridge-way-footway:bridge",
+      "id": "bridge-way-footway:bridge-line-177",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(239, 239, 239, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": 15,
+      "maxzoom": -1
     },
     {
-      "id": "bridge-way-steps:bridge",
+      "id": "bridge-way-steps:bridge-line-178",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(239, 239, 239, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": 15,
+      "maxzoom": -1
     },
     {
-      "id": "bridge-way-path:bridge",
+      "id": "bridge-way-path:bridge-line-179",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(239, 239, 239, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": 15,
+      "maxzoom": -1
     },
     {
-      "id": "bridge-way-cycleway:bridge",
+      "id": "bridge-way-cycleway:bridge-line-180",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(239, 239, 239, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": 15,
+      "maxzoom": -1
     },
     {
-      "id": "bridge-street-track:bridge",
+      "id": "bridge-street-track:bridge-line-181",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(239, 239, 239, 1.0)",
         "line-width": 0.79375
-      }
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "bridge-street-pedestrian:bridge",
+      "id": "bridge-street-pedestrian:bridge-line-182",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(239, 239, 239, 1.0)",
         "line-width": 0.79375
-      }
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "bridge-street-service:bridge",
+      "id": "bridge-street-service:bridge-line-183",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(239, 239, 239, 1.0)",
         "line-width": 0.79375
-      }
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "bridge-street-livingstreet:bridge",
+      "id": "bridge-street-livingstreet:bridge-line-184",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(239, 239, 239, 1.0)",
         "line-width": 0.79375
-      }
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "bridge-street-residential:bridge",
+      "id": "bridge-street-residential:bridge-line-185",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(239, 239, 239, 1.0)",
         "line-width": 0.79375
-      }
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "bridge-street-unclassified:bridge",
+      "id": "bridge-street-unclassified:bridge-line-186",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(239, 239, 239, 1.0)",
         "line-width": 0.79375
-      }
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "bridge-street-tertiary-link:bridge",
+      "id": "bridge-street-tertiary-link:bridge-line-187",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(239, 239, 239, 1.0)",
         "line-width": 0.79375
-      }
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "bridge-street-secondary-link:bridge",
+      "id": "bridge-street-secondary-link:bridge-line-188",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(239, 239, 239, 1.0)",
         "line-width": 0.79375
-      }
+      },
+      "minzoom": 13,
+      "maxzoom": -1
     },
     {
-      "id": "bridge-street-primary-link:bridge",
+      "id": "bridge-street-primary-link:bridge-line-189",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(239, 239, 239, 1.0)",
         "line-width": 0.79375
-      }
+      },
+      "minzoom": 13,
+      "maxzoom": -1
     },
     {
-      "id": "bridge-street-trunk-link:bridge",
+      "id": "bridge-street-trunk-link:bridge-line-190",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(239, 239, 239, 1.0)",
         "line-width": 0.79375
-      }
+      },
+      "minzoom": 13,
+      "maxzoom": -1
     },
     {
-      "id": "bridge-street-motorway-link:bridge",
+      "id": "bridge-street-motorway-link:bridge-line-191",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(239, 239, 239, 1.0)",
         "line-width": 0.79375
-      }
+      },
+      "minzoom": 12,
+      "maxzoom": -1
     },
     {
-      "id": "bridge-street-tertiary:bridge",
+      "id": "bridge-street-tertiary:bridge-line-192",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(239, 239, 239, 1.0)",
         "line-width": 0.79375
-      }
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "bridge-street-secondary:bridge",
+      "id": "bridge-street-secondary:bridge-line-193",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(239, 239, 239, 1.0)",
         "line-width": 0.79375
-      }
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "bridge-street-primary:bridge",
+      "id": "bridge-street-primary:bridge-line-194",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(239, 239, 239, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "bridge-street-trunk:bridge",
+      "id": "bridge-street-trunk:bridge-line-195",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(239, 239, 239, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "bridge-street-motorway:bridge",
+      "id": "bridge-street-motorway:bridge-line-196",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(239, 239, 239, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "bridge-street-pedestrian-zone",
+      "id": "bridge-street-pedestrian-zone-fill-197",
       "type": "fill",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "street_polygons",
       "paint": {
-        "fill-color": "rgba(0,0,0,0)",
-        "fill-outline-color": "rgba(0,0,0,0)"
-      }
+        "fill-color": "rgba(255, 255, 255, 1.0)"
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "bridge-way-footway:outline",
+      "id": "bridge-way-footway:outline-line-198",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(220, 220, 220, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": 15,
+      "maxzoom": -1
     },
     {
-      "id": "bridge-way-steps:outline",
+      "id": "bridge-way-steps:outline-line-199",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(220, 220, 220, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": 15,
+      "maxzoom": -1
     },
     {
-      "id": "bridge-way-path:outline",
+      "id": "bridge-way-path:outline-line-200",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(220, 220, 220, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": 15,
+      "maxzoom": -1
     },
     {
-      "id": "bridge-way-cycleway:outline",
+      "id": "bridge-way-cycleway:outline-line-201",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(222, 222, 222, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": 15,
+      "maxzoom": -1
     },
     {
-      "id": "bridge-street-track:outline",
+      "id": "bridge-street-track:outline-line-202",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(217, 217, 217, 1.0)",
         "line-width": 0.529167
-      }
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "bridge-street-pedestrian:outline",
+      "id": "bridge-street-pedestrian:outline-line-203",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(217, 217, 217, 1.0)",
         "line-width": 0.529167
-      }
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "bridge-street-service:outline",
+      "id": "bridge-street-service:outline-line-204",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(220, 220, 220, 1.0)",
         "line-width": 0.264583
-      }
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "bridge-street-livingstreet:outline",
+      "id": "bridge-street-livingstreet:outline-line-205",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(217, 217, 217, 1.0)",
         "line-width": 0.529167
-      }
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "bridge-street-residential:outline",
+      "id": "bridge-street-residential:outline-line-206",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(217, 217, 217, 1.0)",
         "line-width": 0.529167
-      }
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "bridge-street-unclassified:outline",
+      "id": "bridge-street-unclassified:outline-line-207",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(217, 217, 217, 1.0)",
         "line-width": 0.529167
-      }
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "bridge-street-tertiary-link:outline",
+      "id": "bridge-street-tertiary-link:outline-line-208",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(217, 217, 217, 1.0)",
         "line-width": 0.529167
-      }
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "bridge-street-secondary-link:outline",
+      "id": "bridge-street-secondary-link:outline-line-209",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(175, 175, 175, 1.0)",
         "line-width": 0.529167
-      }
+      },
+      "minzoom": 13,
+      "maxzoom": -1
     },
     {
-      "id": "bridge-street-primary-link:outline",
+      "id": "bridge-street-primary-link:outline-line-210",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(175, 175, 175, 1.0)",
         "line-width": 0.529167
-      }
+      },
+      "minzoom": 13,
+      "maxzoom": -1
     },
     {
-      "id": "bridge-street-trunk-link:outline",
+      "id": "bridge-street-trunk-link:outline-line-211",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(175, 175, 175, 1.0)",
         "line-width": 0.529167
-      }
+      },
+      "minzoom": 13,
+      "maxzoom": -1
     },
     {
-      "id": "bridge-street-motorway-link:outline",
+      "id": "bridge-street-motorway-link:outline-line-212",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(175, 175, 175, 1.0)",
         "line-width": 0.529167
-      }
+      },
+      "minzoom": 12,
+      "maxzoom": -1
     },
     {
-      "id": "bridge-street-tertiary:outline",
+      "id": "bridge-street-tertiary:outline-line-213",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(217, 217, 217, 1.0)",
         "line-width": 0.529167
-      }
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "bridge-street-secondary:outline",
+      "id": "bridge-street-secondary:outline-line-214",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(175, 175, 175, 1.0)",
         "line-width": 0.529167
-      }
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "bridge-street-primary:outline",
+      "id": "bridge-street-primary:outline-line-215",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(175, 175, 175, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "bridge-street-trunk:outline",
+      "id": "bridge-street-trunk:outline-line-216",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(175, 175, 175, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "bridge-street-motorway:outline",
+      "id": "bridge-street-motorway:outline-line-217",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(175, 175, 175, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "bridge-way-footway",
+      "id": "bridge-way-footway-line-218",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(245, 245, 245, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": 15,
+      "maxzoom": -1
     },
     {
-      "id": "bridge-way-steps",
+      "id": "bridge-way-steps-line-219",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(245, 245, 245, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": 15,
+      "maxzoom": -1
     },
     {
-      "id": "bridge-way-path",
+      "id": "bridge-way-path-line-220",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(245, 245, 245, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": 15,
+      "maxzoom": -1
     },
     {
-      "id": "bridge-way-cycleway",
+      "id": "bridge-way-cycleway-line-221",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(247, 247, 247, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": 15,
+      "maxzoom": -1
     },
     {
-      "id": "bridge-street-track",
+      "id": "bridge-street-track-line-222",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(255, 255, 255, 1.0)",
         "line-width": 0.264583
-      }
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "bridge-street-pedestrian",
+      "id": "bridge-street-pedestrian-line-223",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(255, 255, 255, 1.0)",
         "line-width": 0.264583
-      }
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "bridge-street-service",
+      "id": "bridge-street-service-line-224",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(247, 247, 247, 1.0)",
         "line-width": 0.264583
-      }
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "bridge-street-livingstreet",
+      "id": "bridge-street-livingstreet-line-225",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(255, 255, 255, 1.0)",
         "line-width": 0.264583
-      }
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "bridge-street-residential",
+      "id": "bridge-street-residential-line-226",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(255, 255, 255, 1.0)",
         "line-width": 0.264583
-      }
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "bridge-street-unclassified",
+      "id": "bridge-street-unclassified-line-227",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(255, 255, 255, 1.0)",
         "line-width": 0.264583
-      }
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "bridge-street-track-bicycle",
+      "id": "bridge-street-track-bicycle-line-228",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(255, 255, 255, 1.0)",
         "line-width": 0.264583
-      }
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "bridge-street-pedestrian-bicycle",
+      "id": "bridge-street-pedestrian-bicycle-line-229",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(247, 247, 247, 1.0)",
         "line-width": 0.264583
-      }
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "bridge-street-service-bicycle",
+      "id": "bridge-street-service-bicycle-line-230",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(255, 255, 255, 1.0)",
         "line-width": 0.264583
-      }
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "bridge-street-livingstreet-bicycle",
+      "id": "bridge-street-livingstreet-bicycle-line-231",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(247, 247, 247, 1.0)",
         "line-width": 0.264583
-      }
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "bridge-street-residential-bicycle",
+      "id": "bridge-street-residential-bicycle-line-232",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(247, 247, 247, 1.0)",
         "line-width": 0.264583
-      }
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "bridge-street-unclassified-bicycle",
+      "id": "bridge-street-unclassified-bicycle-line-233",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(247, 247, 247, 1.0)",
         "line-width": 0.264583
-      }
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "bridge-street-tertiary-link",
+      "id": "bridge-street-tertiary-link-line-234",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(255, 255, 255, 1.0)",
         "line-width": 0.264583
-      }
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "bridge-street-secondary-link",
+      "id": "bridge-street-secondary-link-line-235",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(211, 211, 211, 1.0)",
         "line-width": 0.264583
-      }
+      },
+      "minzoom": 13,
+      "maxzoom": -1
     },
     {
-      "id": "bridge-street-primary-link",
+      "id": "bridge-street-primary-link-line-236",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(211, 211, 211, 1.0)",
         "line-width": 0.264583
-      }
+      },
+      "minzoom": 13,
+      "maxzoom": -1
     },
     {
-      "id": "bridge-street-trunk-link",
+      "id": "bridge-street-trunk-link-line-237",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(211, 211, 211, 1.0)",
         "line-width": 0.264583
-      }
+      },
+      "minzoom": 13,
+      "maxzoom": -1
     },
     {
-      "id": "bridge-street-motorway-link",
+      "id": "bridge-street-motorway-link-line-238",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(196, 196, 196, 1.0)",
         "line-width": 0.264583
-      }
+      },
+      "minzoom": 12,
+      "maxzoom": -1
     },
     {
-      "id": "bridge-street-tertiary",
+      "id": "bridge-street-tertiary-line-239",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(255, 255, 255, 1.0)",
         "line-width": 0.264583
-      }
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "bridge-street-secondary",
+      "id": "bridge-street-secondary-line-240",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(211, 211, 211, 1.0)",
         "line-width": 0.264583
-      }
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "bridge-street-primary",
+      "id": "bridge-street-primary-line-241",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(211, 211, 211, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "bridge-street-trunk",
+      "id": "bridge-street-trunk-line-242",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(211, 211, 211, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "bridge-street-motorway",
+      "id": "bridge-street-motorway-line-243",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(196, 196, 196, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "bridge-transport-tram:outline",
+      "id": "bridge-transport-tram:outline-line-244",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(186, 186, 186, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": 15,
+      "maxzoom": -1
     },
     {
-      "id": "bridge-transport-narrowgauge:outline",
+      "id": "bridge-transport-narrowgauge:outline-line-245",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(186, 186, 186, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": 15,
+      "maxzoom": -1
     },
     {
-      "id": "bridge-transport-subway:outline",
+      "id": "bridge-transport-subway:outline-line-246",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(183, 183, 183, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "bridge-transport-lightrail:outline",
+      "id": "bridge-transport-lightrail:outline-line-247",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(186, 186, 186, 1.0)",
         "line-width": 0.264583
-      }
+      },
+      "minzoom": 8,
+      "maxzoom": -1
     },
     {
-      "id": "bridge-transport-lightrail-service:outline",
+      "id": "bridge-transport-lightrail-service:outline-line-248",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(186, 186, 186, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": 14,
+      "maxzoom": -1
     },
     {
-      "id": "bridge-transport-rail:outline",
+      "id": "bridge-transport-rail:outline-line-249",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)",
+        "line-color": "rgba(186, 186, 186, 1.0)",
         "line-width": 0.264583
-      }
+      },
+      "minzoom": 8,
+      "maxzoom": -1
     },
     {
-      "id": "bridge-transport-rail-service:outline",
+      "id": "bridge-transport-rail-service:outline-line-250",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(186, 186, 186, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": 14,
+      "maxzoom": -1
     },
     {
-      "id": "bridge-transport-monorail:outline",
+      "id": "bridge-transport-monorail:outline-line-251",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(186, 186, 186, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": 15,
+      "maxzoom": -1
     },
     {
-      "id": "bridge-transport-funicular:outline",
+      "id": "bridge-transport-funicular:outline-line-252",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(186, 186, 186, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": 15,
+      "maxzoom": -1
     },
     {
-      "id": "bridge-transport-tram",
+      "id": "bridge-transport-tram-line-253",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(186, 186, 186, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": 13,
+      "maxzoom": -1
     },
     {
-      "id": "bridge-transport-narrowgauge",
+      "id": "bridge-transport-narrowgauge-line-254",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(186, 186, 186, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": 13,
+      "maxzoom": -1
     },
     {
-      "id": "bridge-transport-subway",
+      "id": "bridge-transport-subway-line-255",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(201, 201, 201, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "bridge-transport-lightrail",
+      "id": "bridge-transport-lightrail-line-256",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(204, 204, 204, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": 14,
+      "maxzoom": -1
     },
     {
-      "id": "bridge-transport-lightrail-service",
+      "id": "bridge-transport-lightrail-service-line-257",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(204, 204, 204, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": 15,
+      "maxzoom": -1
     },
     {
-      "id": "bridge-transport-rail",
+      "id": "bridge-transport-rail-line-258",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(204, 204, 204, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": 14,
+      "maxzoom": -1
     },
     {
-      "id": "bridge-transport-rail-service",
+      "id": "bridge-transport-rail-service-line-259",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(204, 204, 204, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": 15,
+      "maxzoom": -1
     },
     {
-      "id": "bridge-transport-monorail",
+      "id": "bridge-transport-monorail-line-260",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(186, 186, 186, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": 13,
+      "maxzoom": -1
     },
     {
-      "id": "bridge-transport-funicular",
+      "id": "bridge-transport-funicular-line-261",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "streets",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(186, 186, 186, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": 13,
+      "maxzoom": -1
     },
     {
-      "id": "poi-amenity",
+      "id": "poi-amenity-marker-262",
       "type": "circle",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "pois",
       "paint": {
-        "circle-radius": -0.25
-      }
+        "circle-radius": -0.5
+      },
+      "minzoom": 16,
+      "maxzoom": -1
     },
     {
-      "id": "poi-leisure",
+      "id": "poi-leisure-marker-263",
       "type": "circle",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "pois",
       "paint": {
-        "circle-radius": -0.25
-      }
+        "circle-radius": -0.5
+      },
+      "minzoom": 16,
+      "maxzoom": -1
     },
     {
-      "id": "poi-tourism",
+      "id": "poi-tourism-marker-264",
       "type": "circle",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "pois",
       "paint": {
-        "circle-radius": -0.25
-      }
+        "circle-radius": -0.5
+      },
+      "minzoom": 16,
+      "maxzoom": -1
     },
     {
-      "id": "poi-shop",
+      "id": "poi-shop-marker-265",
       "type": "circle",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "pois",
       "paint": {
-        "circle-radius": -0.25
-      }
+        "circle-radius": -0.5
+      },
+      "minzoom": 16,
+      "maxzoom": -1
     },
     {
-      "id": "poi-man_made",
+      "id": "poi-man_made-marker-266",
       "type": "circle",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "pois",
       "paint": {
-        "circle-radius": -0.25
-      }
+        "circle-radius": -0.5
+      },
+      "minzoom": 16,
+      "maxzoom": -1
     },
     {
-      "id": "poi-historic",
+      "id": "poi-historic-marker-267",
       "type": "circle",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "pois",
       "paint": {
-        "circle-radius": -0.25
-      }
+        "circle-radius": -0.5
+      },
+      "minzoom": 16,
+      "maxzoom": -1
     },
     {
-      "id": "poi-emergency",
+      "id": "poi-emergency-marker-268",
       "type": "circle",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "pois",
       "paint": {
-        "circle-radius": -0.25
-      }
+        "circle-radius": -0.5
+      },
+      "minzoom": 16,
+      "maxzoom": -1
     },
     {
-      "id": "boundary-country:outline",
+      "id": "boundary-country:outline-line-269",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "boundaries",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(244, 244, 244, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "boundary-country-disputed:outline",
+      "id": "boundary-country-disputed:outline-line-270",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "boundaries",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(244, 244, 244, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "boundary-state:outline",
+      "id": "boundary-state:outline-line-271",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "boundaries",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(245, 245, 245, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "boundary-country",
+      "id": "boundary-country-line-272",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "boundaries",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(183, 183, 183, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "boundary-country-disputed",
+      "id": "boundary-country-disputed-line-273",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "boundaries",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(196, 196, 196, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "boundary-state",
+      "id": "boundary-state-line-274",
       "type": "line",
-      "source": "my-vector-tiles",
+      "source": "vector_source",
       "source-layer": "boundaries",
       "paint": {
-        "line-color": "rgba(0,0,0,0)"
-      }
+        "line-color": "rgba(183, 183, 183, 1.0)",
+        "line-width": 0.0
+      },
+      "minzoom": -1,
+      "maxzoom": -1
     },
     {
-      "id": "marking-oneway",
-      "type": "line",
-      "source": "my-vector-tiles",
+      "id": "marking-oneway-marker-275",
+      "type": "circle",
+      "source": "vector_source",
       "source-layer": "streets",
-      "paint": {}
+      "paint": {
+        "circle-radius": 4.0
+      },
+      "minzoom": 16,
+      "maxzoom": -1
     },
     {
-      "id": "marking-oneway-reverse",
-      "type": "line",
-      "source": "my-vector-tiles",
+      "id": "marking-oneway-reverse-marker-276",
+      "type": "circle",
+      "source": "vector_source",
       "source-layer": "streets",
-      "paint": {}
+      "paint": {
+        "circle-radius": 4.0
+      },
+      "minzoom": 16,
+      "maxzoom": -1
     }
   ]
 }
