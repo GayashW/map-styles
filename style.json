@@ -2,2485 +2,1595 @@
   "version": 8,
   "name": "QGIS Converted Style",
   "sources": {
-    "vector_tiles": {
+    "openmaptiles": {
       "type": "vector",
       "url": "https://tiles.versatiles.org/assets/glyphs/{fontstack}/{range}.pbf"
     }
   },
   "layers": [
     {
-      "id": "layer-fill",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "background_fill",
+      "source": "openmaptiles",
+      "source-layer": "background",
       "type": "fill",
       "paint": {
-        "fill-color": "#888888",
+        "fill-color": "#000000",
         "fill-opacity": 1
       }
     },
     {
-      "id": "layer-fill_2",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "sites_fill",
+      "source": "openmaptiles",
+      "source-layer": "sites",
       "type": "fill",
       "paint": {
-        "fill-color": "#888888",
-        "fill-opacity": 1,
-        "fill-outline-color": "#888888"
+        "fill-color": "#000000",
+        "fill-opacity": 0.996,
+        "fill-outline-color": "#000000"
       }
     },
     {
-      "id": "layer-fill_3",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "sites_fill_2",
+      "source": "openmaptiles",
+      "source-layer": "sites",
       "type": "fill",
       "paint": {
         "fill-color": "rgba(0,0,0,0)",
-        "fill-opacity": 0.3
+        "fill-opacity": 0
       }
     },
     {
-      "id": "layer-fill_4",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "sites_fill_3",
+      "source": "openmaptiles",
+      "source-layer": "sites",
       "type": "fill",
       "paint": {
-        "fill-color": "#888888",
+        "fill-color": "#000000",
         "fill-opacity": 0.1,
-        "fill-outline-color": "#888888"
+        "fill-outline-color": "#000000"
       }
     },
     {
-      "id": "layer-fill_5",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "sites_fill_4",
+      "source": "openmaptiles",
+      "source-layer": "sites",
       "type": "fill",
       "paint": {
-        "fill-color": "#888888",
+        "fill-color": "#000000",
         "fill-opacity": 0.1,
-        "fill-outline-color": "#888888"
+        "fill-outline-color": "#000000"
       }
     },
     {
-      "id": "layer-fill_6",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "sites_fill_5",
+      "source": "openmaptiles",
+      "source-layer": "sites",
       "type": "fill",
       "paint": {
-        "fill-color": "#888888",
+        "fill-color": "#000000",
         "fill-opacity": 0.794,
-        "fill-outline-color": "#888888"
+        "fill-outline-color": "#000000"
       }
     },
     {
-      "id": "layer-fill_7",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "sites_fill_6",
+      "source": "openmaptiles",
+      "source-layer": "sites",
       "type": "fill",
       "paint": {
         "fill-color": "rgba(0,0,0,0)",
-        "fill-opacity": 0.1
+        "fill-opacity": 0
       }
     },
     {
-      "id": "layer-fill_8",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "sites_fill_7",
+      "source": "openmaptiles",
+      "source-layer": "sites",
       "type": "fill",
       "paint": {
-        "fill-color": "#888888",
+        "fill-color": "#000000",
         "fill-opacity": 1,
-        "fill-outline-color": "#888888"
+        "fill-outline-color": "#000000"
       }
     },
     {
-      "id": "layer-fill_9",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "sites_fill_8",
+      "source": "openmaptiles",
+      "source-layer": "sites",
       "type": "fill",
       "paint": {
-        "fill-color": "#888888",
+        "fill-color": "#000000",
         "fill-opacity": 1,
-        "fill-outline-color": "#888888"
+        "fill-outline-color": "#000000"
       }
     },
     {
-      "id": "layer-fill_10",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "sites_fill_9",
+      "source": "openmaptiles",
+      "source-layer": "sites",
       "type": "fill",
       "paint": {
         "fill-color": "rgba(0,0,0,0)",
-        "fill-opacity": 0.1
+        "fill-opacity": 0
       }
     },
     {
-      "id": "layer-fill_11",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "ocean_fill",
+      "source": "openmaptiles",
+      "source-layer": "ocean",
       "type": "fill",
       "paint": {
-        "fill-color": "#888888",
+        "fill-color": "#000000",
         "fill-opacity": 1,
-        "fill-outline-color": "#888888"
+        "fill-outline-color": "#000000"
       }
     },
     {
-      "id": "layer-fill_12",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "water_polygons_fill",
+      "source": "openmaptiles",
+      "source-layer": "water_polygons",
       "type": "fill",
       "paint": {
-        "fill-color": "#888888",
+        "fill-color": "#000000",
         "fill-opacity": 1,
-        "fill-outline-color": "#888888"
+        "fill-outline-color": "#000000"
       }
     },
     {
-      "id": "layer-fill_13",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "land_fill",
+      "source": "openmaptiles",
+      "source-layer": "land",
       "type": "fill",
       "paint": {
-        "fill-color": "#888888",
+        "fill-color": "#000000",
+        "fill-opacity": 0.333
+      }
+    },
+    {
+      "id": "land_fill_2",
+      "source": "openmaptiles",
+      "source-layer": "land",
+      "type": "fill",
+      "paint": {
+        "fill-color": "#000000",
+        "fill-opacity": 0.2
+      }
+    },
+    {
+      "id": "land_fill_3",
+      "source": "openmaptiles",
+      "source-layer": "land",
+      "type": "fill",
+      "paint": {
+        "fill-color": "#000000",
+        "fill-opacity": 1,
+        "fill-outline-color": "#000000"
+      }
+    },
+    {
+      "id": "land_fill_4",
+      "source": "openmaptiles",
+      "source-layer": "land",
+      "type": "fill",
+      "paint": {
+        "fill-color": "#000000",
+        "fill-opacity": 1,
+        "fill-outline-color": "#000000"
+      }
+    },
+    {
+      "id": "land_fill_5",
+      "source": "openmaptiles",
+      "source-layer": "land",
+      "type": "fill",
+      "paint": {
+        "fill-color": "#000000",
+        "fill-opacity": 1,
+        "fill-outline-color": "#000000"
+      }
+    },
+    {
+      "id": "land_fill_6",
+      "source": "openmaptiles",
+      "source-layer": "land",
+      "type": "fill",
+      "paint": {
+        "fill-color": "#000000",
+        "fill-opacity": 1,
+        "fill-outline-color": "#000000"
+      }
+    },
+    {
+      "id": "land_fill_7",
+      "source": "openmaptiles",
+      "source-layer": "land",
+      "type": "fill",
+      "paint": {
+        "fill-color": "#000000",
+        "fill-opacity": 1,
+        "fill-outline-color": "#000000"
+      }
+    },
+    {
+      "id": "land_fill_8",
+      "source": "openmaptiles",
+      "source-layer": "land",
+      "type": "fill",
+      "paint": {
+        "fill-color": "#000000",
+        "fill-opacity": 1,
+        "fill-outline-color": "#000000"
+      }
+    },
+    {
+      "id": "land_fill_9",
+      "source": "openmaptiles",
+      "source-layer": "land",
+      "type": "fill",
+      "paint": {
+        "fill-color": "#000000",
+        "fill-opacity": 1,
+        "fill-outline-color": "#000000"
+      }
+    },
+    {
+      "id": "land_fill_10",
+      "source": "openmaptiles",
+      "source-layer": "land",
+      "type": "fill",
+      "paint": {
+        "fill-color": "#000000",
         "fill-opacity": 1
       }
     },
     {
-      "id": "layer-fill_14",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "land_fill_11",
+      "source": "openmaptiles",
+      "source-layer": "land",
       "type": "fill",
       "paint": {
-        "fill-color": "#888888",
+        "fill-color": "#000000",
+        "fill-opacity": 1,
+        "fill-outline-color": "#000000"
+      }
+    },
+    {
+      "id": "land_fill_12",
+      "source": "openmaptiles",
+      "source-layer": "land",
+      "type": "fill",
+      "paint": {
+        "fill-color": "#000000",
         "fill-opacity": 1
       }
     },
     {
-      "id": "layer-fill_15",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "land_fill_13",
+      "source": "openmaptiles",
+      "source-layer": "land",
       "type": "fill",
       "paint": {
-        "fill-color": "#888888",
-        "fill-opacity": 1
-      }
-    },
-    {
-      "id": "layer-fill_16",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "fill",
-      "paint": {
-        "fill-color": "#888888",
+        "fill-color": "#000000",
         "fill-opacity": 1,
-        "fill-outline-color": "#888888"
+        "fill-outline-color": "#000000"
       }
     },
     {
-      "id": "layer-fill_17",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "land_fill_14",
+      "source": "openmaptiles",
+      "source-layer": "land",
       "type": "fill",
       "paint": {
-        "fill-color": "#888888",
+        "fill-color": "#000000",
         "fill-opacity": 1,
-        "fill-outline-color": "#888888"
+        "fill-outline-color": "#000000"
       }
     },
     {
-      "id": "layer-fill_18",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "fill",
-      "paint": {
-        "fill-color": "#888888",
-        "fill-opacity": 1,
-        "fill-outline-color": "#888888"
-      }
-    },
-    {
-      "id": "layer-fill_19",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "fill",
-      "paint": {
-        "fill-color": "#888888",
-        "fill-opacity": 1,
-        "fill-outline-color": "#888888"
-      }
-    },
-    {
-      "id": "layer-fill_20",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "fill",
-      "paint": {
-        "fill-color": "#888888",
-        "fill-opacity": 1,
-        "fill-outline-color": "#888888"
-      }
-    },
-    {
-      "id": "layer-fill_21",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "fill",
-      "paint": {
-        "fill-color": "#888888",
-        "fill-opacity": 1,
-        "fill-outline-color": "#888888"
-      }
-    },
-    {
-      "id": "layer-fill_22",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "fill",
-      "paint": {
-        "fill-color": "#888888",
-        "fill-opacity": 1,
-        "fill-outline-color": "#888888"
-      }
-    },
-    {
-      "id": "layer-fill_23",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "fill",
-      "paint": {
-        "fill-color": "#888888",
-        "fill-opacity": 1
-      }
-    },
-    {
-      "id": "layer-fill_24",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "fill",
-      "paint": {
-        "fill-color": "#888888",
-        "fill-opacity": 1,
-        "fill-outline-color": "#888888"
-      }
-    },
-    {
-      "id": "layer-fill_25",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "fill",
-      "paint": {
-        "fill-color": "#888888",
-        "fill-opacity": 1
-      }
-    },
-    {
-      "id": "layer-fill_26",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "fill",
-      "paint": {
-        "fill-color": "#888888",
-        "fill-opacity": 1,
-        "fill-outline-color": "#888888"
-      }
-    },
-    {
-      "id": "layer-fill_27",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "fill",
-      "paint": {
-        "fill-color": "#888888",
-        "fill-opacity": 1,
-        "fill-outline-color": "#888888"
-      }
-    },
-    {
-      "id": "layer-line",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "water_lines_line",
+      "source": "openmaptiles",
+      "source-layer": "water_lines",
       "type": "line",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#888888",
+        "line-color": "#000000",
         "line-width": 0,
         "line-opacity": 1
       }
     },
     {
-      "id": "layer-line_2",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "water_lines_line_2",
+      "source": "openmaptiles",
+      "source-layer": "water_lines",
       "type": "line",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#888888",
+        "line-color": "#000000",
         "line-width": 0,
         "line-opacity": 1
       }
     },
     {
-      "id": "layer-line_3",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "water_lines_line_3",
+      "source": "openmaptiles",
+      "source-layer": "water_lines",
       "type": "line",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#888888",
+        "line-color": "#000000",
         "line-width": 0,
         "line-opacity": 1
       }
     },
     {
-      "id": "layer-line_4",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "water_lines_line_4",
+      "source": "openmaptiles",
+      "source-layer": "water_lines",
       "type": "line",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#888888",
+        "line-color": "#000000",
         "line-width": 0,
         "line-opacity": 1
       }
     },
     {
-      "id": "layer-fill_28",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "water_polygons_fill_2",
+      "source": "openmaptiles",
+      "source-layer": "water_polygons",
       "type": "fill",
       "paint": {
-        "fill-color": "#888888",
+        "fill-color": "#000000",
         "fill-opacity": 1,
-        "fill-outline-color": "#888888"
+        "fill-outline-color": "#000000"
       }
     },
     {
-      "id": "layer-fill_29",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "water_polygons_fill_3",
+      "source": "openmaptiles",
+      "source-layer": "water_polygons",
       "type": "fill",
       "paint": {
-        "fill-color": "#888888",
+        "fill-color": "#000000",
         "fill-opacity": 1,
-        "fill-outline-color": "#888888"
+        "fill-outline-color": "#000000"
       }
     },
     {
-      "id": "layer-fill_30",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "water_polygons_fill_4",
+      "source": "openmaptiles",
+      "source-layer": "water_polygons",
       "type": "fill",
       "paint": {
-        "fill-color": "#888888",
+        "fill-color": "#000000",
         "fill-opacity": 1,
-        "fill-outline-color": "#888888"
+        "fill-outline-color": "#000000"
       }
     },
     {
-      "id": "layer-fill_31",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "dam_polygons_fill",
+      "source": "openmaptiles",
+      "source-layer": "dam_polygons",
       "type": "fill",
       "paint": {
-        "fill-color": "#888888",
+        "fill-color": "#000000",
         "fill-opacity": 1,
-        "fill-outline-color": "#888888"
+        "fill-outline-color": "#000000"
       }
     },
     {
-      "id": "layer-line_5",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "dam_lines_line",
+      "source": "openmaptiles",
+      "source-layer": "dam_lines",
       "type": "line",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#888888",
+        "line-color": "#000000",
         "line-width": 1,
         "line-opacity": 1
       }
     },
     {
-      "id": "layer-fill_32",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "pier_polygons_fill",
+      "source": "openmaptiles",
+      "source-layer": "pier_polygons",
       "type": "fill",
       "paint": {
-        "fill-color": "#888888",
+        "fill-color": "#000000",
         "fill-opacity": 1,
-        "fill-outline-color": "#888888"
+        "fill-outline-color": "#000000"
       }
     },
     {
-      "id": "layer-line_6",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "pier_lines_line",
+      "source": "openmaptiles",
+      "source-layer": "pier_lines",
       "type": "line",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#888888",
+        "line-color": "#000000",
         "line-width": 1,
         "line-opacity": 1
       }
     },
     {
-      "id": "layer-fill_33",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "street_polygons_fill",
+      "source": "openmaptiles",
+      "source-layer": "street_polygons",
       "type": "fill",
       "paint": {
-        "fill-color": "#888888",
+        "fill-color": "#000000",
         "fill-opacity": 0.5,
-        "fill-outline-color": "#888888"
+        "fill-outline-color": "#000000"
       }
     },
     {
-      "id": "layer-line_7",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "streets_line",
+      "source": "openmaptiles",
+      "source-layer": "streets",
       "type": "line",
       "layout": {
         "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#888888",
+        "line-color": "#000000",
         "line-width": 0,
         "line-opacity": 1
       }
     },
     {
-      "id": "layer-line_8",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "streets_line_2",
+      "source": "openmaptiles",
+      "source-layer": "streets",
       "type": "line",
       "layout": {
         "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#888888",
+        "line-color": "#000000",
         "line-width": 0,
         "line-opacity": 1
       }
     },
     {
-      "id": "layer-line_9",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "streets_line_3",
+      "source": "openmaptiles",
+      "source-layer": "streets",
       "type": "line",
       "layout": {
         "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#888888",
+        "line-color": "#000000",
         "line-width": 0,
         "line-opacity": 1
       }
     },
     {
-      "id": "layer-line_10",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "streets_line_4",
+      "source": "openmaptiles",
+      "source-layer": "streets",
       "type": "line",
       "layout": {
         "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#888888",
+        "line-color": "#000000",
         "line-width": 0,
         "line-opacity": 1
       }
     },
     {
-      "id": "layer-fill_34",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "buildings_fill",
+      "source": "openmaptiles",
+      "source-layer": "buildings",
       "type": "fill",
       "paint": {
-        "fill-color": "#888888",
+        "fill-color": "#000000",
         "fill-opacity": 1,
-        "fill-outline-color": "#888888"
+        "fill-outline-color": "#000000"
       }
     },
     {
-      "id": "layer-fill_35",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "buildings_fill_2",
+      "source": "openmaptiles",
+      "source-layer": "buildings",
       "type": "fill",
       "paint": {
-        "fill-color": "#888888",
+        "fill-color": "#000000",
         "fill-opacity": 1,
-        "fill-outline-color": "#888888"
+        "fill-outline-color": "#000000"
       }
     },
     {
-      "id": "layer-fill_36",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "street_polygons_fill_2",
+      "source": "openmaptiles",
+      "source-layer": "street_polygons",
       "type": "fill",
       "paint": {
-        "fill-color": "#888888",
+        "fill-color": "#000000",
         "fill-opacity": 1,
-        "fill-outline-color": "#888888"
+        "fill-outline-color": "#000000"
       }
     },
     {
-      "id": "layer-line_11",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "streets_line_5",
+      "source": "openmaptiles",
+      "source-layer": "streets",
       "type": "line",
       "layout": {
         "line-cap": "round",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "#888888",
+        "line-color": "#000000",
         "line-width": 0,
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "layer-line_12",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "round",
-        "line-join": "miter"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 0,
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "layer-line_13",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "round",
-        "line-join": "miter"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 0,
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "layer-line_14",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "round",
-        "line-join": "miter"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 0,
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "layer-line_15",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "round",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 2,
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "layer-line_16",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "round",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 2,
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "layer-line_17",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "round",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 1,
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "layer-line_18",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "round",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 2,
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "layer-line_19",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "round",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 2,
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "layer-line_20",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "round",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 2,
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "layer-line_21",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "round",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 2,
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "layer-line_22",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "round",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 2,
         "line-opacity": 1,
         "line-dasharray": [
-          0.529167,
-          0.15875
+          0,
+          0
         ]
       }
     },
     {
-      "id": "layer-line_23",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "streets_line_6",
+      "source": "openmaptiles",
+      "source-layer": "streets",
       "type": "line",
       "layout": {
         "line-cap": "round",
-        "line-join": "round"
+        "line-join": "miter"
       },
       "paint": {
-        "line-color": "#888888",
-        "line-width": 2,
+        "line-color": "#000000",
+        "line-width": 0,
         "line-opacity": 1,
         "line-dasharray": [
-          0.529167,
-          0.15875
+          0,
+          0
         ]
       }
     },
     {
-      "id": "layer-line_24",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "streets_line_7",
+      "source": "openmaptiles",
+      "source-layer": "streets",
       "type": "line",
       "layout": {
         "line-cap": "round",
-        "line-join": "round"
+        "line-join": "miter"
       },
       "paint": {
-        "line-color": "#888888",
-        "line-width": 2,
+        "line-color": "#000000",
+        "line-width": 0,
         "line-opacity": 1,
         "line-dasharray": [
-          0.529167,
-          0.15875
+          0,
+          0
         ]
       }
     },
     {
-      "id": "layer-line_25",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "streets_line_8",
+      "source": "openmaptiles",
+      "source-layer": "streets",
       "type": "line",
       "layout": {
         "line-cap": "round",
-        "line-join": "round"
+        "line-join": "miter"
       },
       "paint": {
-        "line-color": "#888888",
-        "line-width": 2,
+        "line-color": "#000000",
+        "line-width": 0,
         "line-opacity": 1,
         "line-dasharray": [
-          0.529167,
-          0.15875
+          0,
+          0
         ]
       }
     },
     {
-      "id": "layer-line_26",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "streets_line_9",
+      "source": "openmaptiles",
+      "source-layer": "streets",
       "type": "line",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#888888",
-        "line-width": 2,
+        "line-color": "#000000",
+        "line-width": 1,
         "line-opacity": 1
       }
     },
     {
-      "id": "layer-line_27",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "streets_line_10",
+      "source": "openmaptiles",
+      "source-layer": "streets",
       "type": "line",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#888888",
-        "line-width": 2,
+        "line-color": "#000000",
+        "line-width": 1,
+        "line-opacity": 1
+      }
+    },
+    {
+      "id": "streets_line_11",
+      "source": "openmaptiles",
+      "source-layer": "streets",
+      "type": "line",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#000000",
+        "line-width": 1,
+        "line-opacity": 1
+      }
+    },
+    {
+      "id": "streets_line_12",
+      "source": "openmaptiles",
+      "source-layer": "streets",
+      "type": "line",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#000000",
+        "line-width": 1,
+        "line-opacity": 1
+      }
+    },
+    {
+      "id": "streets_line_13",
+      "source": "openmaptiles",
+      "source-layer": "streets",
+      "type": "line",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#000000",
+        "line-width": 1,
+        "line-opacity": 1
+      }
+    },
+    {
+      "id": "streets_line_14",
+      "source": "openmaptiles",
+      "source-layer": "streets",
+      "type": "line",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#000000",
+        "line-width": 1,
+        "line-opacity": 1
+      }
+    },
+    {
+      "id": "streets_line_15",
+      "source": "openmaptiles",
+      "source-layer": "streets",
+      "type": "line",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#000000",
+        "line-width": 1,
+        "line-opacity": 1
+      }
+    },
+    {
+      "id": "streets_line_16",
+      "source": "openmaptiles",
+      "source-layer": "streets",
+      "type": "line",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#000000",
+        "line-width": 1,
+        "line-opacity": 1
+      }
+    },
+    {
+      "id": "streets_line_17",
+      "source": "openmaptiles",
+      "source-layer": "streets",
+      "type": "line",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#000000",
+        "line-width": 1,
+        "line-opacity": 1
+      }
+    },
+    {
+      "id": "streets_line_18",
+      "source": "openmaptiles",
+      "source-layer": "streets",
+      "type": "line",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#000000",
+        "line-width": 1,
+        "line-opacity": 1
+      }
+    },
+    {
+      "id": "streets_line_19",
+      "source": "openmaptiles",
+      "source-layer": "streets",
+      "type": "line",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#000000",
+        "line-width": 1,
+        "line-opacity": 1
+      }
+    },
+    {
+      "id": "streets_line_20",
+      "source": "openmaptiles",
+      "source-layer": "streets",
+      "type": "line",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#000000",
+        "line-width": 1,
+        "line-opacity": 1
+      }
+    },
+    {
+      "id": "streets_line_21",
+      "source": "openmaptiles",
+      "source-layer": "streets",
+      "type": "line",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#000000",
+        "line-width": 1,
+        "line-opacity": 1
+      }
+    },
+    {
+      "id": "streets_line_22",
+      "source": "openmaptiles",
+      "source-layer": "streets",
+      "type": "line",
+      "layout": {
+        "line-cap": "flat",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#000000",
+        "line-width": 1,
+        "line-opacity": 1
+      }
+    },
+    {
+      "id": "streets_line_23",
+      "source": "openmaptiles",
+      "source-layer": "streets",
+      "type": "line",
+      "layout": {
+        "line-cap": "flat",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#000000",
+        "line-width": 1,
+        "line-opacity": 1
+      }
+    },
+    {
+      "id": "streets_line_24",
+      "source": "openmaptiles",
+      "source-layer": "streets",
+      "type": "line",
+      "layout": {
+        "line-cap": "flat",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#000000",
+        "line-width": 1,
+        "line-opacity": 1
+      }
+    },
+    {
+      "id": "streets_line_25",
+      "source": "openmaptiles",
+      "source-layer": "streets",
+      "type": "line",
+      "layout": {
+        "line-cap": "flat",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#000000",
+        "line-width": 1,
+        "line-opacity": 1
+      }
+    },
+    {
+      "id": "streets_line_26",
+      "source": "openmaptiles",
+      "source-layer": "streets",
+      "type": "line",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#000000",
+        "line-width": 1,
+        "line-opacity": 1
+      }
+    },
+    {
+      "id": "streets_line_27",
+      "source": "openmaptiles",
+      "source-layer": "streets",
+      "type": "line",
+      "layout": {
+        "line-cap": "flat",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#000000",
+        "line-width": 1,
+        "line-opacity": 1
+      }
+    },
+    {
+      "id": "streets_line_28",
+      "source": "openmaptiles",
+      "source-layer": "streets",
+      "type": "line",
+      "layout": {
+        "line-cap": "flat",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#000000",
+        "line-width": 0,
+        "line-opacity": 1
+      }
+    },
+    {
+      "id": "streets_line_29",
+      "source": "openmaptiles",
+      "source-layer": "streets",
+      "type": "line",
+      "layout": {
+        "line-cap": "flat",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#000000",
+        "line-width": 0,
+        "line-opacity": 1
+      }
+    },
+    {
+      "id": "streets_line_30",
+      "source": "openmaptiles",
+      "source-layer": "streets",
+      "type": "line",
+      "layout": {
+        "line-cap": "flat",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#000000",
+        "line-width": 0,
+        "line-opacity": 1
+      }
+    },
+    {
+      "id": "streets_line_31",
+      "source": "openmaptiles",
+      "source-layer": "streets",
+      "type": "line",
+      "layout": {
+        "line-cap": "flat",
+        "line-join": "miter"
+      },
+      "paint": {
+        "line-color": "#000000",
+        "line-width": 0,
+        "line-opacity": 1
+      }
+    },
+    {
+      "id": "streets_line_32",
+      "source": "openmaptiles",
+      "source-layer": "streets",
+      "type": "line",
+      "layout": {
+        "line-cap": "flat",
+        "line-join": "miter"
+      },
+      "paint": {
+        "line-color": "#000000",
+        "line-width": 0,
+        "line-opacity": 1
+      }
+    },
+    {
+      "id": "streets_line_33",
+      "source": "openmaptiles",
+      "source-layer": "streets",
+      "type": "line",
+      "layout": {
+        "line-cap": "flat",
+        "line-join": "miter"
+      },
+      "paint": {
+        "line-color": "#000000",
+        "line-width": 0,
         "line-opacity": 1,
         "line-dasharray": [
-          0.529167,
-          0.15875
+          0,
+          0
         ]
       }
     },
     {
-      "id": "layer-line_28",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "streets_line_34",
+      "source": "openmaptiles",
+      "source-layer": "streets",
       "type": "line",
       "layout": {
-        "line-cap": "round",
-        "line-join": "round"
+        "line-cap": "flat",
+        "line-join": "miter"
       },
       "paint": {
-        "line-color": "#888888",
+        "line-color": "#000000",
         "line-width": 0,
         "line-opacity": 1,
-        "line-dasharray": []
+        "line-dasharray": [
+          0,
+          0
+        ]
       }
     },
     {
-      "id": "layer-line_29",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "streets_line_35",
+      "source": "openmaptiles",
+      "source-layer": "streets",
       "type": "line",
       "layout": {
-        "line-cap": "round",
-        "line-join": "round"
+        "line-cap": "flat",
+        "line-join": "miter"
       },
       "paint": {
-        "line-color": "#888888",
+        "line-color": "#000000",
         "line-width": 0,
         "line-opacity": 1,
-        "line-dasharray": []
+        "line-dasharray": [
+          0,
+          0
+        ]
       }
     },
     {
-      "id": "layer-line_30",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "streets_line_36",
+      "source": "openmaptiles",
+      "source-layer": "streets",
       "type": "line",
       "layout": {
-        "line-cap": "round",
-        "line-join": "round"
+        "line-cap": "flat",
+        "line-join": "miter"
       },
       "paint": {
-        "line-color": "#888888",
+        "line-color": "#000000",
         "line-width": 0,
         "line-opacity": 1,
-        "line-dasharray": []
+        "line-dasharray": [
+          0,
+          0
+        ]
       }
     },
     {
-      "id": "layer-line_31",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "streets_line_37",
+      "source": "openmaptiles",
+      "source-layer": "streets",
       "type": "line",
       "layout": {
-        "line-cap": "round",
+        "line-cap": "flat",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "#888888",
+        "line-color": "#000000",
         "line-width": 0,
         "line-opacity": 1,
-        "line-dasharray": []
+        "line-dasharray": [
+          0,
+          0
+        ]
       }
     },
     {
-      "id": "layer-line_32",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "round",
-        "line-join": "miter"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 0,
-        "line-opacity": 1,
-        "line-dasharray": []
-      }
-    },
-    {
-      "id": "layer-line_33",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "round",
-        "line-join": "miter"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 0,
-        "line-opacity": 1,
-        "line-dasharray": []
-      }
-    },
-    {
-      "id": "layer-line_34",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "round",
-        "line-join": "miter"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 0,
-        "line-opacity": 1,
-        "line-dasharray": []
-      }
-    },
-    {
-      "id": "layer-line_35",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "round",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 1,
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "layer-line_36",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "round",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 1,
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "layer-line_37",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "round",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 1,
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "layer-line_38",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "round",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 1,
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "layer-line_39",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "round",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 1,
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "layer-line_40",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "round",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 1,
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "layer-line_41",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "round",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 1,
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "layer-line_42",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "round",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 1,
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "layer-line_43",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "round",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 1,
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "layer-line_44",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "round",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 1,
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "layer-line_45",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "round",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 1,
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "layer-line_46",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "round",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 1,
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "layer-line_47",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "round",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 1,
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "layer-line_48",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "flat",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 1,
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "layer-line_49",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "flat",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 1,
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "layer-line_50",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "flat",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 1,
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "layer-line_51",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "flat",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 1,
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "layer-line_52",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "round",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 1,
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "layer-line_53",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "flat",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 1,
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "layer-line_54",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "flat",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 0,
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "layer-line_55",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "flat",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 0,
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "layer-line_56",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "flat",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 0,
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "layer-line_57",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "streets_line_38",
+      "source": "openmaptiles",
+      "source-layer": "streets",
       "type": "line",
       "layout": {
         "line-cap": "flat",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "#888888",
-        "line-width": 0,
-        "line-opacity": 1,
-        "line-dasharray": []
-      }
-    },
-    {
-      "id": "layer-line_58",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "flat",
-        "line-join": "miter"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 0,
-        "line-opacity": 1,
-        "line-dasharray": []
-      }
-    },
-    {
-      "id": "layer-line_59",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "flat",
-        "line-join": "miter"
-      },
-      "paint": {
-        "line-color": "#888888",
+        "line-color": "#000000",
         "line-width": 0,
         "line-opacity": 1
       }
     },
     {
-      "id": "layer-line_60",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "flat",
-        "line-join": "miter"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 1,
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "layer-line_61",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "flat",
-        "line-join": "miter"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 0,
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "layer-line_62",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "flat",
-        "line-join": "miter"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 1,
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "layer-line_63",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "flat",
-        "line-join": "miter"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 0,
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "layer-line_64",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "flat",
-        "line-join": "miter"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 0,
-        "line-opacity": 1,
-        "line-dasharray": []
-      }
-    },
-    {
-      "id": "layer-line_65",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "flat",
-        "line-join": "miter"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 0,
-        "line-opacity": 1,
-        "line-dasharray": []
-      }
-    },
-    {
-      "id": "layer-line_66",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "flat",
-        "line-join": "miter"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 0,
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "layer-line_67",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "flat",
-        "line-join": "miter"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 0,
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "layer-line_68",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "flat",
-        "line-join": "miter"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 0,
-        "line-opacity": 1,
-        "line-dasharray": []
-      }
-    },
-    {
-      "id": "layer-line_69",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "flat",
-        "line-join": "miter"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 0,
-        "line-opacity": 1,
-        "line-dasharray": []
-      }
-    },
-    {
-      "id": "layer-line_70",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "flat",
-        "line-join": "miter"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 0,
-        "line-opacity": 1,
-        "line-dasharray": []
-      }
-    },
-    {
-      "id": "layer-line_71",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "flat",
-        "line-join": "miter"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 0,
-        "line-opacity": 1,
-        "line-dasharray": []
-      }
-    },
-    {
-      "id": "layer-line_72",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "flat",
-        "line-join": "miter"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 0,
-        "line-opacity": 1,
-        "line-dasharray": []
-      }
-    },
-    {
-      "id": "layer-line_73",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "flat",
-        "line-join": "miter"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 0,
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "layer-line_74",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "flat",
-        "line-join": "miter"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 0,
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "layer-fill_37",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "bridges_fill",
+      "source": "openmaptiles",
+      "source-layer": "bridges",
       "type": "fill",
       "paint": {
-        "fill-color": "#888888",
+        "fill-color": "#000000",
         "fill-opacity": 0.8,
-        "fill-outline-color": "#888888"
+        "fill-outline-color": "#000000"
       }
     },
     {
-      "id": "layer-fill_38",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "street_polygons_fill_3",
+      "source": "openmaptiles",
+      "source-layer": "street_polygons",
       "type": "fill",
       "paint": {
-        "fill-color": "#888888",
-        "fill-opacity": 1
+        "fill-color": "#000000",
+        "fill-opacity": 0.251
       }
     },
     {
-      "id": "layer-line_75",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "streets_line_39",
+      "source": "openmaptiles",
+      "source-layer": "streets",
       "type": "line",
       "layout": {
         "line-cap": "round",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "#888888",
+        "line-color": "#000000",
         "line-width": 0,
         "line-opacity": 1
       }
     },
     {
-      "id": "layer-line_76",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "streets_line_40",
+      "source": "openmaptiles",
+      "source-layer": "streets",
       "type": "line",
       "layout": {
         "line-cap": "round",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "#888888",
+        "line-color": "#000000",
         "line-width": 0,
         "line-opacity": 1
       }
     },
     {
-      "id": "layer-line_77",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "streets_line_41",
+      "source": "openmaptiles",
+      "source-layer": "streets",
       "type": "line",
       "layout": {
         "line-cap": "round",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "#888888",
+        "line-color": "#000000",
         "line-width": 0,
         "line-opacity": 1
       }
     },
     {
-      "id": "layer-line_78",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "streets_line_42",
+      "source": "openmaptiles",
+      "source-layer": "streets",
       "type": "line",
       "layout": {
         "line-cap": "round",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "#888888",
+        "line-color": "#000000",
         "line-width": 0,
         "line-opacity": 1
       }
     },
     {
-      "id": "layer-line_79",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "streets_line_43",
+      "source": "openmaptiles",
+      "source-layer": "streets",
       "type": "line",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#888888",
-        "line-width": 2,
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "layer-line_80",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "round",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 2,
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "layer-line_81",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "round",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": "#888888",
+        "line-color": "#000000",
         "line-width": 1,
         "line-opacity": 1
       }
     },
     {
-      "id": "layer-line_82",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "streets_line_44",
+      "source": "openmaptiles",
+      "source-layer": "streets",
       "type": "line",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#888888",
-        "line-width": 2,
+        "line-color": "#000000",
+        "line-width": 1,
         "line-opacity": 1
       }
     },
     {
-      "id": "layer-line_83",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "streets_line_45",
+      "source": "openmaptiles",
+      "source-layer": "streets",
       "type": "line",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#888888",
-        "line-width": 2,
+        "line-color": "#000000",
+        "line-width": 1,
         "line-opacity": 1
       }
     },
     {
-      "id": "layer-line_84",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "streets_line_46",
+      "source": "openmaptiles",
+      "source-layer": "streets",
       "type": "line",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#888888",
-        "line-width": 2,
+        "line-color": "#000000",
+        "line-width": 1,
         "line-opacity": 1
       }
     },
     {
-      "id": "layer-line_85",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "streets_line_47",
+      "source": "openmaptiles",
+      "source-layer": "streets",
       "type": "line",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#888888",
-        "line-width": 2,
+        "line-color": "#000000",
+        "line-width": 1,
         "line-opacity": 1
       }
     },
     {
-      "id": "layer-line_86",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "streets_line_48",
+      "source": "openmaptiles",
+      "source-layer": "streets",
       "type": "line",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#888888",
-        "line-width": 2,
+        "line-color": "#000000",
+        "line-width": 1,
         "line-opacity": 1
       }
     },
     {
-      "id": "layer-line_87",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "streets_line_49",
+      "source": "openmaptiles",
+      "source-layer": "streets",
       "type": "line",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#888888",
-        "line-width": 2,
+        "line-color": "#000000",
+        "line-width": 1,
         "line-opacity": 1
       }
     },
     {
-      "id": "layer-line_88",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "streets_line_50",
+      "source": "openmaptiles",
+      "source-layer": "streets",
       "type": "line",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#888888",
-        "line-width": 2,
+        "line-color": "#000000",
+        "line-width": 1,
         "line-opacity": 1
       }
     },
     {
-      "id": "layer-line_89",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "streets_line_51",
+      "source": "openmaptiles",
+      "source-layer": "streets",
       "type": "line",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#888888",
-        "line-width": 2,
+        "line-color": "#000000",
+        "line-width": 1,
         "line-opacity": 1
       }
     },
     {
-      "id": "layer-line_90",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "streets_line_52",
+      "source": "openmaptiles",
+      "source-layer": "streets",
       "type": "line",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#888888",
-        "line-width": 2,
+        "line-color": "#000000",
+        "line-width": 1,
         "line-opacity": 1
       }
     },
     {
-      "id": "layer-line_91",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "streets_line_53",
+      "source": "openmaptiles",
+      "source-layer": "streets",
       "type": "line",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#888888",
-        "line-width": 2,
+        "line-color": "#000000",
+        "line-width": 1,
         "line-opacity": 1
       }
     },
     {
-      "id": "layer-line_92",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "streets_line_54",
+      "source": "openmaptiles",
+      "source-layer": "streets",
       "type": "line",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#888888",
+        "line-color": "#000000",
+        "line-width": 1,
+        "line-opacity": 1
+      }
+    },
+    {
+      "id": "streets_line_55",
+      "source": "openmaptiles",
+      "source-layer": "streets",
+      "type": "line",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#000000",
+        "line-width": 1,
+        "line-opacity": 1
+      }
+    },
+    {
+      "id": "streets_line_56",
+      "source": "openmaptiles",
+      "source-layer": "streets",
+      "type": "line",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#000000",
+        "line-width": 1,
+        "line-opacity": 1
+      }
+    },
+    {
+      "id": "streets_line_57",
+      "source": "openmaptiles",
+      "source-layer": "streets",
+      "type": "line",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#000000",
+        "line-width": 1,
+        "line-opacity": 1
+      }
+    },
+    {
+      "id": "streets_line_58",
+      "source": "openmaptiles",
+      "source-layer": "streets",
+      "type": "line",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#000000",
+        "line-width": 1,
+        "line-opacity": 1
+      }
+    },
+    {
+      "id": "streets_line_59",
+      "source": "openmaptiles",
+      "source-layer": "streets",
+      "type": "line",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#000000",
+        "line-width": 1,
+        "line-opacity": 1
+      }
+    },
+    {
+      "id": "streets_line_60",
+      "source": "openmaptiles",
+      "source-layer": "streets",
+      "type": "line",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#000000",
+        "line-width": 1,
+        "line-opacity": 1
+      }
+    },
+    {
+      "id": "streets_line_61",
+      "source": "openmaptiles",
+      "source-layer": "streets",
+      "type": "line",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#000000",
+        "line-width": 1,
+        "line-opacity": 1
+      }
+    },
+    {
+      "id": "streets_line_62",
+      "source": "openmaptiles",
+      "source-layer": "streets",
+      "type": "line",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#000000",
         "line-width": 0,
         "line-opacity": 1
       }
     },
     {
-      "id": "layer-line_93",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "streets_line_63",
+      "source": "openmaptiles",
+      "source-layer": "streets",
       "type": "line",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#888888",
+        "line-color": "#000000",
         "line-width": 0,
         "line-opacity": 1
       }
     },
     {
-      "id": "layer-line_94",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "streets_line_64",
+      "source": "openmaptiles",
+      "source-layer": "streets",
       "type": "line",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#888888",
+        "line-color": "#000000",
         "line-width": 0,
         "line-opacity": 1
       }
     },
     {
-      "id": "layer-line_95",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "round",
-        "line-join": "miter"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 0,
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "layer-line_96",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "round",
-        "line-join": "miter"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 0,
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "layer-line_97",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "round",
-        "line-join": "miter"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 0,
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "layer-line_98",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "round",
-        "line-join": "miter"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 0,
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "layer-line_99",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "round",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 1,
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "layer-line_100",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "round",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 1,
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "layer-line_101",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "round",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 1,
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "layer-line_102",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "round",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 1,
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "layer-line_103",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "round",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 1,
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "layer-line_104",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "round",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 1,
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "layer-line_105",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "round",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 1,
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "layer-line_106",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "round",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 1,
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "layer-line_107",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "round",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 1,
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "layer-line_108",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "round",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 1,
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "layer-line_109",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "round",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 1,
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "layer-line_110",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "round",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 1,
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "layer-line_111",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "round",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 1,
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "layer-line_112",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "round",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 1,
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "layer-line_113",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "round",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 1,
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "layer-line_114",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "round",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 1,
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "layer-line_115",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "round",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 1,
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "layer-line_116",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "round",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 1,
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "layer-line_117",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "round",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 1,
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "layer-line_118",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "round",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 0,
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "layer-line_119",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "round",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 0,
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "layer-line_120",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "round",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 0,
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "layer-line_121",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "streets_line_65",
+      "source": "openmaptiles",
+      "source-layer": "streets",
       "type": "line",
       "layout": {
         "line-cap": "flat",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "#888888",
+        "line-color": "#000000",
+        "line-width": 0,
+        "line-opacity": 1
+      }
+    },
+    {
+      "id": "streets_line_66",
+      "source": "openmaptiles",
+      "source-layer": "streets",
+      "type": "line",
+      "layout": {
+        "line-cap": "flat",
+        "line-join": "miter"
+      },
+      "paint": {
+        "line-color": "#000000",
+        "line-width": 0,
+        "line-opacity": 1
+      }
+    },
+    {
+      "id": "streets_line_67",
+      "source": "openmaptiles",
+      "source-layer": "streets",
+      "type": "line",
+      "layout": {
+        "line-cap": "flat",
+        "line-join": "miter"
+      },
+      "paint": {
+        "line-color": "#000000",
         "line-width": 0,
         "line-opacity": 1,
-        "line-dasharray": []
+        "line-dasharray": [
+          0,
+          0
+        ]
       }
     },
     {
-      "id": "layer-line_122",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "streets_line_68",
+      "source": "openmaptiles",
+      "source-layer": "streets",
       "type": "line",
       "layout": {
         "line-cap": "flat",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "#888888",
+        "line-color": "#000000",
         "line-width": 0,
         "line-opacity": 1,
-        "line-dasharray": []
+        "line-dasharray": [
+          0,
+          0
+        ]
       }
     },
     {
-      "id": "layer-line_123",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "streets_line_69",
+      "source": "openmaptiles",
+      "source-layer": "streets",
       "type": "line",
       "layout": {
         "line-cap": "flat",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "#888888",
-        "line-width": 0,
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "layer-line_124",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "flat",
-        "line-join": "miter"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 1,
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "layer-line_125",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "flat",
-        "line-join": "miter"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 0,
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "layer-line_126",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "flat",
-        "line-join": "miter"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 1,
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "layer-line_127",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "flat",
-        "line-join": "miter"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 0,
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "layer-line_128",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "flat",
-        "line-join": "miter"
-      },
-      "paint": {
-        "line-color": "#888888",
+        "line-color": "#000000",
         "line-width": 0,
         "line-opacity": 1,
-        "line-dasharray": []
+        "line-dasharray": [
+          0,
+          0
+        ]
       }
     },
     {
-      "id": "layer-line_129",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "streets_line_70",
+      "source": "openmaptiles",
+      "source-layer": "streets",
       "type": "line",
       "layout": {
         "line-cap": "flat",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "#888888",
-        "line-width": 0,
-        "line-opacity": 1,
-        "line-dasharray": []
-      }
-    },
-    {
-      "id": "layer-line_130",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "flat",
-        "line-join": "miter"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 0,
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "layer-line_131",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "flat",
-        "line-join": "miter"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 0,
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "layer-line_132",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "flat",
-        "line-join": "miter"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 0,
-        "line-opacity": 1,
-        "line-dasharray": []
-      }
-    },
-    {
-      "id": "layer-line_133",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "flat",
-        "line-join": "miter"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 0,
-        "line-opacity": 1,
-        "line-dasharray": []
-      }
-    },
-    {
-      "id": "layer-line_134",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "flat",
-        "line-join": "miter"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 0,
-        "line-opacity": 1,
-        "line-dasharray": []
-      }
-    },
-    {
-      "id": "layer-line_135",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "flat",
-        "line-join": "miter"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 3,
+        "line-color": "#000000",
+        "line-width": 3.02,
         "line-opacity": 1,
         "line-dasharray": [
           1,
@@ -2489,62 +1599,65 @@
       }
     },
     {
-      "id": "layer-line_136",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "streets_line_71",
+      "source": "openmaptiles",
+      "source-layer": "streets",
       "type": "line",
       "layout": {
         "line-cap": "flat",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "#888888",
+        "line-color": "#000000",
         "line-width": 0,
         "line-opacity": 1,
-        "line-dasharray": []
+        "line-dasharray": [
+          0,
+          0
+        ]
       }
     },
     {
-      "id": "layer-line_137",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "streets_line_72",
+      "source": "openmaptiles",
+      "source-layer": "streets",
       "type": "line",
       "layout": {
         "line-cap": "flat",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "#888888",
+        "line-color": "#000000",
         "line-width": 0,
         "line-opacity": 1
       }
     },
     {
-      "id": "layer-line_138",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "streets_line_73",
+      "source": "openmaptiles",
+      "source-layer": "streets",
       "type": "line",
       "layout": {
         "line-cap": "flat",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "#888888",
+        "line-color": "#000000",
         "line-width": 0,
         "line-opacity": 1
       }
     },
     {
-      "id": "layer-line_139",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "ferries_line",
+      "source": "openmaptiles",
+      "source-layer": "ferries",
       "type": "line",
       "layout": {
         "line-cap": "flat",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "#888888",
+        "line-color": "#000000",
         "line-width": 1,
         "line-opacity": 1,
         "line-dasharray": [
@@ -2554,1485 +1667,1064 @@
       }
     },
     {
-      "id": "layer-line_140",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "streets_line_74",
+      "source": "openmaptiles",
+      "source-layer": "streets",
       "type": "line",
       "layout": {
         "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#888888",
+        "line-color": "#000000",
         "line-width": 0,
         "line-opacity": 0.5
       }
     },
     {
-      "id": "layer-line_141",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "streets_line_75",
+      "source": "openmaptiles",
+      "source-layer": "streets",
       "type": "line",
       "layout": {
         "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#888888",
+        "line-color": "#000000",
         "line-width": 0,
         "line-opacity": 0.5
       }
     },
     {
-      "id": "layer-line_142",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "streets_line_76",
+      "source": "openmaptiles",
+      "source-layer": "streets",
       "type": "line",
       "layout": {
         "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#888888",
+        "line-color": "#000000",
         "line-width": 0,
         "line-opacity": 0.5
       }
     },
     {
-      "id": "layer-line_143",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "streets_line_77",
+      "source": "openmaptiles",
+      "source-layer": "streets",
       "type": "line",
       "layout": {
         "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#888888",
+        "line-color": "#000000",
         "line-width": 0,
         "line-opacity": 0.5
       }
     },
     {
-      "id": "layer-line_144",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "streets_line_78",
+      "source": "openmaptiles",
+      "source-layer": "streets",
       "type": "line",
       "layout": {
         "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#888888",
+        "line-color": "#000000",
         "line-width": 3,
         "line-opacity": 1
       }
     },
     {
-      "id": "layer-line_145",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "streets_line_79",
+      "source": "openmaptiles",
+      "source-layer": "streets",
       "type": "line",
       "layout": {
         "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#888888",
+        "line-color": "#000000",
         "line-width": 3,
         "line-opacity": 1
       }
     },
     {
-      "id": "layer-line_146",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "streets_line_80",
+      "source": "openmaptiles",
+      "source-layer": "streets",
       "type": "line",
       "layout": {
         "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#888888",
+        "line-color": "#000000",
         "line-width": 3,
         "line-opacity": 1
       }
     },
     {
-      "id": "layer-line_147",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "streets_line_81",
+      "source": "openmaptiles",
+      "source-layer": "streets",
       "type": "line",
       "layout": {
         "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#888888",
+        "line-color": "#000000",
         "line-width": 3,
         "line-opacity": 1
       }
     },
     {
-      "id": "layer-line_148",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "streets_line_82",
+      "source": "openmaptiles",
+      "source-layer": "streets",
       "type": "line",
       "layout": {
         "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#888888",
+        "line-color": "#000000",
         "line-width": 3,
         "line-opacity": 1
       }
     },
     {
-      "id": "layer-line_149",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "streets_line_83",
+      "source": "openmaptiles",
+      "source-layer": "streets",
       "type": "line",
       "layout": {
         "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#888888",
+        "line-color": "#000000",
         "line-width": 3,
         "line-opacity": 1
       }
     },
     {
-      "id": "layer-line_150",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "streets_line_84",
+      "source": "openmaptiles",
+      "source-layer": "streets",
       "type": "line",
       "layout": {
         "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#888888",
+        "line-color": "#000000",
         "line-width": 3,
         "line-opacity": 1
       }
     },
     {
-      "id": "layer-line_151",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "streets_line_85",
+      "source": "openmaptiles",
+      "source-layer": "streets",
       "type": "line",
       "layout": {
         "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#888888",
+        "line-color": "#000000",
         "line-width": 3,
         "line-opacity": 0.5
       }
     },
     {
-      "id": "layer-line_152",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "streets_line_86",
+      "source": "openmaptiles",
+      "source-layer": "streets",
       "type": "line",
       "layout": {
         "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#888888",
+        "line-color": "#000000",
         "line-width": 3,
         "line-opacity": 0.5
       }
     },
     {
-      "id": "layer-line_153",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "streets_line_87",
+      "source": "openmaptiles",
+      "source-layer": "streets",
       "type": "line",
       "layout": {
         "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#888888",
+        "line-color": "#000000",
         "line-width": 3,
         "line-opacity": 0.5
       }
     },
     {
-      "id": "layer-line_154",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "streets_line_88",
+      "source": "openmaptiles",
+      "source-layer": "streets",
       "type": "line",
       "layout": {
         "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#888888",
+        "line-color": "#000000",
         "line-width": 3,
         "line-opacity": 0.5
       }
     },
     {
-      "id": "layer-line_155",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "streets_line_89",
+      "source": "openmaptiles",
+      "source-layer": "streets",
       "type": "line",
       "layout": {
         "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#888888",
+        "line-color": "#000000",
         "line-width": 3,
         "line-opacity": 1
       }
     },
     {
-      "id": "layer-line_156",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "streets_line_90",
+      "source": "openmaptiles",
+      "source-layer": "streets",
       "type": "line",
       "layout": {
         "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#888888",
+        "line-color": "#000000",
         "line-width": 3,
         "line-opacity": 1
       }
     },
     {
-      "id": "layer-line_157",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "streets_line_91",
+      "source": "openmaptiles",
+      "source-layer": "streets",
       "type": "line",
       "layout": {
         "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#888888",
+        "line-color": "#000000",
         "line-width": 0,
         "line-opacity": 0.5
       }
     },
     {
-      "id": "layer-line_158",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "streets_line_92",
+      "source": "openmaptiles",
+      "source-layer": "streets",
       "type": "line",
       "layout": {
         "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#888888",
+        "line-color": "#000000",
         "line-width": 0,
         "line-opacity": 0.5
       }
     },
     {
-      "id": "layer-line_159",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "streets_line_93",
+      "source": "openmaptiles",
+      "source-layer": "streets",
       "type": "line",
       "layout": {
         "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#888888",
+        "line-color": "#000000",
         "line-width": 0,
         "line-opacity": 0.5
       }
     },
     {
-      "id": "layer-fill_39",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "street_polygons_fill_4",
+      "source": "openmaptiles",
+      "source-layer": "street_polygons",
       "type": "fill",
       "paint": {
-        "fill-color": "#888888",
+        "fill-color": "#000000",
         "fill-opacity": 1,
-        "fill-outline-color": "#888888"
+        "fill-outline-color": "#000000"
       }
     },
     {
-      "id": "layer-line_160",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "streets_line_94",
+      "source": "openmaptiles",
+      "source-layer": "streets",
       "type": "line",
       "layout": {
         "line-cap": "flat",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "#888888",
+        "line-color": "#000000",
         "line-width": 0,
         "line-opacity": 1
       }
     },
     {
-      "id": "layer-line_161",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "streets_line_95",
+      "source": "openmaptiles",
+      "source-layer": "streets",
       "type": "line",
       "layout": {
         "line-cap": "flat",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "#888888",
+        "line-color": "#000000",
         "line-width": 0,
         "line-opacity": 1
       }
     },
     {
-      "id": "layer-line_162",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "streets_line_96",
+      "source": "openmaptiles",
+      "source-layer": "streets",
       "type": "line",
       "layout": {
         "line-cap": "flat",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "#888888",
+        "line-color": "#000000",
         "line-width": 0,
         "line-opacity": 1
       }
     },
     {
-      "id": "layer-line_163",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "streets_line_97",
+      "source": "openmaptiles",
+      "source-layer": "streets",
       "type": "line",
       "layout": {
         "line-cap": "flat",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "#888888",
+        "line-color": "#000000",
         "line-width": 0,
         "line-opacity": 1
       }
     },
     {
-      "id": "layer-line_164",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "streets_line_98",
+      "source": "openmaptiles",
+      "source-layer": "streets",
       "type": "line",
       "layout": {
         "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#888888",
-        "line-width": 2,
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "layer-line_165",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "flat",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 2,
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "layer-line_166",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "flat",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": "#888888",
+        "line-color": "#000000",
         "line-width": 1,
         "line-opacity": 1
       }
     },
     {
-      "id": "layer-line_167",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "streets_line_99",
+      "source": "openmaptiles",
+      "source-layer": "streets",
       "type": "line",
       "layout": {
         "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#888888",
-        "line-width": 2,
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "layer-line_168",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "flat",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 2,
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "layer-line_169",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "flat",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 2,
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "layer-line_170",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "flat",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 2,
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "layer-line_171",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "flat",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 2,
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "layer-line_172",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "flat",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 2,
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "layer-line_173",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "flat",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 2,
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "layer-line_174",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "flat",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 2,
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "layer-line_175",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "flat",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 2,
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "layer-line_176",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "flat",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 2,
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "layer-line_177",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "flat",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 0,
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "layer-line_178",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "flat",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 0,
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "layer-line_179",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "flat",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 0,
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "layer-line_180",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "flat",
-        "line-join": "miter"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 0,
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "layer-line_181",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "flat",
-        "line-join": "miter"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 0,
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "layer-line_182",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "flat",
-        "line-join": "miter"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 0,
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "layer-line_183",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "flat",
-        "line-join": "miter"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 0,
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "layer-line_184",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "flat",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": "#888888",
+        "line-color": "#000000",
         "line-width": 1,
         "line-opacity": 1
       }
     },
     {
-      "id": "layer-line_185",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "streets_line_100",
+      "source": "openmaptiles",
+      "source-layer": "streets",
       "type": "line",
       "layout": {
         "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#888888",
+        "line-color": "#000000",
         "line-width": 1,
         "line-opacity": 1
       }
     },
     {
-      "id": "layer-line_186",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "streets_line_101",
+      "source": "openmaptiles",
+      "source-layer": "streets",
       "type": "line",
       "layout": {
         "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#888888",
+        "line-color": "#000000",
         "line-width": 1,
         "line-opacity": 1
       }
     },
     {
-      "id": "layer-line_187",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "streets_line_102",
+      "source": "openmaptiles",
+      "source-layer": "streets",
       "type": "line",
       "layout": {
         "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#888888",
+        "line-color": "#000000",
         "line-width": 1,
         "line-opacity": 1
       }
     },
     {
-      "id": "layer-line_188",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "streets_line_103",
+      "source": "openmaptiles",
+      "source-layer": "streets",
       "type": "line",
       "layout": {
         "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#888888",
+        "line-color": "#000000",
         "line-width": 1,
         "line-opacity": 1
       }
     },
     {
-      "id": "layer-line_189",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "streets_line_104",
+      "source": "openmaptiles",
+      "source-layer": "streets",
       "type": "line",
       "layout": {
         "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#888888",
+        "line-color": "#000000",
         "line-width": 1,
         "line-opacity": 1
       }
     },
     {
-      "id": "layer-line_190",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "flat",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 1,
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "layer-line_191",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "streets_line_105",
+      "source": "openmaptiles",
+      "source-layer": "streets",
       "type": "line",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#888888",
+        "line-color": "#000000",
         "line-width": 1,
         "line-opacity": 1
       }
     },
     {
-      "id": "layer-line_192",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "streets_line_106",
+      "source": "openmaptiles",
+      "source-layer": "streets",
       "type": "line",
       "layout": {
         "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#888888",
+        "line-color": "#000000",
         "line-width": 1,
         "line-opacity": 1
       }
     },
     {
-      "id": "layer-line_193",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "streets_line_107",
+      "source": "openmaptiles",
+      "source-layer": "streets",
       "type": "line",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#888888",
+        "line-color": "#000000",
         "line-width": 1,
         "line-opacity": 1
       }
     },
     {
-      "id": "layer-line_194",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "streets_line_108",
+      "source": "openmaptiles",
+      "source-layer": "streets",
       "type": "line",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#888888",
+        "line-color": "#000000",
         "line-width": 1,
         "line-opacity": 1
       }
     },
     {
-      "id": "layer-line_195",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "streets_line_109",
+      "source": "openmaptiles",
+      "source-layer": "streets",
       "type": "line",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#888888",
+        "line-color": "#000000",
         "line-width": 1,
         "line-opacity": 1
       }
     },
     {
-      "id": "layer-line_196",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "streets_line_110",
+      "source": "openmaptiles",
+      "source-layer": "streets",
       "type": "line",
       "layout": {
         "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#888888",
+        "line-color": "#000000",
         "line-width": 1,
         "line-opacity": 1
       }
     },
     {
-      "id": "layer-line_197",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "streets_line_111",
+      "source": "openmaptiles",
+      "source-layer": "streets",
       "type": "line",
       "layout": {
         "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#888888",
+        "line-color": "#000000",
         "line-width": 1,
         "line-opacity": 1
       }
     },
     {
-      "id": "layer-line_198",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "streets_line_112",
+      "source": "openmaptiles",
+      "source-layer": "streets",
       "type": "line",
       "layout": {
         "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#888888",
+        "line-color": "#000000",
         "line-width": 1,
         "line-opacity": 1
       }
     },
     {
-      "id": "layer-line_199",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "streets_line_113",
+      "source": "openmaptiles",
+      "source-layer": "streets",
       "type": "line",
       "layout": {
         "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#888888",
+        "line-color": "#000000",
         "line-width": 1,
         "line-opacity": 1
       }
     },
     {
-      "id": "layer-line_200",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "streets_line_114",
+      "source": "openmaptiles",
+      "source-layer": "streets",
       "type": "line",
       "layout": {
         "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#888888",
+        "line-color": "#000000",
         "line-width": 1,
         "line-opacity": 1
       }
     },
     {
-      "id": "layer-line_201",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "streets_line_115",
+      "source": "openmaptiles",
+      "source-layer": "streets",
       "type": "line",
       "layout": {
         "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#888888",
+        "line-color": "#000000",
         "line-width": 1,
         "line-opacity": 1
       }
     },
     {
-      "id": "layer-line_202",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "streets_line_116",
+      "source": "openmaptiles",
+      "source-layer": "streets",
       "type": "line",
       "layout": {
         "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#888888",
+        "line-color": "#000000",
         "line-width": 1,
         "line-opacity": 1
       }
     },
     {
-      "id": "layer-line_203",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "streets_line_117",
+      "source": "openmaptiles",
+      "source-layer": "streets",
       "type": "line",
       "layout": {
         "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#888888",
+        "line-color": "#000000",
         "line-width": 0,
         "line-opacity": 1
       }
     },
     {
-      "id": "layer-line_204",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "streets_line_118",
+      "source": "openmaptiles",
+      "source-layer": "streets",
       "type": "line",
       "layout": {
         "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#888888",
+        "line-color": "#000000",
         "line-width": 0,
         "line-opacity": 1
       }
     },
     {
-      "id": "layer-line_205",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "streets_line_119",
+      "source": "openmaptiles",
+      "source-layer": "streets",
       "type": "line",
       "layout": {
         "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#888888",
+        "line-color": "#000000",
         "line-width": 0,
         "line-opacity": 1
       }
     },
     {
-      "id": "layer-line_206",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "streets_line_120",
+      "source": "openmaptiles",
+      "source-layer": "streets",
       "type": "line",
       "layout": {
         "line-cap": "flat",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "#888888",
+        "line-color": "#000000",
+        "line-width": 0,
+        "line-opacity": 1
+      }
+    },
+    {
+      "id": "streets_line_121",
+      "source": "openmaptiles",
+      "source-layer": "streets",
+      "type": "line",
+      "layout": {
+        "line-cap": "flat",
+        "line-join": "miter"
+      },
+      "paint": {
+        "line-color": "#000000",
+        "line-width": 0,
+        "line-opacity": 1
+      }
+    },
+    {
+      "id": "streets_line_122",
+      "source": "openmaptiles",
+      "source-layer": "streets",
+      "type": "line",
+      "layout": {
+        "line-cap": "flat",
+        "line-join": "miter"
+      },
+      "paint": {
+        "line-color": "#000000",
         "line-width": 0,
         "line-opacity": 1,
-        "line-dasharray": []
+        "line-dasharray": [
+          0,
+          0
+        ]
       }
     },
     {
-      "id": "layer-line_207",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "streets_line_123",
+      "source": "openmaptiles",
+      "source-layer": "streets",
       "type": "line",
       "layout": {
         "line-cap": "flat",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "#888888",
+        "line-color": "#000000",
         "line-width": 0,
         "line-opacity": 1,
-        "line-dasharray": []
+        "line-dasharray": [
+          0,
+          0
+        ]
       }
     },
     {
-      "id": "layer-line_208",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "streets_line_124",
+      "source": "openmaptiles",
+      "source-layer": "streets",
       "type": "line",
       "layout": {
         "line-cap": "flat",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "#888888",
-        "line-width": 0,
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "layer-line_209",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "flat",
-        "line-join": "miter"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 1,
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "layer-line_210",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "flat",
-        "line-join": "miter"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 0,
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "layer-line_211",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "flat",
-        "line-join": "miter"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 1,
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "layer-line_212",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "flat",
-        "line-join": "miter"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 0,
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "layer-line_213",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "flat",
-        "line-join": "miter"
-      },
-      "paint": {
-        "line-color": "#888888",
+        "line-color": "#000000",
         "line-width": 0,
         "line-opacity": 1,
-        "line-dasharray": []
+        "line-dasharray": [
+          0,
+          0
+        ]
       }
     },
     {
-      "id": "layer-line_214",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "streets_line_125",
+      "source": "openmaptiles",
+      "source-layer": "streets",
       "type": "line",
       "layout": {
         "line-cap": "flat",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "#888888",
+        "line-color": "#000000",
         "line-width": 0,
         "line-opacity": 1,
-        "line-dasharray": []
+        "line-dasharray": [
+          0,
+          0
+        ]
       }
     },
     {
-      "id": "layer-line_215",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "streets_line_126",
+      "source": "openmaptiles",
+      "source-layer": "streets",
       "type": "line",
       "layout": {
         "line-cap": "flat",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "#888888",
+        "line-color": "#000000",
+        "line-width": 0,
+        "line-opacity": 1,
+        "line-dasharray": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "streets_line_127",
+      "source": "openmaptiles",
+      "source-layer": "streets",
+      "type": "line",
+      "layout": {
+        "line-cap": "flat",
+        "line-join": "miter"
+      },
+      "paint": {
+        "line-color": "#000000",
         "line-width": 0,
         "line-opacity": 1
       }
     },
     {
-      "id": "layer-line_216",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "streets_line_128",
+      "source": "openmaptiles",
+      "source-layer": "streets",
       "type": "line",
       "layout": {
         "line-cap": "flat",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "#888888",
+        "line-color": "#000000",
         "line-width": 0,
         "line-opacity": 1
       }
     },
     {
-      "id": "layer-line_217",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "flat",
-        "line-join": "miter"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 0,
-        "line-opacity": 1,
-        "line-dasharray": []
-      }
-    },
-    {
-      "id": "layer-line_218",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "flat",
-        "line-join": "miter"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 0,
-        "line-opacity": 1,
-        "line-dasharray": []
-      }
-    },
-    {
-      "id": "layer-line_219",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "flat",
-        "line-join": "miter"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 0,
-        "line-opacity": 1,
-        "line-dasharray": []
-      }
-    },
-    {
-      "id": "layer-line_220",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "flat",
-        "line-join": "miter"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 0,
-        "line-opacity": 1,
-        "line-dasharray": []
-      }
-    },
-    {
-      "id": "layer-line_221",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "flat",
-        "line-join": "miter"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 0,
-        "line-opacity": 1,
-        "line-dasharray": []
-      }
-    },
-    {
-      "id": "layer-line_222",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "flat",
-        "line-join": "miter"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 0,
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "layer-line_223",
-      "source": "vector_tiles",
-      "source-layer": "layer",
-      "type": "line",
-      "layout": {
-        "line-cap": "flat",
-        "line-join": "miter"
-      },
-      "paint": {
-        "line-color": "#888888",
-        "line-width": 0,
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "layer-marker",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "pois_marker",
+      "source": "openmaptiles",
+      "source-layer": "pois",
       "type": "circle",
       "paint": {
         "circle-color": "#808080",
-        "circle-radius": -0.9,
+        "circle-radius": -0.94,
         "circle-opacity": 1
       },
       "metadata": {
-        "qgis:original-class": "RasterMarker",
-        "qgis:note": "Converted to circle"
+        "qgis:class": "RasterMarker",
+        "qgis:note": "converted to circle"
       }
     },
     {
-      "id": "layer-marker_2",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "pois_marker_2",
+      "source": "openmaptiles",
+      "source-layer": "pois",
       "type": "circle",
       "paint": {
         "circle-color": "#808080",
-        "circle-radius": -0.9,
+        "circle-radius": -0.94,
         "circle-opacity": 1
       },
       "metadata": {
-        "qgis:original-class": "RasterMarker",
-        "qgis:note": "Converted to circle"
+        "qgis:class": "RasterMarker",
+        "qgis:note": "converted to circle"
       }
     },
     {
-      "id": "layer-marker_3",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "pois_marker_3",
+      "source": "openmaptiles",
+      "source-layer": "pois",
       "type": "circle",
       "paint": {
         "circle-color": "#808080",
-        "circle-radius": -0.9,
+        "circle-radius": -0.94,
         "circle-opacity": 1
       },
       "metadata": {
-        "qgis:original-class": "RasterMarker",
-        "qgis:note": "Converted to circle"
+        "qgis:class": "RasterMarker",
+        "qgis:note": "converted to circle"
       }
     },
     {
-      "id": "layer-marker_4",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "pois_marker_4",
+      "source": "openmaptiles",
+      "source-layer": "pois",
       "type": "circle",
       "paint": {
         "circle-color": "#808080",
-        "circle-radius": -0.9,
+        "circle-radius": -0.94,
         "circle-opacity": 1
       },
       "metadata": {
-        "qgis:original-class": "RasterMarker",
-        "qgis:note": "Converted to circle"
+        "qgis:class": "RasterMarker",
+        "qgis:note": "converted to circle"
       }
     },
     {
-      "id": "layer-marker_5",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "pois_marker_5",
+      "source": "openmaptiles",
+      "source-layer": "pois",
       "type": "circle",
       "paint": {
         "circle-color": "#808080",
-        "circle-radius": -0.9,
+        "circle-radius": -0.94,
         "circle-opacity": 1
       },
       "metadata": {
-        "qgis:original-class": "RasterMarker",
-        "qgis:note": "Converted to circle"
+        "qgis:class": "RasterMarker",
+        "qgis:note": "converted to circle"
       }
     },
     {
-      "id": "layer-marker_6",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "pois_marker_6",
+      "source": "openmaptiles",
+      "source-layer": "pois",
       "type": "circle",
       "paint": {
         "circle-color": "#808080",
-        "circle-radius": -0.9,
+        "circle-radius": -0.94,
         "circle-opacity": 1
       },
       "metadata": {
-        "qgis:original-class": "RasterMarker",
-        "qgis:note": "Converted to circle"
+        "qgis:class": "RasterMarker",
+        "qgis:note": "converted to circle"
       }
     },
     {
-      "id": "layer-marker_7",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "pois_marker_7",
+      "source": "openmaptiles",
+      "source-layer": "pois",
       "type": "circle",
       "paint": {
         "circle-color": "#808080",
-        "circle-radius": -0.9,
+        "circle-radius": -0.94,
         "circle-opacity": 1
       },
       "metadata": {
-        "qgis:original-class": "RasterMarker",
-        "qgis:note": "Converted to circle"
+        "qgis:class": "RasterMarker",
+        "qgis:note": "converted to circle"
       }
     },
     {
-      "id": "layer-line_224",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "boundaries_line",
+      "source": "openmaptiles",
+      "source-layer": "boundaries",
       "type": "line",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#888888",
+        "line-color": "#000000",
         "line-width": 0,
         "line-opacity": 0.75
       }
     },
     {
-      "id": "layer-line_225",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "boundaries_line_2",
+      "source": "openmaptiles",
+      "source-layer": "boundaries",
       "type": "line",
       "layout": {
         "line-cap": "flat",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "#888888",
+        "line-color": "#000000",
         "line-width": 0,
         "line-opacity": 0.75
       }
     },
     {
-      "id": "layer-line_226",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "boundaries_line_3",
+      "source": "openmaptiles",
+      "source-layer": "boundaries",
       "type": "line",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#888888",
+        "line-color": "#000000",
         "line-width": 0,
         "line-opacity": 0.75
       }
     },
     {
-      "id": "layer-line_227",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "boundaries_line_4",
+      "source": "openmaptiles",
+      "source-layer": "boundaries",
       "type": "line",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#888888",
+        "line-color": "#000000",
         "line-width": 0,
         "line-opacity": 1
       }
     },
     {
-      "id": "layer-line_228",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "boundaries_line_5",
+      "source": "openmaptiles",
+      "source-layer": "boundaries",
       "type": "line",
       "layout": {
         "line-cap": "square",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "#888888",
+        "line-color": "#000000",
         "line-width": 0,
         "line-opacity": 1,
-        "line-dasharray": []
+        "line-dasharray": [
+          0,
+          0
+        ]
       }
     },
     {
-      "id": "layer-line_229",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "boundaries_line_6",
+      "source": "openmaptiles",
+      "source-layer": "boundaries",
       "type": "line",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#888888",
+        "line-color": "#000000",
         "line-width": 0,
         "line-opacity": 1
       }
     },
     {
-      "id": "layer-line_230-path",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "streets_line_129_path",
+      "source": "openmaptiles",
+      "source-layer": "streets",
       "type": "line",
       "layout": {
         "line-cap": "round",
@@ -4040,43 +2732,43 @@
       },
       "paint": {
         "line-color": "#888888",
-        "line-width": 1,
-        "line-opacity": 0.4
+        "line-width": 1.5,
+        "line-opacity": 0.5
       },
       "metadata": {
-        "qgis:original-class": "MarkerLine",
-        "qgis:note": "Path stroke from MarkerLine"
+        "qgis:class": "MarkerLine",
+        "qgis:note": "path stroke"
       }
     },
     {
-      "id": "layer-line_230-sym",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "streets_line_129_dots",
+      "source": "openmaptiles",
+      "source-layer": "streets",
       "type": "symbol",
       "layout": {
         "symbol-placement": "line",
-        "symbol-spacing": 175,
-        "icon-allow-overlap": true,
-        "text-allow-overlap": true,
+        "symbol-spacing": 175.02,
         "text-field": "·",
-        "text-size": 7.6,
         "text-font": [
-          "Open Sans Regular"
-        ]
+          "Noto Sans Regular"
+        ],
+        "text-size": 8,
+        "text-allow-overlap": true,
+        "icon-allow-overlap": true
       },
       "paint": {
         "text-color": "#888888",
         "text-opacity": 1
       },
       "metadata": {
-        "qgis:original-class": "MarkerLine",
-        "qgis:note": "Dot markers along line"
+        "qgis:class": "MarkerLine",
+        "qgis:note": "markers along line"
       }
     },
     {
-      "id": "layer-line_231-path",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "streets_line_130_path",
+      "source": "openmaptiles",
+      "source-layer": "streets",
       "type": "line",
       "layout": {
         "line-cap": "round",
@@ -4084,38 +2776,39 @@
       },
       "paint": {
         "line-color": "#888888",
-        "line-width": 1,
-        "line-opacity": 0.4
+        "line-width": 1.5,
+        "line-opacity": 0.5
       },
       "metadata": {
-        "qgis:original-class": "MarkerLine",
-        "qgis:note": "Path stroke from MarkerLine"
+        "qgis:class": "MarkerLine",
+        "qgis:note": "path stroke"
       }
     },
     {
-      "id": "layer-line_231-sym",
-      "source": "vector_tiles",
-      "source-layer": "layer",
+      "id": "streets_line_130_dots",
+      "source": "openmaptiles",
+      "source-layer": "streets",
       "type": "symbol",
       "layout": {
         "symbol-placement": "line",
-        "symbol-spacing": 75,
-        "icon-allow-overlap": true,
-        "text-allow-overlap": true,
+        "symbol-spacing": 75.01,
         "text-field": "·",
-        "text-size": 7.6,
         "text-font": [
-          "Open Sans Regular"
-        ]
+          "Noto Sans Regular"
+        ],
+        "text-size": 8,
+        "text-allow-overlap": true,
+        "icon-allow-overlap": true
       },
       "paint": {
         "text-color": "#888888",
         "text-opacity": 1
       },
       "metadata": {
-        "qgis:original-class": "MarkerLine",
-        "qgis:note": "Dot markers along line"
+        "qgis:class": "MarkerLine",
+        "qgis:note": "markers along line"
       }
     }
-  ]
+  ],
+  "glyphs": "https://api.maptiler.com/fonts/{fontstack}/{range}.pbf?key=YOUR_KEY"
 }
