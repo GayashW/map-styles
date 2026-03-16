@@ -4,7 +4,7 @@
   "sources": {
     "openmaptiles": {
       "type": "vector",
-      "url": "https://tiles.versatiles.org/assets/glyphs/{fontstack}/{range}.pbf"
+      "url": "https://your-tile-source/tiles.json"
     }
   },
   "layers": [
