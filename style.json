@@ -1,5161 +1,4121 @@
 {
   "version": 8,
-  "name": "QGIS Converted Vector Tiles",
+  "name": "QGIS Converted Style",
   "sources": {
-    "vector_source": {
+    "vector_tiles": {
       "type": "vector",
-      "tiles": [
-        "https://tiles.versatiles.org/assets/glyphs/{fontstack}/{range}.pbf"
-      ]
+      "url": "https://tiles.versatiles.org/assets/glyphs/{fontstack}/{range}.pbf"
     }
   },
   "layers": [
     {
-      "id": "background-fill-0-0-0",
+      "id": "layer-fill",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "fill",
-      "source": "vector_source",
-      "source-layer": "background",
       "paint": {
-        "fill-color": "rgba(234, 234, 234, 1.0)",
-        "fill-outline-color": "rgba(35, 35, 35, 1.0)"
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "fill-color": "#888888",
+        "fill-opacity": 1
+      }
     },
     {
-      "id": "water-ocean-fill-1-0-0",
+      "id": "layer-fill_2",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "fill",
-      "source": "vector_source",
-      "source-layer": "ocean",
       "paint": {
-        "fill-color": "rgba(97, 170, 177, 1.0)",
-        "fill-outline-color": "rgba(216, 216, 216, 1.0)"
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "fill-color": "#888888",
+        "fill-opacity": 1,
+        "fill-outline-color": "#888888"
+      }
     },
     {
-      "id": "land-glacier-fill-2-0-0",
+      "id": "layer-fill_3",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "fill",
-      "source": "vector_source",
-      "source-layer": "water_polygons",
       "paint": {
-        "fill-color": "rgba(97, 170, 177, 1.0)",
-        "fill-outline-color": "rgba(255, 255, 255, 1.0)"
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "fill-color": "rgba(0,0,0,0)",
+        "fill-opacity": 0.3
+      }
     },
     {
-      "id": "land-commercial-fill-3-0-0",
+      "id": "layer-fill_4",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "fill",
-      "source": "vector_source",
-      "source-layer": "land",
       "paint": {
-        "fill-color": "rgba(234, 234, 234, 1.0)",
-        "fill-outline-color": "rgba(35, 35, 35, 1.0)"
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "fill-color": "#888888",
+        "fill-opacity": 0.1,
+        "fill-outline-color": "#888888"
+      }
     },
     {
-      "id": "land-industrial-fill-4-0-0",
+      "id": "layer-fill_5",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "fill",
-      "source": "vector_source",
-      "source-layer": "land",
       "paint": {
-        "fill-color": "rgba(224, 224, 224, 1.0)",
-        "fill-outline-color": "rgba(35, 35, 35, 1.0)"
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "fill-color": "#888888",
+        "fill-opacity": 0.1,
+        "fill-outline-color": "#888888"
+      }
     },
     {
-      "id": "land-residential-fill-5-0-0",
+      "id": "layer-fill_6",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "fill",
-      "source": "vector_source",
-      "source-layer": "land",
       "paint": {
-        "fill-color": "rgba(229, 229, 229, 1.0)",
-        "fill-outline-color": "rgba(35, 35, 35, 1.0)"
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "fill-color": "#888888",
+        "fill-opacity": 0.794,
+        "fill-outline-color": "#888888"
+      }
     },
     {
-      "id": "land-agriculture-fill-6-0-0",
+      "id": "layer-fill_7",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "fill",
-      "source": "vector_source",
-      "source-layer": "land",
       "paint": {
-        "fill-color": "rgba(224, 224, 224, 1.0)",
-        "fill-outline-color": "rgba(224, 224, 224, 1.0)"
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "fill-color": "rgba(0,0,0,0)",
+        "fill-opacity": 0.1
+      }
     },
     {
-      "id": "land-waste-fill-7-0-0",
+      "id": "layer-fill_8",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "fill",
-      "source": "vector_source",
-      "source-layer": "land",
       "paint": {
-        "fill-color": "rgba(204, 204, 204, 1.0)",
-        "fill-outline-color": "rgba(204, 204, 204, 1.0)"
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "fill-color": "#888888",
+        "fill-opacity": 1,
+        "fill-outline-color": "#888888"
+      }
     },
     {
-      "id": "land-park-fill-8-0-0",
+      "id": "layer-fill_9",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "fill",
-      "source": "vector_source",
-      "source-layer": "land",
       "paint": {
-        "fill-color": "rgba(191, 191, 191, 1.0)",
-        "fill-outline-color": "rgba(191, 191, 191, 1.0)"
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "fill-color": "#888888",
+        "fill-opacity": 1,
+        "fill-outline-color": "#888888"
+      }
     },
     {
-      "id": "land-garden-fill-9-0-0",
+      "id": "layer-fill_10",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "fill",
-      "source": "vector_source",
-      "source-layer": "land",
       "paint": {
-        "fill-color": "rgba(212, 217, 153, 1.0)",
-        "fill-outline-color": "rgba(191, 191, 191, 1.0)"
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "fill-color": "rgba(0,0,0,0)",
+        "fill-opacity": 0.1
+      }
     },
     {
-      "id": "land-burial-fill-10-0-0",
+      "id": "layer-fill_11",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "fill",
-      "source": "vector_source",
-      "source-layer": "land",
       "paint": {
-        "fill-color": "rgba(211, 211, 211, 1.0)",
-        "fill-outline-color": "rgba(211, 211, 211, 1.0)"
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "fill-color": "#888888",
+        "fill-opacity": 1,
+        "fill-outline-color": "#888888"
+      }
     },
     {
-      "id": "land-leisure-fill-11-0-0",
+      "id": "layer-fill_12",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "fill",
-      "source": "vector_source",
-      "source-layer": "land",
       "paint": {
-        "fill-color": "rgba(229, 229, 229, 1.0)",
-        "fill-outline-color": "rgba(229, 229, 229, 1.0)"
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "fill-color": "#888888",
+        "fill-opacity": 1,
+        "fill-outline-color": "#888888"
+      }
     },
     {
-      "id": "land-rock-fill-12-0-0",
+      "id": "layer-fill_13",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "fill",
-      "source": "vector_source",
-      "source-layer": "land",
       "paint": {
-        "fill-color": "rgba(226, 226, 226, 1.0)",
-        "fill-outline-color": "rgba(226, 226, 226, 1.0)"
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "fill-color": "#888888",
+        "fill-opacity": 1
+      }
     },
     {
-      "id": "land-forest-fill-13-0-0",
+      "id": "layer-fill_14",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "fill",
-      "source": "vector_source",
-      "source-layer": "land",
       "paint": {
-        "fill-color": "rgba(98, 157, 54, 1.0)",
-        "fill-outline-color": "rgba(119, 119, 119, 1.0)"
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "fill-color": "#888888",
+        "fill-opacity": 1
+      }
     },
     {
-      "id": "land-grass-fill-14-0-0",
+      "id": "layer-fill_15",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "fill",
-      "source": "vector_source",
-      "source-layer": "land",
       "paint": {
-        "fill-color": "rgba(216, 232, 200, 1.0)",
-        "fill-outline-color": "rgba(216, 216, 216, 1.0)"
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "fill-color": "#888888",
+        "fill-opacity": 1
+      }
     },
     {
-      "id": "land-vegetation-fill-15-0-0",
+      "id": "layer-fill_16",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "fill",
-      "source": "vector_source",
-      "source-layer": "land",
       "paint": {
-        "fill-color": "rgba(98, 157, 54, 1.0)",
-        "fill-outline-color": "rgba(191, 191, 191, 1.0)"
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "fill-color": "#888888",
+        "fill-opacity": 1,
+        "fill-outline-color": "#888888"
+      }
     },
     {
-      "id": "land-sand-fill-16-0-0",
+      "id": "layer-fill_17",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "fill",
-      "source": "vector_source",
-      "source-layer": "land",
       "paint": {
-        "fill-color": "rgba(242, 242, 242, 1.0)",
-        "fill-outline-color": "rgba(242, 242, 242, 1.0)"
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "fill-color": "#888888",
+        "fill-opacity": 1,
+        "fill-outline-color": "#888888"
+      }
     },
     {
-      "id": "land-wetland-fill-17-0-0",
+      "id": "layer-fill_18",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "fill",
-      "source": "vector_source",
-      "source-layer": "land",
       "paint": {
-        "fill-color": "rgba(219, 219, 219, 1.0)",
-        "fill-outline-color": "rgba(219, 219, 219, 1.0)"
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "fill-color": "#888888",
+        "fill-opacity": 1,
+        "fill-outline-color": "#888888"
+      }
     },
     {
-      "id": "water-river-line-18-0-0",
+      "id": "layer-fill_19",
+      "source": "vector_tiles",
+      "source-layer": "layer",
+      "type": "fill",
+      "paint": {
+        "fill-color": "#888888",
+        "fill-opacity": 1,
+        "fill-outline-color": "#888888"
+      }
+    },
+    {
+      "id": "layer-fill_20",
+      "source": "vector_tiles",
+      "source-layer": "layer",
+      "type": "fill",
+      "paint": {
+        "fill-color": "#888888",
+        "fill-opacity": 1,
+        "fill-outline-color": "#888888"
+      }
+    },
+    {
+      "id": "layer-fill_21",
+      "source": "vector_tiles",
+      "source-layer": "layer",
+      "type": "fill",
+      "paint": {
+        "fill-color": "#888888",
+        "fill-opacity": 1,
+        "fill-outline-color": "#888888"
+      }
+    },
+    {
+      "id": "layer-fill_22",
+      "source": "vector_tiles",
+      "source-layer": "layer",
+      "type": "fill",
+      "paint": {
+        "fill-color": "#888888",
+        "fill-opacity": 1,
+        "fill-outline-color": "#888888"
+      }
+    },
+    {
+      "id": "layer-fill_23",
+      "source": "vector_tiles",
+      "source-layer": "layer",
+      "type": "fill",
+      "paint": {
+        "fill-color": "#888888",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "layer-fill_24",
+      "source": "vector_tiles",
+      "source-layer": "layer",
+      "type": "fill",
+      "paint": {
+        "fill-color": "#888888",
+        "fill-opacity": 1,
+        "fill-outline-color": "#888888"
+      }
+    },
+    {
+      "id": "layer-fill_25",
+      "source": "vector_tiles",
+      "source-layer": "layer",
+      "type": "fill",
+      "paint": {
+        "fill-color": "#888888",
+        "fill-opacity": 1
+      }
+    },
+    {
+      "id": "layer-fill_26",
+      "source": "vector_tiles",
+      "source-layer": "layer",
+      "type": "fill",
+      "paint": {
+        "fill-color": "#888888",
+        "fill-opacity": 1,
+        "fill-outline-color": "#888888"
+      }
+    },
+    {
+      "id": "layer-fill_27",
+      "source": "vector_tiles",
+      "source-layer": "layer",
+      "type": "fill",
+      "paint": {
+        "fill-color": "#888888",
+        "fill-opacity": 1,
+        "fill-outline-color": "#888888"
+      }
+    },
+    {
+      "id": "layer-line",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "water_lines",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(216, 216, 216, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "water-canal-line-19-0-0",
+      "id": "layer-line_2",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "water_lines",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(216, 216, 216, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "water-stream-line-20-0-0",
+      "id": "layer-line_3",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "water_lines",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(216, 216, 216, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "water-ditch-line-21-0-0",
+      "id": "layer-line_4",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "water_lines",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(216, 216, 216, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "water-area-fill-22-0-0",
+      "id": "layer-fill_28",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "fill",
-      "source": "vector_source",
-      "source-layer": "water_polygons",
       "paint": {
-        "fill-color": "rgba(97, 170, 177, 1.0)",
-        "fill-outline-color": "rgba(216, 216, 216, 1.0)"
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "fill-color": "#888888",
+        "fill-opacity": 1,
+        "fill-outline-color": "#888888"
+      }
     },
     {
-      "id": "water-area-river-fill-23-0-0",
+      "id": "layer-fill_29",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "fill",
-      "source": "vector_source",
-      "source-layer": "water_polygons",
       "paint": {
-        "fill-color": "rgba(97, 170, 177, 1.0)",
-        "fill-outline-color": "rgba(216, 216, 216, 1.0)"
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "fill-color": "#888888",
+        "fill-opacity": 1,
+        "fill-outline-color": "#888888"
+      }
     },
     {
-      "id": "water-area-small-fill-24-0-0",
+      "id": "layer-fill_30",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "fill",
-      "source": "vector_source",
-      "source-layer": "water_polygons",
       "paint": {
-        "fill-color": "rgba(97, 170, 177, 1.0)",
-        "fill-outline-color": "rgba(216, 216, 216, 1.0)"
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "fill-color": "#888888",
+        "fill-opacity": 1,
+        "fill-outline-color": "#888888"
+      }
     },
     {
-      "id": "water-dam-area-fill-25-0-0",
+      "id": "layer-fill_31",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "fill",
-      "source": "vector_source",
-      "source-layer": "dam_polygons",
       "paint": {
-        "fill-color": "rgba(242, 242, 242, 1.0)",
-        "fill-outline-color": "rgba(242, 242, 242, 1.0)"
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "fill-color": "#888888",
+        "fill-opacity": 1,
+        "fill-outline-color": "#888888"
+      }
     },
     {
-      "id": "water-dam-line-26-0-0",
+      "id": "layer-line_5",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "dam_lines",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(216, 216, 216, 1.0)",
-        "line-width": 0.264583,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 1,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "water-pier-area-fill-27-0-0",
+      "id": "layer-fill_32",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "fill",
-      "source": "vector_source",
-      "source-layer": "pier_polygons",
       "paint": {
-        "fill-color": "rgba(242, 242, 242, 1.0)",
-        "fill-outline-color": "rgba(242, 242, 242, 1.0)"
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "fill-color": "#888888",
+        "fill-opacity": 1,
+        "fill-outline-color": "#888888"
+      }
     },
     {
-      "id": "water-pier-line-28-0-0",
+      "id": "layer-line_6",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "pier_lines",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(242, 242, 242, 1.0)",
-        "line-width": 0.264583,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 1,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "site-dangerarea-fill-29-0-0",
+      "id": "layer-fill_33",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "fill",
-      "source": "vector_source",
-      "source-layer": "sites",
       "paint": {
-        "fill-color": "rgba(0, 0, 255, 1.0)",
-        "fill-outline-color": "rgba(35, 35, 35, 1.0)"
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "fill-color": "#888888",
+        "fill-opacity": 0.5,
+        "fill-outline-color": "#888888"
+      }
     },
     {
-      "id": "site-university-fill-30-0-0",
-      "type": "fill",
-      "source": "vector_source",
-      "source-layer": "sites",
-      "paint": {
-        "fill-color": "rgba(191, 191, 191, 1.0)",
-        "fill-outline-color": "rgba(191, 191, 191, 1.0)"
-      },
-      "minzoom": -1,
-      "maxzoom": -1
-    },
-    {
-      "id": "site-college-fill-31-0-0",
-      "type": "fill",
-      "source": "vector_source",
-      "source-layer": "sites",
-      "paint": {
-        "fill-color": "rgba(191, 191, 191, 1.0)",
-        "fill-outline-color": "rgba(191, 191, 191, 1.0)"
-      },
-      "minzoom": -1,
-      "maxzoom": -1
-    },
-    {
-      "id": "site-school-fill-32-0-0",
-      "type": "fill",
-      "source": "vector_source",
-      "source-layer": "sites",
-      "paint": {
-        "fill-color": "rgba(191, 191, 191, 1.0)",
-        "fill-outline-color": "rgba(191, 191, 191, 1.0)"
-      },
-      "minzoom": -1,
-      "maxzoom": -1
-    },
-    {
-      "id": "site-hospital-fill-33-0-0",
-      "type": "fill",
-      "source": "vector_source",
-      "source-layer": "sites",
-      "paint": {
-        "fill-color": "rgba(178, 178, 178, 1.0)",
-        "fill-outline-color": "rgba(178, 178, 178, 1.0)"
-      },
-      "minzoom": -1,
-      "maxzoom": -1
-    },
-    {
-      "id": "site-prison-fill-34-0-0",
-      "type": "fill",
-      "source": "vector_source",
-      "source-layer": "sites",
-      "paint": {
-        "fill-color": "rgba(0, 0, 255, 1.0)",
-        "fill-outline-color": "rgba(35, 35, 35, 1.0)"
-      },
-      "minzoom": -1,
-      "maxzoom": -1
-    },
-    {
-      "id": "site-parking-fill-35-0-0",
-      "type": "fill",
-      "source": "vector_source",
-      "source-layer": "sites",
-      "paint": {
-        "fill-color": "rgba(232, 232, 232, 1.0)",
-        "fill-outline-color": "rgba(232, 232, 232, 1.0)"
-      },
-      "minzoom": -1,
-      "maxzoom": -1
-    },
-    {
-      "id": "site-bicycleparking-fill-36-0-0",
-      "type": "fill",
-      "source": "vector_source",
-      "source-layer": "sites",
-      "paint": {
-        "fill-color": "rgba(232, 232, 232, 1.0)",
-        "fill-outline-color": "rgba(232, 232, 232, 1.0)"
-      },
-      "minzoom": -1,
-      "maxzoom": -1
-    },
-    {
-      "id": "site-construction-fill-37-0-0",
-      "type": "fill",
-      "source": "vector_source",
-      "source-layer": "sites",
-      "paint": {
-        "fill-color": "rgba(0, 0, 255, 1.0)",
-        "fill-outline-color": "rgba(35, 35, 35, 1.0)"
-      },
-      "minzoom": -1,
-      "maxzoom": -1
-    },
-    {
-      "id": "airport-area-fill-38-0-0",
-      "type": "fill",
-      "source": "vector_source",
-      "source-layer": "street_polygons",
-      "paint": {
-        "fill-color": "rgba(255, 255, 255, 1.0)",
-        "fill-outline-color": "rgba(255, 255, 255, 1.0)"
-      },
-      "minzoom": -1,
-      "maxzoom": -1
-    },
-    {
-      "id": "airport-taxiway:outline-line-39-0-0",
+      "id": "layer-line_7",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(204, 204, 204, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "airport-runway:outline-line-40-0-0",
+      "id": "layer-line_8",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(204, 204, 204, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "airport-taxiway-line-41-0-0",
+      "id": "layer-line_9",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(255, 255, 255, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "airport-runway-line-42-0-0",
+      "id": "layer-line_10",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(255, 255, 255, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "building:outline-fill-43-0-0",
+      "id": "layer-fill_34",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "fill",
-      "source": "vector_source",
-      "source-layer": "buildings",
       "paint": {
-        "fill-color": "rgba(219, 219, 219, 1.0)",
-        "fill-outline-color": "rgba(219, 219, 219, 1.0)"
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "fill-color": "#888888",
+        "fill-opacity": 1,
+        "fill-outline-color": "#888888"
+      }
     },
     {
-      "id": "building-fill-44-0-0",
+      "id": "layer-fill_35",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "fill",
-      "source": "vector_source",
-      "source-layer": "buildings",
       "paint": {
-        "fill-color": "rgba(255, 255, 255, 1.0)",
-        "fill-outline-color": "rgba(232, 232, 232, 1.0)"
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "fill-color": "#888888",
+        "fill-opacity": 1,
+        "fill-outline-color": "#888888"
+      }
     },
     {
-      "id": "tunnel-street-pedestrian-zone-fill-45-0-0",
+      "id": "layer-fill_36",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "fill",
-      "source": "vector_source",
-      "source-layer": "street_polygons",
       "paint": {
-        "fill-color": "rgba(247, 247, 247, 1.0)",
-        "fill-outline-color": "rgba(247, 247, 247, 1.0)"
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "fill-color": "#888888",
+        "fill-opacity": 1,
+        "fill-outline-color": "#888888"
+      }
     },
     {
-      "id": "tunnel-way-footway:outline-line-46-0-0",
+      "id": "layer-line_11",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
         "line-cap": "round",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "rgba(219, 219, 219, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": 15,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "tunnel-way-steps:outline-line-47-0-0",
+      "id": "layer-line_12",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
         "line-cap": "round",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "rgba(219, 219, 219, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": 15,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "tunnel-way-path:outline-line-48-0-0",
+      "id": "layer-line_13",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
         "line-cap": "round",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "rgba(219, 219, 219, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": 15,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "tunnel-way-cycleway:outline-line-49-0-0",
+      "id": "layer-line_14",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
         "line-cap": "round",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "rgba(221, 221, 221, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": 15,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "tunnel-street-track:outline-line-50-0-0",
+      "id": "layer-line_15",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(222, 222, 222, 1.0)",
-        "line-width": 0.529167,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 2,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "tunnel-street-pedestrian:outline-line-51-0-0",
+      "id": "layer-line_16",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(222, 222, 222, 1.0)",
-        "line-width": 0.529167,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 2,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "tunnel-street-service:outline-line-52-0-0",
+      "id": "layer-line_17",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(220, 220, 220, 1.0)",
-        "line-width": 0.264583,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 1,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "tunnel-street-livingstreet:outline-line-53-0-0",
+      "id": "layer-line_18",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(222, 222, 222, 1.0)",
-        "line-width": 0.529167,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 2,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "tunnel-street-residential:outline-line-54-0-0",
+      "id": "layer-line_19",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(222, 222, 222, 1.0)",
-        "line-width": 0.529167,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 2,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "tunnel-street-unclassified:outline-line-55-0-0",
+      "id": "layer-line_20",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(222, 222, 222, 1.0)",
-        "line-width": 0.529167,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 2,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "tunnel-street-tertiary-link:outline-line-56-0-0",
+      "id": "layer-line_21",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(222, 222, 222, 1.0)",
-        "line-width": 0.529167,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 2,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "tunnel-street-secondary-link:outline-line-57-0-0",
+      "id": "layer-line_22",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(180, 180, 180, 1.0)",
-        "line-width": 0.529167,
+        "line-color": "#888888",
+        "line-width": 2,
+        "line-opacity": 1,
         "line-dasharray": [
           0.529167,
           0.15875
         ]
-      },
-      "minzoom": 13,
-      "maxzoom": -1
+      }
     },
     {
-      "id": "tunnel-street-primary-link:outline-line-58-0-0",
+      "id": "layer-line_23",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(180, 180, 180, 1.0)",
-        "line-width": 0.529167,
+        "line-color": "#888888",
+        "line-width": 2,
+        "line-opacity": 1,
         "line-dasharray": [
           0.529167,
           0.15875
         ]
-      },
-      "minzoom": 13,
-      "maxzoom": -1
+      }
     },
     {
-      "id": "tunnel-street-trunk-link:outline-line-59-0-0",
+      "id": "layer-line_24",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(180, 180, 180, 1.0)",
-        "line-width": 0.529167,
+        "line-color": "#888888",
+        "line-width": 2,
+        "line-opacity": 1,
         "line-dasharray": [
           0.529167,
           0.15875
         ]
-      },
-      "minzoom": 13,
-      "maxzoom": -1
+      }
     },
     {
-      "id": "tunnel-street-motorway-link:outline-line-60-0-0",
+      "id": "layer-line_25",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(180, 180, 180, 1.0)",
-        "line-width": 0.529167,
+        "line-color": "#888888",
+        "line-width": 2,
+        "line-opacity": 1,
         "line-dasharray": [
           0.529167,
           0.15875
         ]
-      },
-      "minzoom": 12,
-      "maxzoom": -1
+      }
     },
     {
-      "id": "tunnel-street-tertiary:outline-line-61-0-0",
+      "id": "layer-line_26",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(222, 222, 222, 1.0)",
-        "line-width": 0.529167,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 2,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "tunnel-street-secondary:outline-line-62-0-0",
+      "id": "layer-line_27",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(180, 180, 180, 1.0)",
-        "line-width": 0.529167,
+        "line-color": "#888888",
+        "line-width": 2,
+        "line-opacity": 1,
         "line-dasharray": [
           0.529167,
           0.15875
         ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+      }
     },
     {
-      "id": "tunnel-street-primary:outline-line-63-0-0",
+      "id": "layer-line_28",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(180, 180, 180, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          0.0,
-          0.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 1,
+        "line-dasharray": []
+      }
     },
     {
-      "id": "tunnel-street-trunk:outline-line-64-0-0",
+      "id": "layer-line_29",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(180, 180, 180, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          0.0,
-          0.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 1,
+        "line-dasharray": []
+      }
     },
     {
-      "id": "tunnel-street-motorway:outline-line-65-0-0",
+      "id": "layer-line_30",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(180, 180, 180, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          0.0,
-          0.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 1,
+        "line-dasharray": []
+      }
     },
     {
-      "id": "tunnel-way-footway-line-66-0-0",
+      "id": "layer-line_31",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
         "line-cap": "round",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "rgba(239, 239, 239, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          0.0,
-          0.0
-        ]
-      },
-      "minzoom": 15,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 1,
+        "line-dasharray": []
+      }
     },
     {
-      "id": "tunnel-way-steps-line-67-0-0",
+      "id": "layer-line_32",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
         "line-cap": "round",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "rgba(239, 239, 239, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          0.0,
-          0.0
-        ]
-      },
-      "minzoom": 15,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 1,
+        "line-dasharray": []
+      }
     },
     {
-      "id": "tunnel-way-path-line-68-0-0",
+      "id": "layer-line_33",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
         "line-cap": "round",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "rgba(239, 239, 239, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          0.0,
-          0.0
-        ]
-      },
-      "minzoom": 15,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 1,
+        "line-dasharray": []
+      }
     },
     {
-      "id": "tunnel-way-cycleway-line-69-0-0",
+      "id": "layer-line_34",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
         "line-cap": "round",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "rgba(242, 242, 242, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          0.0,
-          0.0
-        ]
-      },
-      "minzoom": 15,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 1,
+        "line-dasharray": []
+      }
     },
     {
-      "id": "tunnel-street-track-line-70-0-0",
+      "id": "layer-line_35",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(247, 247, 247, 1.0)",
-        "line-width": 0.264583,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 1,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "tunnel-street-pedestrian-line-71-0-0",
+      "id": "layer-line_36",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(247, 247, 247, 1.0)",
-        "line-width": 0.264583,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 1,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "tunnel-street-service-line-72-0-0",
+      "id": "layer-line_37",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(247, 247, 247, 1.0)",
-        "line-width": 0.264583,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 1,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "tunnel-street-livingstreet-line-73-0-0",
+      "id": "layer-line_38",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(247, 247, 247, 1.0)",
-        "line-width": 0.264583,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 1,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "tunnel-street-residential-line-74-0-0",
+      "id": "layer-line_39",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(247, 247, 247, 1.0)",
-        "line-width": 0.264583,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 1,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "tunnel-street-unclassified-line-75-0-0",
+      "id": "layer-line_40",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(247, 247, 247, 1.0)",
-        "line-width": 0.264583,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 1,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "tunnel-street-track-bicycle-line-76-0-0",
+      "id": "layer-line_41",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(247, 247, 247, 1.0)",
-        "line-width": 0.264583,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 1,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "tunnel-street-pedestrian-bicycle-line-77-0-0",
+      "id": "layer-line_42",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(247, 247, 247, 1.0)",
-        "line-width": 0.264583,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 1,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "tunnel-street-service-bicycle-line-78-0-0",
+      "id": "layer-line_43",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(247, 247, 247, 1.0)",
-        "line-width": 0.264583,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 1,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "tunnel-street-livingstreet-bicycle-line-79-0-0",
+      "id": "layer-line_44",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(247, 247, 247, 1.0)",
-        "line-width": 0.264583,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 1,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "tunnel-street-residential-bicycle-line-80-0-0",
+      "id": "layer-line_45",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(247, 247, 247, 1.0)",
-        "line-width": 0.264583,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 1,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "tunnel-street-unclassified-bicycle-line-81-0-0",
+      "id": "layer-line_46",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(247, 247, 247, 1.0)",
-        "line-width": 0.264583,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 1,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "tunnel-street-tertiary-link-line-82-0-0",
+      "id": "layer-line_47",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(247, 247, 247, 1.0)",
-        "line-width": 0.264583,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 1,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "tunnel-street-secondary-link-line-83-0-0",
+      "id": "layer-line_48",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(217, 217, 217, 1.0)",
-        "line-width": 0.264583,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": 13,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 1,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "tunnel-street-primary-link-line-84-0-0",
+      "id": "layer-line_49",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(217, 217, 217, 1.0)",
-        "line-width": 0.264583,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": 13,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 1,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "tunnel-street-trunk-link-line-85-0-0",
+      "id": "layer-line_50",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(217, 217, 217, 1.0)",
-        "line-width": 0.264583,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": 13,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 1,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "tunnel-street-motorway-link-line-86-0-0",
+      "id": "layer-line_51",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(201, 201, 201, 1.0)",
-        "line-width": 0.264583,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": 12,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 1,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "tunnel-street-tertiary-line-87-0-0",
+      "id": "layer-line_52",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(247, 247, 247, 1.0)",
-        "line-width": 0.264583,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 1,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "tunnel-street-secondary-line-88-0-0",
+      "id": "layer-line_53",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(217, 217, 217, 1.0)",
-        "line-width": 0.264583,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 1,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "tunnel-street-primary-line-89-0-0",
+      "id": "layer-line_54",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(217, 217, 217, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "tunnel-street-trunk-line-90-0-0",
+      "id": "layer-line_55",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(217, 217, 217, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "tunnel-street-motorway-line-91-0-0",
+      "id": "layer-line_56",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(201, 201, 201, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "tunnel-transport-tram:outline-line-92-0-0",
+      "id": "layer-line_57",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "rgba(186, 186, 186, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          0.0,
-          0.0
-        ]
-      },
-      "minzoom": 15,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 1,
+        "line-dasharray": []
+      }
     },
     {
-      "id": "tunnel-transport-narrowgauge:outline-line-93-0-0",
+      "id": "layer-line_58",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "rgba(186, 186, 186, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          0.0,
-          0.0
-        ]
-      },
-      "minzoom": 15,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 1,
+        "line-dasharray": []
+      }
     },
     {
-      "id": "tunnel-transport-subway:outline-line-94-0-0",
+      "id": "layer-line_59",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "rgba(183, 183, 183, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "tunnel-transport-lightrail:outline-line-95-0-0",
+      "id": "layer-line_60",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "rgba(186, 186, 186, 1.0)",
-        "line-width": 0.264583,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": 8,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 1,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "tunnel-transport-lightrail-service:outline-line-96-0-0",
+      "id": "layer-line_61",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "rgba(186, 186, 186, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": 14,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "tunnel-transport-rail:outline-line-97-0-0",
+      "id": "layer-line_62",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "rgba(186, 186, 186, 1.0)",
-        "line-width": 0.264583,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": 8,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 1,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "tunnel-transport-rail-service:outline-line-98-0-0",
+      "id": "layer-line_63",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "rgba(186, 186, 186, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": 14,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "tunnel-transport-monorail:outline-line-99-0-0",
+      "id": "layer-line_64",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "rgba(186, 186, 186, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          0.0,
-          0.0
-        ]
-      },
-      "minzoom": 15,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 1,
+        "line-dasharray": []
+      }
     },
     {
-      "id": "tunnel-transport-funicular:outline-line-100-0-0",
+      "id": "layer-line_65",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "rgba(186, 186, 186, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          0.0,
-          0.0
-        ]
-      },
-      "minzoom": 15,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 1,
+        "line-dasharray": []
+      }
     },
     {
-      "id": "tunnel-transport-tram-line-101-0-0",
+      "id": "layer-line_66",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "rgba(186, 186, 186, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": 13,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "tunnel-transport-narrowgauge-line-102-0-0",
+      "id": "layer-line_67",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "rgba(186, 186, 186, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": 13,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "tunnel-transport-subway-line-103-0-0",
+      "id": "layer-line_68",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "rgba(201, 201, 201, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          0.0,
-          0.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 1,
+        "line-dasharray": []
+      }
     },
     {
-      "id": "tunnel-transport-lightrail-line-104-0-0",
+      "id": "layer-line_69",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "rgba(204, 204, 204, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          0.0,
-          0.0
-        ]
-      },
-      "minzoom": 14,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 1,
+        "line-dasharray": []
+      }
     },
     {
-      "id": "tunnel-transport-lightrail-service-line-105-0-0",
+      "id": "layer-line_70",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "rgba(204, 204, 204, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          0.0,
-          0.0
-        ]
-      },
-      "minzoom": 15,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 1,
+        "line-dasharray": []
+      }
     },
     {
-      "id": "tunnel-transport-rail-line-106-0-0",
+      "id": "layer-line_71",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "rgba(204, 204, 204, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          0.0,
-          0.0
-        ]
-      },
-      "minzoom": 14,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 1,
+        "line-dasharray": []
+      }
     },
     {
-      "id": "tunnel-transport-rail-service-line-107-0-0",
+      "id": "layer-line_72",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "rgba(204, 204, 204, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          0.0,
-          0.0
-        ]
-      },
-      "minzoom": 15,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 1,
+        "line-dasharray": []
+      }
     },
     {
-      "id": "tunnel-transport-monorail-line-108-0-0",
+      "id": "layer-line_73",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "rgba(186, 186, 186, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": 13,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "tunnel-transport-funicular-line-109-0-0",
+      "id": "layer-line_74",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "rgba(186, 186, 186, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": 13,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "bridge-fill-110-0-0",
+      "id": "layer-fill_37",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "fill",
-      "source": "vector_source",
-      "source-layer": "bridges",
       "paint": {
-        "fill-color": "rgba(239, 239, 239, 1.0)",
-        "fill-outline-color": "rgba(239, 239, 239, 1.0)"
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "fill-color": "#888888",
+        "fill-opacity": 0.8,
+        "fill-outline-color": "#888888"
+      }
     },
     {
-      "id": "street-pedestrian-zone-fill-111-0-0",
+      "id": "layer-fill_38",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "fill",
-      "source": "vector_source",
-      "source-layer": "street_polygons",
       "paint": {
-        "fill-color": "rgba(245, 245, 245, 1.0)",
-        "fill-outline-color": "rgba(35, 35, 35, 1.0)"
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "fill-color": "#888888",
+        "fill-opacity": 1
+      }
     },
     {
-      "id": "way-footway:outline-line-112-0-0",
+      "id": "layer-line_75",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
         "line-cap": "round",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "rgba(220, 220, 220, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": 15,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "way-steps:outline-line-113-0-0",
+      "id": "layer-line_76",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
         "line-cap": "round",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "rgba(220, 220, 220, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": 15,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "way-path:outline-line-114-0-0",
+      "id": "layer-line_77",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
         "line-cap": "round",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "rgba(220, 220, 220, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": 15,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "way-cycleway:outline-line-115-0-0",
+      "id": "layer-line_78",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
         "line-cap": "round",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "rgba(222, 222, 222, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": 15,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "street-track:outline-line-116-0-0",
+      "id": "layer-line_79",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(204, 204, 204, 1.0)",
-        "line-width": 0.529167,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 2,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "street-pedestrian:outline-line-117-0-0",
+      "id": "layer-line_80",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(204, 204, 204, 1.0)",
-        "line-width": 0.529167,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 2,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "street-service:outline-line-118-0-0",
+      "id": "layer-line_81",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(220, 220, 220, 1.0)",
-        "line-width": 0.264583,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 1,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "street-livingstreet:outline-line-119-0-0",
+      "id": "layer-line_82",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(204, 204, 204, 1.0)",
-        "line-width": 0.529167,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 2,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "street-residential:outline-line-120-0-0",
+      "id": "layer-line_83",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(204, 204, 204, 1.0)",
-        "line-width": 0.529167,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 2,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "street-unclassified:outline-line-121-0-0",
+      "id": "layer-line_84",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(204, 204, 204, 1.0)",
-        "line-width": 0.529167,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 2,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "street-tertiary-link:outline-line-122-0-0",
+      "id": "layer-line_85",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(204, 204, 204, 1.0)",
-        "line-width": 0.529167,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 2,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "street-secondary-link:outline-line-123-0-0",
+      "id": "layer-line_86",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(175, 175, 175, 1.0)",
-        "line-width": 0.529167,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": 13,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 2,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "street-primary-link:outline-line-124-0-0",
+      "id": "layer-line_87",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(175, 175, 175, 1.0)",
-        "line-width": 0.529167,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": 13,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 2,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "street-trunk-link:outline-line-125-0-0",
+      "id": "layer-line_88",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(175, 175, 175, 1.0)",
-        "line-width": 0.529167,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": 13,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 2,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "street-motorway-link:outline-line-126-0-0",
+      "id": "layer-line_89",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(175, 175, 175, 1.0)",
-        "line-width": 0.529167,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": 12,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 2,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "street-tertiary:outline-line-127-0-0",
+      "id": "layer-line_90",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(204, 204, 204, 1.0)",
-        "line-width": 0.529167,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 2,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "street-secondary:outline-line-128-0-0",
+      "id": "layer-line_91",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(175, 175, 175, 1.0)",
-        "line-width": 0.529167,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 2,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "street-primary:outline-line-129-0-0",
+      "id": "layer-line_92",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(175, 175, 175, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "street-trunk:outline-line-130-0-0",
+      "id": "layer-line_93",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(175, 175, 175, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "street-motorway:outline-line-131-0-0",
+      "id": "layer-line_94",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(175, 175, 175, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "way-footway-line-132-0-0",
+      "id": "layer-line_95",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
         "line-cap": "round",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "rgba(245, 245, 245, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": 15,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "way-steps-line-133-0-0",
+      "id": "layer-line_96",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
         "line-cap": "round",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "rgba(245, 245, 245, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": 15,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "way-path-line-134-0-0",
+      "id": "layer-line_97",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
         "line-cap": "round",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "rgba(245, 245, 245, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": 15,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "way-cycleway-line-135-0-0",
+      "id": "layer-line_98",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
         "line-cap": "round",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "rgba(247, 247, 247, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": 15,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "street-track-line-136-0-0",
+      "id": "layer-line_99",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(255, 255, 255, 1.0)",
-        "line-width": 0.264583,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 1,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "street-pedestrian-line-137-0-0",
+      "id": "layer-line_100",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(244, 244, 244, 1.0)",
-        "line-width": 0.264583,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 1,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "street-service-line-138-0-0",
+      "id": "layer-line_101",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(247, 247, 247, 1.0)",
-        "line-width": 0.264583,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 1,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "street-livingstreet-line-139-0-0",
+      "id": "layer-line_102",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(255, 255, 255, 1.0)",
-        "line-width": 0.264583,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 1,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "street-residential-line-140-0-0",
+      "id": "layer-line_103",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(255, 255, 255, 1.0)",
-        "line-width": 0.264583,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 1,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "street-unclassified-line-141-0-0",
+      "id": "layer-line_104",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(255, 255, 255, 1.0)",
-        "line-width": 0.264583,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 1,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "street-track-bicycle-line-142-0-0",
+      "id": "layer-line_105",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(255, 255, 255, 1.0)",
-        "line-width": 0.264583,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 1,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "street-pedestrian-bicycle-line-143-0-0",
+      "id": "layer-line_106",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(247, 247, 247, 1.0)",
-        "line-width": 0.264583,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 1,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "street-service-bicycle-line-144-0-0",
+      "id": "layer-line_107",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(255, 255, 255, 1.0)",
-        "line-width": 0.264583,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 1,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "street-livingstreet-bicycle-line-145-0-0",
+      "id": "layer-line_108",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(247, 247, 247, 1.0)",
-        "line-width": 0.264583,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 1,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "street-residential-bicycle-line-146-0-0",
+      "id": "layer-line_109",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(247, 247, 247, 1.0)",
-        "line-width": 0.264583,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 1,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "street-unclassified-bicycle-line-147-0-0",
+      "id": "layer-line_110",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(247, 247, 247, 1.0)",
-        "line-width": 0.264583,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 1,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "street-tertiary-link-line-148-0-0",
+      "id": "layer-line_111",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(255, 255, 255, 1.0)",
-        "line-width": 0.264583,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 1,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "street-secondary-link-line-149-0-0",
+      "id": "layer-line_112",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(255, 255, 255, 1.0)",
-        "line-width": 0.26458,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": 13,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 1,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "street-primary-link-line-150-0-0",
+      "id": "layer-line_113",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(255, 255, 255, 1.0)",
-        "line-width": 0.26458,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": 13,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 1,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "street-trunk-link-line-151-0-0",
+      "id": "layer-line_114",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(211, 211, 211, 1.0)",
-        "line-width": 0.264583,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": 13,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 1,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "street-motorway-link-line-152-0-0",
+      "id": "layer-line_115",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(196, 196, 196, 1.0)",
-        "line-width": 0.264583,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": 12,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 1,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "street-tertiary-line-153-0-0",
+      "id": "layer-line_116",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(255, 255, 255, 1.0)",
-        "line-width": 0.264583,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 1,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "street-secondary-line-154-0-0",
+      "id": "layer-line_117",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(255, 255, 255, 1.0)",
-        "line-width": 0.26458,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 1,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "street-primary-line-155-0-0",
+      "id": "layer-line_118",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(252, 252, 252, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "street-trunk-line-156-0-0",
+      "id": "layer-line_119",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(255, 255, 255, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "street-motorway-line-157-0-0",
+      "id": "layer-line_120",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(196, 196, 196, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "transport-tram:outline-line-158-0-0",
+      "id": "layer-line_121",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "rgba(186, 186, 186, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          0.0,
-          0.0
-        ]
-      },
-      "minzoom": 15,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 1,
+        "line-dasharray": []
+      }
     },
     {
-      "id": "transport-narrowgauge:outline-line-159-0-0",
+      "id": "layer-line_122",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "rgba(186, 186, 186, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          0.0,
-          0.0
-        ]
-      },
-      "minzoom": 15,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 1,
+        "line-dasharray": []
+      }
     },
     {
-      "id": "transport-subway:outline-line-160-0-0",
+      "id": "layer-line_123",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "rgba(183, 183, 183, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "transport-lightrail:outline-line-161-0-0",
+      "id": "layer-line_124",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "rgba(186, 186, 186, 1.0)",
-        "line-width": 0.264583,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": 8,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 1,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "transport-lightrail-service:outline-line-162-0-0",
+      "id": "layer-line_125",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "rgba(186, 186, 186, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": 14,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "transport-rail:outline-line-163-0-0",
+      "id": "layer-line_126",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "rgba(186, 186, 186, 1.0)",
-        "line-width": 0.264583,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": 8,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 1,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "transport-rail-service:outline-line-164-0-0",
+      "id": "layer-line_127",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "rgba(186, 186, 186, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": 14,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "transport-monorail:outline-line-165-0-0",
+      "id": "layer-line_128",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "rgba(186, 186, 186, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          0.0,
-          0.0
-        ]
-      },
-      "minzoom": 15,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 1,
+        "line-dasharray": []
+      }
     },
     {
-      "id": "transport-funicular:outline-line-166-0-0",
+      "id": "layer-line_129",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "rgba(186, 186, 186, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          0.0,
-          0.0
-        ]
-      },
-      "minzoom": 15,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 1,
+        "line-dasharray": []
+      }
     },
     {
-      "id": "transport-tram-line-167-0-0",
+      "id": "layer-line_130",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "rgba(186, 186, 186, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": 13,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "transport-narrowgauge-line-168-0-0",
+      "id": "layer-line_131",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "rgba(186, 186, 186, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": 13,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "transport-subway-line-169-0-0",
+      "id": "layer-line_132",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "rgba(201, 201, 201, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          0.0,
-          0.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 1,
+        "line-dasharray": []
+      }
     },
     {
-      "id": "transport-lightrail-line-170-0-0",
+      "id": "layer-line_133",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "rgba(204, 204, 204, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          0.0,
-          0.0
-        ]
-      },
-      "minzoom": 14,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 1,
+        "line-dasharray": []
+      }
     },
     {
-      "id": "transport-lightrail-service-line-171-0-0",
+      "id": "layer-line_134",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "rgba(204, 204, 204, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          0.0,
-          0.0
-        ]
-      },
-      "minzoom": 15,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 1,
+        "line-dasharray": []
+      }
     },
     {
-      "id": "transport-rail-line-172-0-0",
+      "id": "layer-line_135",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "rgba(204, 204, 204, 1.0)",
-        "line-width": 0.0,
+        "line-color": "#888888",
+        "line-width": 3,
+        "line-opacity": 1,
         "line-dasharray": [
-          0.0,
-          0.0
+          1,
+          1
         ]
-      },
-      "minzoom": 14,
-      "maxzoom": -1
+      }
     },
     {
-      "id": "transport-rail-service-line-173-0-0",
+      "id": "layer-line_136",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "rgba(204, 204, 204, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          0.0,
-          0.0
-        ]
-      },
-      "minzoom": 15,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 1,
+        "line-dasharray": []
+      }
     },
     {
-      "id": "transport-monorail-line-174-0-0",
+      "id": "layer-line_137",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "rgba(186, 186, 186, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": 13,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "transport-funicular-line-175-0-0",
+      "id": "layer-line_138",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "rgba(186, 186, 186, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": 13,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "transport-ferry-line-176-0-0",
+      "id": "layer-line_139",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "ferries",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "rgba(195, 195, 195, 1.0)",
-        "line-width": 0.264583,
+        "line-color": "#888888",
+        "line-width": 1,
+        "line-opacity": 1,
         "line-dasharray": [
           0.264583,
           0.264583
         ]
-      },
-      "minzoom": 10,
-      "maxzoom": -1
+      }
     },
     {
-      "id": "bridge-way-footway:bridge-line-177-0-0",
+      "id": "layer-line_140",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(239, 239, 239, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": 15,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 0.5
+      }
     },
     {
-      "id": "bridge-way-steps:bridge-line-178-0-0",
+      "id": "layer-line_141",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(239, 239, 239, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": 15,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 0.5
+      }
     },
     {
-      "id": "bridge-way-path:bridge-line-179-0-0",
+      "id": "layer-line_142",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(239, 239, 239, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": 15,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 0.5
+      }
     },
     {
-      "id": "bridge-way-cycleway:bridge-line-180-0-0",
+      "id": "layer-line_143",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(239, 239, 239, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": 15,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 0.5
+      }
     },
     {
-      "id": "bridge-street-track:bridge-line-181-0-0",
+      "id": "layer-line_144",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(239, 239, 239, 1.0)",
-        "line-width": 0.79375,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 3,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "bridge-street-pedestrian:bridge-line-182-0-0",
+      "id": "layer-line_145",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(239, 239, 239, 1.0)",
-        "line-width": 0.79375,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 3,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "bridge-street-service:bridge-line-183-0-0",
+      "id": "layer-line_146",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(239, 239, 239, 1.0)",
-        "line-width": 0.79375,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 3,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "bridge-street-livingstreet:bridge-line-184-0-0",
+      "id": "layer-line_147",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(239, 239, 239, 1.0)",
-        "line-width": 0.79375,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 3,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "bridge-street-residential:bridge-line-185-0-0",
+      "id": "layer-line_148",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(239, 239, 239, 1.0)",
-        "line-width": 0.79375,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 3,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "bridge-street-unclassified:bridge-line-186-0-0",
+      "id": "layer-line_149",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(239, 239, 239, 1.0)",
-        "line-width": 0.79375,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 3,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "bridge-street-tertiary-link:bridge-line-187-0-0",
+      "id": "layer-line_150",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(239, 239, 239, 1.0)",
-        "line-width": 0.79375,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 3,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "bridge-street-secondary-link:bridge-line-188-0-0",
+      "id": "layer-line_151",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(239, 239, 239, 1.0)",
-        "line-width": 0.79375,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": 13,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 3,
+        "line-opacity": 0.5
+      }
     },
     {
-      "id": "bridge-street-primary-link:bridge-line-189-0-0",
+      "id": "layer-line_152",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(239, 239, 239, 1.0)",
-        "line-width": 0.79375,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": 13,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 3,
+        "line-opacity": 0.5
+      }
     },
     {
-      "id": "bridge-street-trunk-link:bridge-line-190-0-0",
+      "id": "layer-line_153",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(239, 239, 239, 1.0)",
-        "line-width": 0.79375,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": 13,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 3,
+        "line-opacity": 0.5
+      }
     },
     {
-      "id": "bridge-street-motorway-link:bridge-line-191-0-0",
+      "id": "layer-line_154",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(239, 239, 239, 1.0)",
-        "line-width": 0.79375,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": 12,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 3,
+        "line-opacity": 0.5
+      }
     },
     {
-      "id": "bridge-street-tertiary:bridge-line-192-0-0",
+      "id": "layer-line_155",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(239, 239, 239, 1.0)",
-        "line-width": 0.79375,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 3,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "bridge-street-secondary:bridge-line-193-0-0",
+      "id": "layer-line_156",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(239, 239, 239, 1.0)",
-        "line-width": 0.79375,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 3,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "bridge-street-primary:bridge-line-194-0-0",
+      "id": "layer-line_157",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(239, 239, 239, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 0.5
+      }
     },
     {
-      "id": "bridge-street-trunk:bridge-line-195-0-0",
+      "id": "layer-line_158",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(239, 239, 239, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 0.5
+      }
     },
     {
-      "id": "bridge-street-motorway:bridge-line-196-0-0",
+      "id": "layer-line_159",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(239, 239, 239, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 0.5
+      }
     },
     {
-      "id": "bridge-street-pedestrian-zone-fill-197-0-0",
+      "id": "layer-fill_39",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "fill",
-      "source": "vector_source",
-      "source-layer": "street_polygons",
       "paint": {
-        "fill-color": "rgba(255, 255, 255, 1.0)",
-        "fill-outline-color": "rgba(255, 255, 255, 1.0)"
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "fill-color": "#888888",
+        "fill-opacity": 1,
+        "fill-outline-color": "#888888"
+      }
     },
     {
-      "id": "bridge-way-footway:outline-line-198-0-0",
+      "id": "layer-line_160",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "rgba(220, 220, 220, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": 15,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "bridge-way-steps:outline-line-199-0-0",
+      "id": "layer-line_161",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "rgba(220, 220, 220, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": 15,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "bridge-way-path:outline-line-200-0-0",
+      "id": "layer-line_162",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "rgba(220, 220, 220, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": 15,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "bridge-way-cycleway:outline-line-201-0-0",
+      "id": "layer-line_163",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "rgba(222, 222, 222, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": 15,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "bridge-street-track:outline-line-202-0-0",
+      "id": "layer-line_164",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(217, 217, 217, 1.0)",
-        "line-width": 0.529167,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 2,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "bridge-street-pedestrian:outline-line-203-0-0",
+      "id": "layer-line_165",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(217, 217, 217, 1.0)",
-        "line-width": 0.529167,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 2,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "bridge-street-service:outline-line-204-0-0",
+      "id": "layer-line_166",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(220, 220, 220, 1.0)",
-        "line-width": 0.264583,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 1,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "bridge-street-livingstreet:outline-line-205-0-0",
+      "id": "layer-line_167",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(217, 217, 217, 1.0)",
-        "line-width": 0.529167,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 2,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "bridge-street-residential:outline-line-206-0-0",
+      "id": "layer-line_168",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(217, 217, 217, 1.0)",
-        "line-width": 0.529167,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 2,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "bridge-street-unclassified:outline-line-207-0-0",
+      "id": "layer-line_169",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(217, 217, 217, 1.0)",
-        "line-width": 0.529167,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 2,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "bridge-street-tertiary-link:outline-line-208-0-0",
+      "id": "layer-line_170",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(217, 217, 217, 1.0)",
-        "line-width": 0.529167,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 2,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "bridge-street-secondary-link:outline-line-209-0-0",
+      "id": "layer-line_171",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(175, 175, 175, 1.0)",
-        "line-width": 0.529167,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": 13,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 2,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "bridge-street-primary-link:outline-line-210-0-0",
+      "id": "layer-line_172",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(175, 175, 175, 1.0)",
-        "line-width": 0.529167,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": 13,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 2,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "bridge-street-trunk-link:outline-line-211-0-0",
+      "id": "layer-line_173",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(175, 175, 175, 1.0)",
-        "line-width": 0.529167,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": 13,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 2,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "bridge-street-motorway-link:outline-line-212-0-0",
+      "id": "layer-line_174",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(175, 175, 175, 1.0)",
-        "line-width": 0.529167,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": 12,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 2,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "bridge-street-tertiary:outline-line-213-0-0",
+      "id": "layer-line_175",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(217, 217, 217, 1.0)",
-        "line-width": 0.529167,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 2,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "bridge-street-secondary:outline-line-214-0-0",
+      "id": "layer-line_176",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(175, 175, 175, 1.0)",
-        "line-width": 0.529167,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 2,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "bridge-street-primary:outline-line-215-0-0",
+      "id": "layer-line_177",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(175, 175, 175, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "bridge-street-trunk:outline-line-216-0-0",
+      "id": "layer-line_178",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(175, 175, 175, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "bridge-street-motorway:outline-line-217-0-0",
+      "id": "layer-line_179",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(175, 175, 175, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "bridge-way-footway-line-218-0-0",
+      "id": "layer-line_180",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "rgba(245, 245, 245, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": 15,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "bridge-way-steps-line-219-0-0",
+      "id": "layer-line_181",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "rgba(245, 245, 245, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": 15,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "bridge-way-path-line-220-0-0",
+      "id": "layer-line_182",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "rgba(245, 245, 245, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": 15,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "bridge-way-cycleway-line-221-0-0",
+      "id": "layer-line_183",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "rgba(247, 247, 247, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": 15,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "bridge-street-track-line-222-0-0",
+      "id": "layer-line_184",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(255, 255, 255, 1.0)",
-        "line-width": 0.264583,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 1,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "bridge-street-pedestrian-line-223-0-0",
+      "id": "layer-line_185",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(255, 255, 255, 1.0)",
-        "line-width": 0.264583,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 1,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "bridge-street-service-line-224-0-0",
+      "id": "layer-line_186",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(247, 247, 247, 1.0)",
-        "line-width": 0.264583,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 1,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "bridge-street-livingstreet-line-225-0-0",
+      "id": "layer-line_187",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(255, 255, 255, 1.0)",
-        "line-width": 0.264583,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 1,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "bridge-street-residential-line-226-0-0",
+      "id": "layer-line_188",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(255, 255, 255, 1.0)",
-        "line-width": 0.264583,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 1,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "bridge-street-unclassified-line-227-0-0",
+      "id": "layer-line_189",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(255, 255, 255, 1.0)",
-        "line-width": 0.264583,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 1,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "bridge-street-track-bicycle-line-228-0-0",
+      "id": "layer-line_190",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(255, 255, 255, 1.0)",
-        "line-width": 0.264583,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 1,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "bridge-street-pedestrian-bicycle-line-229-0-0",
+      "id": "layer-line_191",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(247, 247, 247, 1.0)",
-        "line-width": 0.264583,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 1,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "bridge-street-service-bicycle-line-230-0-0",
+      "id": "layer-line_192",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(255, 255, 255, 1.0)",
-        "line-width": 0.264583,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 1,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "bridge-street-livingstreet-bicycle-line-231-0-0",
+      "id": "layer-line_193",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(247, 247, 247, 1.0)",
-        "line-width": 0.264583,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 1,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "bridge-street-residential-bicycle-line-232-0-0",
+      "id": "layer-line_194",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(247, 247, 247, 1.0)",
-        "line-width": 0.264583,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 1,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "bridge-street-unclassified-bicycle-line-233-0-0",
+      "id": "layer-line_195",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(247, 247, 247, 1.0)",
-        "line-width": 0.264583,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 1,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "bridge-street-tertiary-link-line-234-0-0",
+      "id": "layer-line_196",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(255, 255, 255, 1.0)",
-        "line-width": 0.264583,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 1,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "bridge-street-secondary-link-line-235-0-0",
+      "id": "layer-line_197",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(211, 211, 211, 1.0)",
-        "line-width": 0.264583,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": 13,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 1,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "bridge-street-primary-link-line-236-0-0",
+      "id": "layer-line_198",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(211, 211, 211, 1.0)",
-        "line-width": 0.264583,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": 13,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 1,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "bridge-street-trunk-link-line-237-0-0",
+      "id": "layer-line_199",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(211, 211, 211, 1.0)",
-        "line-width": 0.264583,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": 13,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 1,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "bridge-street-motorway-link-line-238-0-0",
+      "id": "layer-line_200",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(196, 196, 196, 1.0)",
-        "line-width": 0.264583,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": 12,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 1,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "bridge-street-tertiary-line-239-0-0",
+      "id": "layer-line_201",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(255, 255, 255, 1.0)",
-        "line-width": 0.264583,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 1,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "bridge-street-secondary-line-240-0-0",
+      "id": "layer-line_202",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(211, 211, 211, 1.0)",
-        "line-width": 0.264583,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 1,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "bridge-street-primary-line-241-0-0",
+      "id": "layer-line_203",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(211, 211, 211, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "bridge-street-trunk-line-242-0-0",
+      "id": "layer-line_204",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(211, 211, 211, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "bridge-street-motorway-line-243-0-0",
+      "id": "layer-line_205",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(196, 196, 196, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "bridge-transport-tram:outline-line-244-0-0",
+      "id": "layer-line_206",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "rgba(186, 186, 186, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          0.0,
-          0.0
-        ]
-      },
-      "minzoom": 15,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 1,
+        "line-dasharray": []
+      }
     },
     {
-      "id": "bridge-transport-narrowgauge:outline-line-245-0-0",
+      "id": "layer-line_207",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "rgba(186, 186, 186, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          0.0,
-          0.0
-        ]
-      },
-      "minzoom": 15,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 1,
+        "line-dasharray": []
+      }
     },
     {
-      "id": "bridge-transport-subway:outline-line-246-0-0",
+      "id": "layer-line_208",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "rgba(183, 183, 183, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "bridge-transport-lightrail:outline-line-247-0-0",
+      "id": "layer-line_209",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "rgba(186, 186, 186, 1.0)",
-        "line-width": 0.264583,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": 8,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 1,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "bridge-transport-lightrail-service:outline-line-248-0-0",
+      "id": "layer-line_210",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "rgba(186, 186, 186, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": 14,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "bridge-transport-rail:outline-line-249-0-0",
+      "id": "layer-line_211",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "rgba(186, 186, 186, 1.0)",
-        "line-width": 0.264583,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": 8,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 1,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "bridge-transport-rail-service:outline-line-250-0-0",
+      "id": "layer-line_212",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "rgba(186, 186, 186, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": 14,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "bridge-transport-monorail:outline-line-251-0-0",
+      "id": "layer-line_213",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "rgba(186, 186, 186, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          0.0,
-          0.0
-        ]
-      },
-      "minzoom": 15,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 1,
+        "line-dasharray": []
+      }
     },
     {
-      "id": "bridge-transport-funicular:outline-line-252-0-0",
+      "id": "layer-line_214",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "rgba(186, 186, 186, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          0.0,
-          0.0
-        ]
-      },
-      "minzoom": 15,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 1,
+        "line-dasharray": []
+      }
     },
     {
-      "id": "bridge-transport-tram-line-253-0-0",
+      "id": "layer-line_215",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "rgba(186, 186, 186, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": 13,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "bridge-transport-narrowgauge-line-254-0-0",
+      "id": "layer-line_216",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "rgba(186, 186, 186, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": 13,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "bridge-transport-subway-line-255-0-0",
+      "id": "layer-line_217",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "rgba(201, 201, 201, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          0.0,
-          0.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 1,
+        "line-dasharray": []
+      }
     },
     {
-      "id": "bridge-transport-lightrail-line-256-0-0",
+      "id": "layer-line_218",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "rgba(204, 204, 204, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          0.0,
-          0.0
-        ]
-      },
-      "minzoom": 14,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 1,
+        "line-dasharray": []
+      }
     },
     {
-      "id": "bridge-transport-lightrail-service-line-257-0-0",
+      "id": "layer-line_219",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "rgba(204, 204, 204, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          0.0,
-          0.0
-        ]
-      },
-      "minzoom": 15,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 1,
+        "line-dasharray": []
+      }
     },
     {
-      "id": "bridge-transport-rail-line-258-0-0",
+      "id": "layer-line_220",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "rgba(204, 204, 204, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          0.0,
-          0.0
-        ]
-      },
-      "minzoom": 14,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 1,
+        "line-dasharray": []
+      }
     },
     {
-      "id": "bridge-transport-rail-service-line-259-0-0",
+      "id": "layer-line_221",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "rgba(204, 204, 204, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          0.0,
-          0.0
-        ]
-      },
-      "minzoom": 15,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 1,
+        "line-dasharray": []
+      }
     },
     {
-      "id": "bridge-transport-monorail-line-260-0-0",
+      "id": "layer-line_222",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "rgba(186, 186, 186, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": 13,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "bridge-transport-funicular-line-261-0-0",
+      "id": "layer-line_223",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "streets",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "rgba(186, 186, 186, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": 13,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "poi-amenity-marker-262-0-0",
+      "id": "layer-marker",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "circle",
-      "source": "vector_source",
-      "source-layer": "pois",
       "paint": {
-        "circle-radius": -0.25
+        "circle-color": "#808080",
+        "circle-radius": -0.9,
+        "circle-opacity": 1
       },
-      "minzoom": 16,
-      "maxzoom": -1
+      "metadata": {
+        "qgis:original-class": "RasterMarker",
+        "qgis:note": "Converted to circle"
+      }
     },
     {
-      "id": "poi-leisure-marker-263-0-0",
+      "id": "layer-marker_2",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "circle",
-      "source": "vector_source",
-      "source-layer": "pois",
       "paint": {
-        "circle-radius": -0.25
+        "circle-color": "#808080",
+        "circle-radius": -0.9,
+        "circle-opacity": 1
       },
-      "minzoom": 16,
-      "maxzoom": -1
+      "metadata": {
+        "qgis:original-class": "RasterMarker",
+        "qgis:note": "Converted to circle"
+      }
     },
     {
-      "id": "poi-tourism-marker-264-0-0",
+      "id": "layer-marker_3",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "circle",
-      "source": "vector_source",
-      "source-layer": "pois",
       "paint": {
-        "circle-radius": -0.25
+        "circle-color": "#808080",
+        "circle-radius": -0.9,
+        "circle-opacity": 1
       },
-      "minzoom": 16,
-      "maxzoom": -1
+      "metadata": {
+        "qgis:original-class": "RasterMarker",
+        "qgis:note": "Converted to circle"
+      }
     },
     {
-      "id": "poi-shop-marker-265-0-0",
+      "id": "layer-marker_4",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "circle",
-      "source": "vector_source",
-      "source-layer": "pois",
       "paint": {
-        "circle-radius": -0.25
+        "circle-color": "#808080",
+        "circle-radius": -0.9,
+        "circle-opacity": 1
       },
-      "minzoom": 16,
-      "maxzoom": -1
+      "metadata": {
+        "qgis:original-class": "RasterMarker",
+        "qgis:note": "Converted to circle"
+      }
     },
     {
-      "id": "poi-man_made-marker-266-0-0",
+      "id": "layer-marker_5",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "circle",
-      "source": "vector_source",
-      "source-layer": "pois",
       "paint": {
-        "circle-radius": -0.25
+        "circle-color": "#808080",
+        "circle-radius": -0.9,
+        "circle-opacity": 1
       },
-      "minzoom": 16,
-      "maxzoom": -1
+      "metadata": {
+        "qgis:original-class": "RasterMarker",
+        "qgis:note": "Converted to circle"
+      }
     },
     {
-      "id": "poi-historic-marker-267-0-0",
+      "id": "layer-marker_6",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "circle",
-      "source": "vector_source",
-      "source-layer": "pois",
       "paint": {
-        "circle-radius": -0.25
+        "circle-color": "#808080",
+        "circle-radius": -0.9,
+        "circle-opacity": 1
       },
-      "minzoom": 16,
-      "maxzoom": -1
+      "metadata": {
+        "qgis:original-class": "RasterMarker",
+        "qgis:note": "Converted to circle"
+      }
     },
     {
-      "id": "poi-emergency-marker-268-0-0",
+      "id": "layer-marker_7",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "circle",
-      "source": "vector_source",
-      "source-layer": "pois",
       "paint": {
-        "circle-radius": -0.25
+        "circle-color": "#808080",
+        "circle-radius": -0.9,
+        "circle-opacity": 1
       },
-      "minzoom": 16,
-      "maxzoom": -1
+      "metadata": {
+        "qgis:original-class": "RasterMarker",
+        "qgis:note": "Converted to circle"
+      }
     },
     {
-      "id": "boundary-country:outline-line-269-0-0",
+      "id": "layer-line_224",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "boundaries",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(244, 244, 244, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 0.75
+      }
     },
     {
-      "id": "boundary-country-disputed:outline-line-270-0-0",
+      "id": "layer-line_225",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "boundaries",
       "layout": {
-        "line-cap": "butt",
+        "line-cap": "flat",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "rgba(244, 244, 244, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 0.75
+      }
     },
     {
-      "id": "boundary-state:outline-line-271-0-0",
+      "id": "layer-line_226",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "boundaries",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(245, 245, 245, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 0.75
+      }
     },
     {
-      "id": "boundary-country-line-272-0-0",
+      "id": "layer-line_227",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "boundaries",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(183, 183, 183, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          5.0,
-          2.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 1
+      }
     },
     {
-      "id": "boundary-country-disputed-line-273-0-0",
+      "id": "layer-line_228",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "boundaries",
       "layout": {
         "line-cap": "square",
         "line-join": "miter"
       },
       "paint": {
-        "line-color": "rgba(196, 196, 196, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          0.0,
-          0.0
-        ]
-      },
-      "minzoom": -1,
-      "maxzoom": -1
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 1,
+        "line-dasharray": []
+      }
     },
     {
-      "id": "boundary-state-line-274-0-0",
+      "id": "layer-line_229",
+      "source": "vector_tiles",
+      "source-layer": "layer",
       "type": "line",
-      "source": "vector_source",
-      "source-layer": "boundaries",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "rgba(183, 183, 183, 1.0)",
-        "line-width": 0.0,
-        "line-dasharray": [
-          5.0,
-          2.0
+        "line-color": "#888888",
+        "line-width": 0,
+        "line-opacity": 1
+      }
+    },
+    {
+      "id": "layer-line_230-path",
+      "source": "vector_tiles",
+      "source-layer": "layer",
+      "type": "line",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#888888",
+        "line-width": 1,
+        "line-opacity": 0.4
+      },
+      "metadata": {
+        "qgis:original-class": "MarkerLine",
+        "qgis:note": "Path stroke from MarkerLine"
+      }
+    },
+    {
+      "id": "layer-line_230-sym",
+      "source": "vector_tiles",
+      "source-layer": "layer",
+      "type": "symbol",
+      "layout": {
+        "symbol-placement": "line",
+        "symbol-spacing": 175,
+        "icon-allow-overlap": true,
+        "text-allow-overlap": true,
+        "text-field": "·",
+        "text-size": 7.6,
+        "text-font": [
+          "Open Sans Regular"
         ]
       },
-      "minzoom": -1,
-      "maxzoom": -1
+      "paint": {
+        "text-color": "#888888",
+        "text-opacity": 1
+      },
+      "metadata": {
+        "qgis:original-class": "MarkerLine",
+        "qgis:note": "Dot markers along line"
+      }
     },
     {
-      "id": "marking-oneway-marker-275-1-0",
-      "type": "circle",
-      "source": "vector_source",
-      "source-layer": "streets",
-      "paint": {
-        "circle-radius": 2.0
+      "id": "layer-line_231-path",
+      "source": "vector_tiles",
+      "source-layer": "layer",
+      "type": "line",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
       },
-      "minzoom": 16,
-      "maxzoom": -1
+      "paint": {
+        "line-color": "#888888",
+        "line-width": 1,
+        "line-opacity": 0.4
+      },
+      "metadata": {
+        "qgis:original-class": "MarkerLine",
+        "qgis:note": "Path stroke from MarkerLine"
+      }
     },
     {
-      "id": "marking-oneway-reverse-marker-276-1-0",
-      "type": "circle",
-      "source": "vector_source",
-      "source-layer": "streets",
-      "paint": {
-        "circle-radius": 2.0
+      "id": "layer-line_231-sym",
+      "source": "vector_tiles",
+      "source-layer": "layer",
+      "type": "symbol",
+      "layout": {
+        "symbol-placement": "line",
+        "symbol-spacing": 75,
+        "icon-allow-overlap": true,
+        "text-allow-overlap": true,
+        "text-field": "·",
+        "text-size": 7.6,
+        "text-font": [
+          "Open Sans Regular"
+        ]
       },
-      "minzoom": 16,
-      "maxzoom": -1
+      "paint": {
+        "text-color": "#888888",
+        "text-opacity": 1
+      },
+      "metadata": {
+        "qgis:original-class": "MarkerLine",
+        "qgis:note": "Dot markers along line"
+      }
     }
   ]
 }
