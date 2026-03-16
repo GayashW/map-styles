@@ -12,11 +12,179 @@
       "id": "background_fill",
       "type": "background",
       "paint": {
-        "background-color": "#eaeaea"
+        "background-color": "#efefef"
       }
     },
     {
-      "id": "ocean_fill",
+      "id": "site-school_fill",
+      "source": "openmaptiles",
+      "source-layer": "sites",
+      "filter": [
+        "==",
+        [
+          "get",
+          "kind"
+        ],
+        "school"
+      ],
+      "type": "fill",
+      "paint": {
+        "fill-color": "rgba(237,171,193,0.9961)",
+        "fill-opacity": 0.9961,
+        "fill-outline-color": "#bfbfbf"
+      }
+    },
+    {
+      "id": "site-dangerarea_fill",
+      "source": "openmaptiles",
+      "source-layer": "sites",
+      "filter": [
+        "==",
+        [
+          "get",
+          "kind"
+        ],
+        "danger_area"
+      ],
+      "type": "fill",
+      "paint": {
+        "fill-color": "rgba(0,0,0,0)",
+        "fill-opacity": 0
+      }
+    },
+    {
+      "id": "site-university_fill",
+      "source": "openmaptiles",
+      "source-layer": "sites",
+      "filter": [
+        "==",
+        [
+          "get",
+          "kind"
+        ],
+        "university"
+      ],
+      "type": "fill",
+      "paint": {
+        "fill-color": "#bfbfbf",
+        "fill-opacity": 0.1,
+        "fill-outline-color": "#bfbfbf"
+      }
+    },
+    {
+      "id": "site-college_fill",
+      "source": "openmaptiles",
+      "source-layer": "sites",
+      "filter": [
+        "==",
+        [
+          "get",
+          "kind"
+        ],
+        "college"
+      ],
+      "type": "fill",
+      "paint": {
+        "fill-color": "#bfbfbf",
+        "fill-opacity": 0.1,
+        "fill-outline-color": "#bfbfbf"
+      }
+    },
+    {
+      "id": "site-hospital_fill",
+      "source": "openmaptiles",
+      "source-layer": "sites",
+      "filter": [
+        "==",
+        [
+          "get",
+          "kind"
+        ],
+        "hospital"
+      ],
+      "type": "fill",
+      "paint": {
+        "fill-color": "#f17d7d",
+        "fill-opacity": 0.794,
+        "fill-outline-color": "#b2b2b2"
+      }
+    },
+    {
+      "id": "site-prison_fill",
+      "source": "openmaptiles",
+      "source-layer": "sites",
+      "filter": [
+        "==",
+        [
+          "get",
+          "kind"
+        ],
+        "prison"
+      ],
+      "type": "fill",
+      "paint": {
+        "fill-color": "rgba(0,0,0,0)",
+        "fill-opacity": 0
+      }
+    },
+    {
+      "id": "site-parking_fill",
+      "source": "openmaptiles",
+      "source-layer": "sites",
+      "filter": [
+        "==",
+        [
+          "get",
+          "kind"
+        ],
+        "parking"
+      ],
+      "type": "fill",
+      "paint": {
+        "fill-color": "#e8e8e8",
+        "fill-opacity": 1,
+        "fill-outline-color": "#e8e8e8"
+      }
+    },
+    {
+      "id": "site-bicycleparking_fill",
+      "source": "openmaptiles",
+      "source-layer": "sites",
+      "filter": [
+        "==",
+        [
+          "get",
+          "kind"
+        ],
+        "bicycle_parking"
+      ],
+      "type": "fill",
+      "paint": {
+        "fill-color": "#e8e8e8",
+        "fill-opacity": 1,
+        "fill-outline-color": "#e8e8e8"
+      }
+    },
+    {
+      "id": "site-construction_fill",
+      "source": "openmaptiles",
+      "source-layer": "sites",
+      "filter": [
+        "==",
+        [
+          "get",
+          "kind"
+        ],
+        "construction"
+      ],
+      "type": "fill",
+      "paint": {
+        "fill-color": "rgba(0,0,0,0)",
+        "fill-opacity": 0
+      }
+    },
+    {
+      "id": "water-ocean_fill",
       "source": "openmaptiles",
       "source-layer": "ocean",
       "type": "fill",
@@ -27,7 +195,7 @@
       }
     },
     {
-      "id": "water_polygons_fill",
+      "id": "land-glacier_fill",
       "source": "openmaptiles",
       "source-layer": "water_polygons",
       "type": "fill",
@@ -38,17 +206,7 @@
       }
     },
     {
-      "id": "land_fill",
-      "source": "openmaptiles",
-      "source-layer": "land",
-      "type": "fill",
-      "paint": {
-        "fill-color": "rgba(234,234,234,0.251)",
-        "fill-opacity": 0.251
-      }
-    },
-    {
-      "id": "land_fill_2",
+      "id": "land-industrial_fill",
       "source": "openmaptiles",
       "source-layer": "land",
       "type": "fill",
@@ -58,7 +216,7 @@
       }
     },
     {
-      "id": "land_fill_3",
+      "id": "land-residential_fill",
       "source": "openmaptiles",
       "source-layer": "land",
       "type": "fill",
@@ -68,18 +226,18 @@
       }
     },
     {
-      "id": "land_fill_4",
+      "id": "land-agriculture_fill",
       "source": "openmaptiles",
       "source-layer": "land",
       "type": "fill",
       "paint": {
-        "fill-color": "#e0e0e0",
+        "fill-color": "#e2e0bd",
         "fill-opacity": 1,
         "fill-outline-color": "#e0e0e0"
       }
     },
     {
-      "id": "land_fill_5",
+      "id": "land-waste_fill",
       "source": "openmaptiles",
       "source-layer": "land",
       "type": "fill",
@@ -90,18 +248,18 @@
       }
     },
     {
-      "id": "land_fill_6",
+      "id": "land-park_fill",
       "source": "openmaptiles",
       "source-layer": "land",
       "type": "fill",
       "paint": {
-        "fill-color": "#bfbfbf",
+        "fill-color": "#d0dc94",
         "fill-opacity": 1,
         "fill-outline-color": "#bfbfbf"
       }
     },
     {
-      "id": "land_fill_7",
+      "id": "land-garden_fill",
       "source": "openmaptiles",
       "source-layer": "land",
       "type": "fill",
@@ -112,29 +270,29 @@
       }
     },
     {
-      "id": "land_fill_8",
+      "id": "land-burial_fill",
       "source": "openmaptiles",
       "source-layer": "land",
       "type": "fill",
       "paint": {
         "fill-color": "#d3d3d3",
         "fill-opacity": 1,
-        "fill-outline-color": "#d3d3d3"
+        "fill-outline-color": "#d5d5d5"
       }
     },
     {
-      "id": "land_fill_9",
+      "id": "land-leisure_fill",
       "source": "openmaptiles",
       "source-layer": "land",
       "type": "fill",
       "paint": {
-        "fill-color": "#e5e5e5",
+        "fill-color": "#d8e8c8",
         "fill-opacity": 1,
         "fill-outline-color": "#e5e5e5"
       }
     },
     {
-      "id": "land_fill_10",
+      "id": "land-rock_fill",
       "source": "openmaptiles",
       "source-layer": "land",
       "type": "fill",
@@ -145,7 +303,7 @@
       }
     },
     {
-      "id": "land_fill_11",
+      "id": "land-forest_fill",
       "source": "openmaptiles",
       "source-layer": "land",
       "type": "fill",
@@ -155,7 +313,7 @@
       }
     },
     {
-      "id": "land_fill_12",
+      "id": "land-grass_fill",
       "source": "openmaptiles",
       "source-layer": "land",
       "type": "fill",
@@ -166,7 +324,7 @@
       }
     },
     {
-      "id": "land_fill_13",
+      "id": "land-vegetation_fill",
       "source": "openmaptiles",
       "source-layer": "land",
       "type": "fill",
@@ -176,7 +334,7 @@
       }
     },
     {
-      "id": "land_fill_14",
+      "id": "land-sand_fill",
       "source": "openmaptiles",
       "source-layer": "land",
       "type": "fill",
@@ -187,18 +345,18 @@
       }
     },
     {
-      "id": "land_fill_15",
+      "id": "land-wetland_fill",
       "source": "openmaptiles",
       "source-layer": "land",
       "type": "fill",
       "paint": {
-        "fill-color": "#dbdbdb",
+        "fill-color": "#8cb1a3",
         "fill-opacity": 1,
         "fill-outline-color": "#dbdbdb"
       }
     },
     {
-      "id": "water_lines_line",
+      "id": "water-river_line",
       "source": "openmaptiles",
       "source-layer": "water_lines",
       "type": "line",
@@ -207,7 +365,7 @@
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#d8d8d8",
+        "line-color": "#61aab1",
         "line-width": 0,
         "line-opacity": 1,
         "line-dasharray": [
@@ -217,7 +375,7 @@
       }
     },
     {
-      "id": "water_lines_line_2",
+      "id": "water-canal_line",
       "source": "openmaptiles",
       "source-layer": "water_lines",
       "type": "line",
@@ -226,7 +384,7 @@
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#d8d8d8",
+        "line-color": "#61aab1",
         "line-width": 0,
         "line-opacity": 1,
         "line-dasharray": [
@@ -236,7 +394,7 @@
       }
     },
     {
-      "id": "water_lines_line_3",
+      "id": "water-stream_line",
       "source": "openmaptiles",
       "source-layer": "water_lines",
       "type": "line",
@@ -245,7 +403,7 @@
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#d8d8d8",
+        "line-color": "#61aab1",
         "line-width": 0,
         "line-opacity": 1,
         "line-dasharray": [
@@ -255,7 +413,7 @@
       }
     },
     {
-      "id": "water_lines_line_4",
+      "id": "water-ditch_line",
       "source": "openmaptiles",
       "source-layer": "water_lines",
       "type": "line",
@@ -264,7 +422,7 @@
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#d8d8d8",
+        "line-color": "#61aab1",
         "line-width": 0,
         "line-opacity": 1,
         "line-dasharray": [
@@ -274,7 +432,7 @@
       }
     },
     {
-      "id": "water_polygons_fill_2",
+      "id": "water-area_fill",
       "source": "openmaptiles",
       "source-layer": "water_polygons",
       "type": "fill",
@@ -285,7 +443,7 @@
       }
     },
     {
-      "id": "water_polygons_fill_3",
+      "id": "water-area-river_fill",
       "source": "openmaptiles",
       "source-layer": "water_polygons",
       "type": "fill",
@@ -296,9 +454,19 @@
       }
     },
     {
-      "id": "water_polygons_fill_4",
+      "id": "water-area-small_fill",
       "source": "openmaptiles",
       "source-layer": "water_polygons",
+      "filter": [
+        "in",
+        [
+          "get",
+          "kind"
+        ],
+        "reservoir",
+        "basin",
+        "dock"
+      ],
       "type": "fill",
       "paint": {
         "fill-color": "#61aab1",
@@ -307,7 +475,7 @@
       }
     },
     {
-      "id": "dam_polygons_fill",
+      "id": "water-dam-area_fill",
       "source": "openmaptiles",
       "source-layer": "dam_polygons",
       "type": "fill",
@@ -318,7 +486,7 @@
       }
     },
     {
-      "id": "dam_lines_line",
+      "id": "water-dam_line",
       "source": "openmaptiles",
       "source-layer": "dam_lines",
       "type": "line",
@@ -337,9 +505,19 @@
       }
     },
     {
-      "id": "pier_polygons_fill",
+      "id": "water-pier-area_fill",
       "source": "openmaptiles",
       "source-layer": "pier_polygons",
+      "filter": [
+        "in",
+        [
+          "get",
+          "kind"
+        ],
+        "pier",
+        "breakwater",
+        "groyne"
+      ],
       "type": "fill",
       "paint": {
         "fill-color": "#f2f2f2",
@@ -348,9 +526,19 @@
       }
     },
     {
-      "id": "pier_lines_line",
+      "id": "water-pier_line",
       "source": "openmaptiles",
       "source-layer": "pier_lines",
+      "filter": [
+        "in",
+        [
+          "get",
+          "kind"
+        ],
+        "pier",
+        "breakwater",
+        "groyne"
+      ],
       "type": "line",
       "layout": {
         "line-cap": "round",
@@ -367,105 +555,18 @@
       }
     },
     {
-      "id": "sites_fill",
-      "source": "openmaptiles",
-      "source-layer": "sites",
-      "type": "fill",
-      "paint": {
-        "fill-color": "rgba(0,0,0,0)",
-        "fill-opacity": 0
-      }
-    },
-    {
-      "id": "sites_fill_2",
-      "source": "openmaptiles",
-      "source-layer": "sites",
-      "type": "fill",
-      "paint": {
-        "fill-color": "#bfbfbf",
-        "fill-opacity": 0.1,
-        "fill-outline-color": "#bfbfbf"
-      }
-    },
-    {
-      "id": "sites_fill_3",
-      "source": "openmaptiles",
-      "source-layer": "sites",
-      "type": "fill",
-      "paint": {
-        "fill-color": "#bfbfbf",
-        "fill-opacity": 0.1,
-        "fill-outline-color": "#bfbfbf"
-      }
-    },
-    {
-      "id": "sites_fill_4",
-      "source": "openmaptiles",
-      "source-layer": "sites",
-      "type": "fill",
-      "paint": {
-        "fill-color": "#bfbfbf",
-        "fill-opacity": 0.1,
-        "fill-outline-color": "#bfbfbf"
-      }
-    },
-    {
-      "id": "sites_fill_5",
-      "source": "openmaptiles",
-      "source-layer": "sites",
-      "type": "fill",
-      "paint": {
-        "fill-color": "#b2b2b2",
-        "fill-opacity": 0.1,
-        "fill-outline-color": "#b2b2b2"
-      }
-    },
-    {
-      "id": "sites_fill_6",
-      "source": "openmaptiles",
-      "source-layer": "sites",
-      "type": "fill",
-      "paint": {
-        "fill-color": "rgba(0,0,0,0)",
-        "fill-opacity": 0
-      }
-    },
-    {
-      "id": "sites_fill_7",
-      "source": "openmaptiles",
-      "source-layer": "sites",
-      "type": "fill",
-      "paint": {
-        "fill-color": "#e8e8e8",
-        "fill-opacity": 1,
-        "fill-outline-color": "#e8e8e8"
-      }
-    },
-    {
-      "id": "sites_fill_8",
-      "source": "openmaptiles",
-      "source-layer": "sites",
-      "type": "fill",
-      "paint": {
-        "fill-color": "#e8e8e8",
-        "fill-opacity": 1,
-        "fill-outline-color": "#e8e8e8"
-      }
-    },
-    {
-      "id": "sites_fill_9",
-      "source": "openmaptiles",
-      "source-layer": "sites",
-      "type": "fill",
-      "paint": {
-        "fill-color": "rgba(0,0,0,0)",
-        "fill-opacity": 0
-      }
-    },
-    {
-      "id": "street_polygons_fill",
+      "id": "airport-area_fill",
       "source": "openmaptiles",
       "source-layer": "street_polygons",
+      "filter": [
+        "in",
+        [
+          "get",
+          "kind"
+        ],
+        "runway",
+        "taxiway"
+      ],
       "type": "fill",
       "paint": {
         "fill-color": "#ffffff",
@@ -474,7 +575,7 @@
       }
     },
     {
-      "id": "streets_line",
+      "id": "airport-taxiway_outline_line",
       "source": "openmaptiles",
       "source-layer": "streets",
       "type": "line",
@@ -493,7 +594,7 @@
       }
     },
     {
-      "id": "streets_line_2",
+      "id": "airport-runway_outline_line",
       "source": "openmaptiles",
       "source-layer": "streets",
       "type": "line",
@@ -512,7 +613,7 @@
       }
     },
     {
-      "id": "streets_line_3",
+      "id": "airport-taxiway_line",
       "source": "openmaptiles",
       "source-layer": "streets",
       "type": "line",
@@ -531,7 +632,7 @@
       }
     },
     {
-      "id": "streets_line_4",
+      "id": "airport-runway_line",
       "source": "openmaptiles",
       "source-layer": "streets",
       "type": "line",
@@ -550,7 +651,7 @@
       }
     },
     {
-      "id": "buildings_fill",
+      "id": "building_outline_fill",
       "source": "openmaptiles",
       "source-layer": "buildings",
       "type": "fill",
@@ -561,7 +662,7 @@
       }
     },
     {
-      "id": "buildings_fill_2",
+      "id": "building_fill",
       "source": "openmaptiles",
       "source-layer": "buildings",
       "type": "fill",
@@ -572,7 +673,7 @@
       }
     },
     {
-      "id": "street_polygons_fill_2",
+      "id": "tunnel-street-pedestrian-zone_fill",
       "source": "openmaptiles",
       "source-layer": "street_polygons",
       "type": "fill",
@@ -583,9 +684,10 @@
       }
     },
     {
-      "id": "streets_line_5",
+      "id": "tunnel-way-footway_line",
       "source": "openmaptiles",
       "source-layer": "streets",
+      "minzoom": 15,
       "type": "line",
       "layout": {
         "line-cap": "round",
@@ -598,9 +700,10 @@
       }
     },
     {
-      "id": "streets_line_6",
+      "id": "tunnel-way-steps_line",
       "source": "openmaptiles",
       "source-layer": "streets",
+      "minzoom": 15,
       "type": "line",
       "layout": {
         "line-cap": "round",
@@ -613,9 +716,10 @@
       }
     },
     {
-      "id": "streets_line_7",
+      "id": "tunnel-way-path_line",
       "source": "openmaptiles",
       "source-layer": "streets",
+      "minzoom": 15,
       "type": "line",
       "layout": {
         "line-cap": "round",
@@ -628,9 +732,10 @@
       }
     },
     {
-      "id": "streets_line_8",
+      "id": "tunnel-way-cycleway_line",
       "source": "openmaptiles",
       "source-layer": "streets",
+      "minzoom": 15,
       "type": "line",
       "layout": {
         "line-cap": "round",
@@ -643,7 +748,7 @@
       }
     },
     {
-      "id": "streets_line_9",
+      "id": "tunnel-street-track_line",
       "source": "openmaptiles",
       "source-layer": "streets",
       "type": "line",
@@ -662,7 +767,7 @@
       }
     },
     {
-      "id": "streets_line_10",
+      "id": "tunnel-street-pedestrian_line",
       "source": "openmaptiles",
       "source-layer": "streets",
       "type": "line",
@@ -681,7 +786,7 @@
       }
     },
     {
-      "id": "streets_line_11",
+      "id": "tunnel-street-service_line",
       "source": "openmaptiles",
       "source-layer": "streets",
       "type": "line",
@@ -700,7 +805,7 @@
       }
     },
     {
-      "id": "streets_line_12",
+      "id": "tunnel-street-livingstreet_line",
       "source": "openmaptiles",
       "source-layer": "streets",
       "type": "line",
@@ -719,7 +824,7 @@
       }
     },
     {
-      "id": "streets_line_13",
+      "id": "tunnel-street-residential_line",
       "source": "openmaptiles",
       "source-layer": "streets",
       "type": "line",
@@ -738,7 +843,7 @@
       }
     },
     {
-      "id": "streets_line_14",
+      "id": "tunnel-street-unclassified_line",
       "source": "openmaptiles",
       "source-layer": "streets",
       "type": "line",
@@ -757,7 +862,7 @@
       }
     },
     {
-      "id": "streets_line_15",
+      "id": "tunnel-street-track-bicycle_line",
       "source": "openmaptiles",
       "source-layer": "streets",
       "type": "line",
@@ -776,7 +881,7 @@
       }
     },
     {
-      "id": "streets_line_16",
+      "id": "tunnel-street-pedestrian-bicycle_line",
       "source": "openmaptiles",
       "source-layer": "streets",
       "type": "line",
@@ -795,7 +900,7 @@
       }
     },
     {
-      "id": "streets_line_17",
+      "id": "tunnel-street-service-bicycle_line",
       "source": "openmaptiles",
       "source-layer": "streets",
       "type": "line",
@@ -814,7 +919,7 @@
       }
     },
     {
-      "id": "streets_line_18",
+      "id": "tunnel-street-livingstreet-bicycle_line",
       "source": "openmaptiles",
       "source-layer": "streets",
       "type": "line",
@@ -833,7 +938,7 @@
       }
     },
     {
-      "id": "streets_line_19",
+      "id": "tunnel-street-residential-bicycle_line",
       "source": "openmaptiles",
       "source-layer": "streets",
       "type": "line",
@@ -852,7 +957,7 @@
       }
     },
     {
-      "id": "streets_line_20",
+      "id": "tunnel-street-unclassified-bicycle_line",
       "source": "openmaptiles",
       "source-layer": "streets",
       "type": "line",
@@ -871,7 +976,7 @@
       }
     },
     {
-      "id": "streets_line_21",
+      "id": "tunnel-street-tertiary-link_line",
       "source": "openmaptiles",
       "source-layer": "streets",
       "type": "line",
@@ -890,9 +995,10 @@
       }
     },
     {
-      "id": "streets_line_22",
+      "id": "tunnel-street-secondary-link_line",
       "source": "openmaptiles",
       "source-layer": "streets",
+      "minzoom": 13,
       "type": "line",
       "layout": {
         "line-cap": "butt",
@@ -909,9 +1015,10 @@
       }
     },
     {
-      "id": "streets_line_23",
+      "id": "tunnel-street-primary-link_line",
       "source": "openmaptiles",
       "source-layer": "streets",
+      "minzoom": 13,
       "type": "line",
       "layout": {
         "line-cap": "butt",
@@ -928,9 +1035,10 @@
       }
     },
     {
-      "id": "streets_line_24",
+      "id": "tunnel-street-trunk-link_line",
       "source": "openmaptiles",
       "source-layer": "streets",
+      "minzoom": 13,
       "type": "line",
       "layout": {
         "line-cap": "butt",
@@ -947,9 +1055,10 @@
       }
     },
     {
-      "id": "streets_line_25",
+      "id": "tunnel-street-motorway-link_line",
       "source": "openmaptiles",
       "source-layer": "streets",
+      "minzoom": 12,
       "type": "line",
       "layout": {
         "line-cap": "butt",
@@ -966,7 +1075,7 @@
       }
     },
     {
-      "id": "streets_line_26",
+      "id": "tunnel-street-tertiary_line",
       "source": "openmaptiles",
       "source-layer": "streets",
       "type": "line",
@@ -985,7 +1094,7 @@
       }
     },
     {
-      "id": "streets_line_27",
+      "id": "tunnel-street-secondary_line",
       "source": "openmaptiles",
       "source-layer": "streets",
       "type": "line",
@@ -1004,7 +1113,7 @@
       }
     },
     {
-      "id": "streets_line_28",
+      "id": "tunnel-street-primary_line",
       "source": "openmaptiles",
       "source-layer": "streets",
       "type": "line",
@@ -1023,7 +1132,7 @@
       }
     },
     {
-      "id": "streets_line_29",
+      "id": "tunnel-street-trunk_line",
       "source": "openmaptiles",
       "source-layer": "streets",
       "type": "line",
@@ -1042,7 +1151,7 @@
       }
     },
     {
-      "id": "streets_line_30",
+      "id": "tunnel-street-motorway_line",
       "source": "openmaptiles",
       "source-layer": "streets",
       "type": "line",
@@ -1061,9 +1170,10 @@
       }
     },
     {
-      "id": "streets_line_31",
+      "id": "tunnel-transport-tram_line",
       "source": "openmaptiles",
       "source-layer": "streets",
+      "minzoom": 13,
       "type": "line",
       "layout": {
         "line-cap": "butt",
@@ -1080,9 +1190,10 @@
       }
     },
     {
-      "id": "streets_line_32",
+      "id": "tunnel-transport-narrowgauge_line",
       "source": "openmaptiles",
       "source-layer": "streets",
+      "minzoom": 13,
       "type": "line",
       "layout": {
         "line-cap": "butt",
@@ -1099,7 +1210,7 @@
       }
     },
     {
-      "id": "streets_line_33",
+      "id": "tunnel-transport-subway_line",
       "source": "openmaptiles",
       "source-layer": "streets",
       "type": "line",
@@ -1114,9 +1225,10 @@
       }
     },
     {
-      "id": "streets_line_34",
+      "id": "tunnel-transport-lightrail_line",
       "source": "openmaptiles",
       "source-layer": "streets",
+      "minzoom": 14,
       "type": "line",
       "layout": {
         "line-cap": "butt",
@@ -1129,9 +1241,10 @@
       }
     },
     {
-      "id": "streets_line_35",
+      "id": "tunnel-transport-lightrail-service_line",
       "source": "openmaptiles",
       "source-layer": "streets",
+      "minzoom": 15,
       "type": "line",
       "layout": {
         "line-cap": "butt",
@@ -1144,9 +1257,10 @@
       }
     },
     {
-      "id": "streets_line_36",
+      "id": "tunnel-transport-rail_line",
       "source": "openmaptiles",
       "source-layer": "streets",
+      "minzoom": 14,
       "type": "line",
       "layout": {
         "line-cap": "butt",
@@ -1159,9 +1273,10 @@
       }
     },
     {
-      "id": "streets_line_37",
+      "id": "tunnel-transport-rail-service_line",
       "source": "openmaptiles",
       "source-layer": "streets",
+      "minzoom": 15,
       "type": "line",
       "layout": {
         "line-cap": "butt",
@@ -1174,9 +1289,10 @@
       }
     },
     {
-      "id": "streets_line_38",
+      "id": "tunnel-transport-funicular_line",
       "source": "openmaptiles",
       "source-layer": "streets",
+      "minzoom": 13,
       "type": "line",
       "layout": {
         "line-cap": "butt",
@@ -1193,26 +1309,7 @@
       }
     },
     {
-      "id": "streets_line_39",
-      "source": "openmaptiles",
-      "source-layer": "streets",
-      "type": "line",
-      "layout": {
-        "line-cap": "butt",
-        "line-join": "miter"
-      },
-      "paint": {
-        "line-color": "#bababa",
-        "line-width": 0,
-        "line-opacity": 1,
-        "line-dasharray": [
-          5,
-          2
-        ]
-      }
-    },
-    {
-      "id": "bridges_fill",
+      "id": "bridge_fill",
       "source": "openmaptiles",
       "source-layer": "bridges",
       "type": "fill",
@@ -1223,7 +1320,7 @@
       }
     },
     {
-      "id": "street_polygons_fill_3",
+      "id": "street-pedestrian-zone_fill",
       "source": "openmaptiles",
       "source-layer": "street_polygons",
       "type": "fill",
@@ -1233,9 +1330,10 @@
       }
     },
     {
-      "id": "streets_line_40",
+      "id": "way-footway_line",
       "source": "openmaptiles",
       "source-layer": "streets",
+      "minzoom": 15,
       "type": "line",
       "layout": {
         "line-cap": "round",
@@ -1252,9 +1350,10 @@
       }
     },
     {
-      "id": "streets_line_41",
+      "id": "way-steps_line",
       "source": "openmaptiles",
       "source-layer": "streets",
+      "minzoom": 15,
       "type": "line",
       "layout": {
         "line-cap": "round",
@@ -1271,9 +1370,10 @@
       }
     },
     {
-      "id": "streets_line_42",
+      "id": "way-path_line",
       "source": "openmaptiles",
       "source-layer": "streets",
+      "minzoom": 15,
       "type": "line",
       "layout": {
         "line-cap": "round",
@@ -1290,9 +1390,10 @@
       }
     },
     {
-      "id": "streets_line_43",
+      "id": "way-cycleway_line",
       "source": "openmaptiles",
       "source-layer": "streets",
+      "minzoom": 15,
       "type": "line",
       "layout": {
         "line-cap": "round",
@@ -1309,7 +1410,7 @@
       }
     },
     {
-      "id": "streets_line_44",
+      "id": "street-track_line",
       "source": "openmaptiles",
       "source-layer": "streets",
       "type": "line",
@@ -1328,7 +1429,7 @@
       }
     },
     {
-      "id": "streets_line_45",
+      "id": "street-pedestrian_line",
       "source": "openmaptiles",
       "source-layer": "streets",
       "type": "line",
@@ -1347,7 +1448,7 @@
       }
     },
     {
-      "id": "streets_line_46",
+      "id": "street-service_line",
       "source": "openmaptiles",
       "source-layer": "streets",
       "type": "line",
@@ -1366,7 +1467,7 @@
       }
     },
     {
-      "id": "streets_line_47",
+      "id": "street-livingstreet_line",
       "source": "openmaptiles",
       "source-layer": "streets",
       "type": "line",
@@ -1385,7 +1486,7 @@
       }
     },
     {
-      "id": "streets_line_48",
+      "id": "street-residential_line",
       "source": "openmaptiles",
       "source-layer": "streets",
       "type": "line",
@@ -1404,7 +1505,7 @@
       }
     },
     {
-      "id": "streets_line_49",
+      "id": "street-unclassified_line",
       "source": "openmaptiles",
       "source-layer": "streets",
       "type": "line",
@@ -1423,7 +1524,7 @@
       }
     },
     {
-      "id": "streets_line_50",
+      "id": "street-track-bicycle_line",
       "source": "openmaptiles",
       "source-layer": "streets",
       "type": "line",
@@ -1442,7 +1543,7 @@
       }
     },
     {
-      "id": "streets_line_51",
+      "id": "street-pedestrian-bicycle_line",
       "source": "openmaptiles",
       "source-layer": "streets",
       "type": "line",
@@ -1461,7 +1562,7 @@
       }
     },
     {
-      "id": "streets_line_52",
+      "id": "street-service-bicycle_line",
       "source": "openmaptiles",
       "source-layer": "streets",
       "type": "line",
@@ -1480,7 +1581,7 @@
       }
     },
     {
-      "id": "streets_line_53",
+      "id": "street-livingstreet-bicycle_line",
       "source": "openmaptiles",
       "source-layer": "streets",
       "type": "line",
@@ -1499,7 +1600,7 @@
       }
     },
     {
-      "id": "streets_line_54",
+      "id": "street-residential-bicycle_line",
       "source": "openmaptiles",
       "source-layer": "streets",
       "type": "line",
@@ -1518,7 +1619,7 @@
       }
     },
     {
-      "id": "streets_line_55",
+      "id": "street-unclassified-bicycle_line",
       "source": "openmaptiles",
       "source-layer": "streets",
       "type": "line",
@@ -1537,7 +1638,7 @@
       }
     },
     {
-      "id": "streets_line_56",
+      "id": "street-tertiary-link_line",
       "source": "openmaptiles",
       "source-layer": "streets",
       "type": "line",
@@ -1556,9 +1657,10 @@
       }
     },
     {
-      "id": "streets_line_57",
+      "id": "street-secondary-link_line",
       "source": "openmaptiles",
       "source-layer": "streets",
+      "minzoom": 13,
       "type": "line",
       "layout": {
         "line-cap": "round",
@@ -1575,9 +1677,10 @@
       }
     },
     {
-      "id": "streets_line_58",
+      "id": "street-primary-link_line",
       "source": "openmaptiles",
       "source-layer": "streets",
+      "minzoom": 13,
       "type": "line",
       "layout": {
         "line-cap": "round",
@@ -1594,9 +1697,10 @@
       }
     },
     {
-      "id": "streets_line_59",
+      "id": "street-trunk-link_line",
       "source": "openmaptiles",
       "source-layer": "streets",
+      "minzoom": 13,
       "type": "line",
       "layout": {
         "line-cap": "round",
@@ -1613,9 +1717,10 @@
       }
     },
     {
-      "id": "streets_line_60",
+      "id": "street-motorway-link_line",
       "source": "openmaptiles",
       "source-layer": "streets",
+      "minzoom": 12,
       "type": "line",
       "layout": {
         "line-cap": "round",
@@ -1632,7 +1737,7 @@
       }
     },
     {
-      "id": "streets_line_61",
+      "id": "street-tertiary_line",
       "source": "openmaptiles",
       "source-layer": "streets",
       "type": "line",
@@ -1651,7 +1756,7 @@
       }
     },
     {
-      "id": "streets_line_62",
+      "id": "street-secondary_line",
       "source": "openmaptiles",
       "source-layer": "streets",
       "type": "line",
@@ -1670,7 +1775,7 @@
       }
     },
     {
-      "id": "streets_line_63",
+      "id": "street-primary_line",
       "source": "openmaptiles",
       "source-layer": "streets",
       "type": "line",
@@ -1689,7 +1794,7 @@
       }
     },
     {
-      "id": "streets_line_64",
+      "id": "street-trunk_line",
       "source": "openmaptiles",
       "source-layer": "streets",
       "type": "line",
@@ -1708,7 +1813,7 @@
       }
     },
     {
-      "id": "streets_line_65",
+      "id": "street-motorway_line",
       "source": "openmaptiles",
       "source-layer": "streets",
       "type": "line",
@@ -1727,9 +1832,10 @@
       }
     },
     {
-      "id": "streets_line_66",
+      "id": "transport-tram_line",
       "source": "openmaptiles",
       "source-layer": "streets",
+      "minzoom": 13,
       "type": "line",
       "layout": {
         "line-cap": "butt",
@@ -1746,9 +1852,10 @@
       }
     },
     {
-      "id": "streets_line_67",
+      "id": "transport-narrowgauge_line",
       "source": "openmaptiles",
       "source-layer": "streets",
+      "minzoom": 13,
       "type": "line",
       "layout": {
         "line-cap": "butt",
@@ -1765,7 +1872,7 @@
       }
     },
     {
-      "id": "streets_line_68",
+      "id": "transport-subway_line",
       "source": "openmaptiles",
       "source-layer": "streets",
       "type": "line",
@@ -1780,9 +1887,10 @@
       }
     },
     {
-      "id": "streets_line_69",
+      "id": "transport-lightrail_line",
       "source": "openmaptiles",
       "source-layer": "streets",
+      "minzoom": 14,
       "type": "line",
       "layout": {
         "line-cap": "butt",
@@ -1795,9 +1903,10 @@
       }
     },
     {
-      "id": "streets_line_70",
+      "id": "transport-lightrail-service_line",
       "source": "openmaptiles",
       "source-layer": "streets",
+      "minzoom": 15,
       "type": "line",
       "layout": {
         "line-cap": "butt",
@@ -1810,9 +1919,30 @@
       }
     },
     {
-      "id": "streets_line_71",
+      "id": "transport-rail_line",
       "source": "openmaptiles",
       "source-layer": "streets",
+      "minzoom": 14,
+      "type": "line",
+      "layout": {
+        "line-cap": "butt",
+        "line-join": "miter"
+      },
+      "paint": {
+        "line-color": "#8d8b86",
+        "line-width": 3.02,
+        "line-opacity": 1,
+        "line-dasharray": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "id": "transport-rail-service_line",
+      "source": "openmaptiles",
+      "source-layer": "streets",
+      "minzoom": 15,
       "type": "line",
       "layout": {
         "line-cap": "butt",
@@ -1825,24 +1955,10 @@
       }
     },
     {
-      "id": "streets_line_72",
+      "id": "transport-monorail_line",
       "source": "openmaptiles",
       "source-layer": "streets",
-      "type": "line",
-      "layout": {
-        "line-cap": "butt",
-        "line-join": "miter"
-      },
-      "paint": {
-        "line-color": "#cccccc",
-        "line-width": 0,
-        "line-opacity": 1
-      }
-    },
-    {
-      "id": "streets_line_73",
-      "source": "openmaptiles",
-      "source-layer": "streets",
+      "minzoom": 13,
       "type": "line",
       "layout": {
         "line-cap": "butt",
@@ -1859,9 +1975,10 @@
       }
     },
     {
-      "id": "streets_line_74",
+      "id": "transport-funicular_line",
       "source": "openmaptiles",
       "source-layer": "streets",
+      "minzoom": 13,
       "type": "line",
       "layout": {
         "line-cap": "butt",
@@ -1878,9 +1995,10 @@
       }
     },
     {
-      "id": "ferries_line",
+      "id": "transport-ferry_line",
       "source": "openmaptiles",
       "source-layer": "ferries",
+      "minzoom": 10,
       "type": "line",
       "layout": {
         "line-cap": "butt",
@@ -1897,7 +2015,338 @@
       }
     },
     {
-      "id": "streets_line_75",
+      "id": "bridge-way-footway_bridge_line",
+      "source": "openmaptiles",
+      "source-layer": "streets",
+      "minzoom": 15,
+      "type": "line",
+      "layout": {
+        "line-cap": "butt",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#efefef",
+        "line-width": 0,
+        "line-opacity": 0.5,
+        "line-dasharray": [
+          5,
+          2
+        ]
+      }
+    },
+    {
+      "id": "bridge-way-steps_bridge_line",
+      "source": "openmaptiles",
+      "source-layer": "streets",
+      "minzoom": 15,
+      "type": "line",
+      "layout": {
+        "line-cap": "butt",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#efefef",
+        "line-width": 0,
+        "line-opacity": 0.5,
+        "line-dasharray": [
+          5,
+          2
+        ]
+      }
+    },
+    {
+      "id": "bridge-way-path_bridge_line",
+      "source": "openmaptiles",
+      "source-layer": "streets",
+      "minzoom": 15,
+      "type": "line",
+      "layout": {
+        "line-cap": "butt",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#efefef",
+        "line-width": 0,
+        "line-opacity": 0.5,
+        "line-dasharray": [
+          5,
+          2
+        ]
+      }
+    },
+    {
+      "id": "bridge-way-cycleway_bridge_line",
+      "source": "openmaptiles",
+      "source-layer": "streets",
+      "minzoom": 15,
+      "type": "line",
+      "layout": {
+        "line-cap": "butt",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#efefef",
+        "line-width": 0,
+        "line-opacity": 0.5,
+        "line-dasharray": [
+          5,
+          2
+        ]
+      }
+    },
+    {
+      "id": "bridge-street-track_bridge_line",
+      "source": "openmaptiles",
+      "source-layer": "streets",
+      "type": "line",
+      "layout": {
+        "line-cap": "butt",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#efefef",
+        "line-width": 3,
+        "line-opacity": 1,
+        "line-dasharray": [
+          5,
+          2
+        ]
+      }
+    },
+    {
+      "id": "bridge-street-pedestrian_bridge_line",
+      "source": "openmaptiles",
+      "source-layer": "streets",
+      "type": "line",
+      "layout": {
+        "line-cap": "butt",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#efefef",
+        "line-width": 3,
+        "line-opacity": 1,
+        "line-dasharray": [
+          5,
+          2
+        ]
+      }
+    },
+    {
+      "id": "bridge-street-service_bridge_line",
+      "source": "openmaptiles",
+      "source-layer": "streets",
+      "type": "line",
+      "layout": {
+        "line-cap": "butt",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#efefef",
+        "line-width": 3,
+        "line-opacity": 1,
+        "line-dasharray": [
+          5,
+          2
+        ]
+      }
+    },
+    {
+      "id": "bridge-street-livingstreet_bridge_line",
+      "source": "openmaptiles",
+      "source-layer": "streets",
+      "type": "line",
+      "layout": {
+        "line-cap": "butt",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#efefef",
+        "line-width": 3,
+        "line-opacity": 1,
+        "line-dasharray": [
+          5,
+          2
+        ]
+      }
+    },
+    {
+      "id": "bridge-street-residential_bridge_line",
+      "source": "openmaptiles",
+      "source-layer": "streets",
+      "type": "line",
+      "layout": {
+        "line-cap": "butt",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#efefef",
+        "line-width": 3,
+        "line-opacity": 1,
+        "line-dasharray": [
+          5,
+          2
+        ]
+      }
+    },
+    {
+      "id": "bridge-street-unclassified_bridge_line",
+      "source": "openmaptiles",
+      "source-layer": "streets",
+      "type": "line",
+      "layout": {
+        "line-cap": "butt",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#efefef",
+        "line-width": 3,
+        "line-opacity": 1,
+        "line-dasharray": [
+          5,
+          2
+        ]
+      }
+    },
+    {
+      "id": "bridge-street-tertiary-link_bridge_line",
+      "source": "openmaptiles",
+      "source-layer": "streets",
+      "type": "line",
+      "layout": {
+        "line-cap": "butt",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#efefef",
+        "line-width": 3,
+        "line-opacity": 1,
+        "line-dasharray": [
+          5,
+          2
+        ]
+      }
+    },
+    {
+      "id": "bridge-street-secondary-link_bridge_line",
+      "source": "openmaptiles",
+      "source-layer": "streets",
+      "minzoom": 13,
+      "type": "line",
+      "layout": {
+        "line-cap": "butt",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#efefef",
+        "line-width": 3,
+        "line-opacity": 0.5,
+        "line-dasharray": [
+          5,
+          2
+        ]
+      }
+    },
+    {
+      "id": "bridge-street-primary-link_bridge_line",
+      "source": "openmaptiles",
+      "source-layer": "streets",
+      "minzoom": 13,
+      "type": "line",
+      "layout": {
+        "line-cap": "butt",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#efefef",
+        "line-width": 3,
+        "line-opacity": 0.5,
+        "line-dasharray": [
+          5,
+          2
+        ]
+      }
+    },
+    {
+      "id": "bridge-street-trunk-link_bridge_line",
+      "source": "openmaptiles",
+      "source-layer": "streets",
+      "minzoom": 13,
+      "type": "line",
+      "layout": {
+        "line-cap": "butt",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#efefef",
+        "line-width": 3,
+        "line-opacity": 0.5,
+        "line-dasharray": [
+          5,
+          2
+        ]
+      }
+    },
+    {
+      "id": "bridge-street-motorway-link_bridge_line",
+      "source": "openmaptiles",
+      "source-layer": "streets",
+      "minzoom": 12,
+      "type": "line",
+      "layout": {
+        "line-cap": "butt",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#efefef",
+        "line-width": 3,
+        "line-opacity": 0.5,
+        "line-dasharray": [
+          5,
+          2
+        ]
+      }
+    },
+    {
+      "id": "bridge-street-tertiary_bridge_line",
+      "source": "openmaptiles",
+      "source-layer": "streets",
+      "type": "line",
+      "layout": {
+        "line-cap": "butt",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#efefef",
+        "line-width": 3,
+        "line-opacity": 1,
+        "line-dasharray": [
+          5,
+          2
+        ]
+      }
+    },
+    {
+      "id": "bridge-street-secondary_bridge_line",
+      "source": "openmaptiles",
+      "source-layer": "streets",
+      "type": "line",
+      "layout": {
+        "line-cap": "butt",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#efefef",
+        "line-width": 3,
+        "line-opacity": 1,
+        "line-dasharray": [
+          5,
+          2
+        ]
+      }
+    },
+    {
+      "id": "bridge-street-primary_bridge_line",
       "source": "openmaptiles",
       "source-layer": "streets",
       "type": "line",
@@ -1916,7 +2365,7 @@
       }
     },
     {
-      "id": "streets_line_76",
+      "id": "bridge-street-trunk_bridge_line",
       "source": "openmaptiles",
       "source-layer": "streets",
       "type": "line",
@@ -1935,7 +2384,7 @@
       }
     },
     {
-      "id": "streets_line_77",
+      "id": "bridge-street-motorway_bridge_line",
       "source": "openmaptiles",
       "source-layer": "streets",
       "type": "line",
@@ -1954,330 +2403,7 @@
       }
     },
     {
-      "id": "streets_line_78",
-      "source": "openmaptiles",
-      "source-layer": "streets",
-      "type": "line",
-      "layout": {
-        "line-cap": "butt",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": "#efefef",
-        "line-width": 0,
-        "line-opacity": 0.5,
-        "line-dasharray": [
-          5,
-          2
-        ]
-      }
-    },
-    {
-      "id": "streets_line_79",
-      "source": "openmaptiles",
-      "source-layer": "streets",
-      "type": "line",
-      "layout": {
-        "line-cap": "butt",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": "#efefef",
-        "line-width": 3,
-        "line-opacity": 1,
-        "line-dasharray": [
-          5,
-          2
-        ]
-      }
-    },
-    {
-      "id": "streets_line_80",
-      "source": "openmaptiles",
-      "source-layer": "streets",
-      "type": "line",
-      "layout": {
-        "line-cap": "butt",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": "#efefef",
-        "line-width": 3,
-        "line-opacity": 1,
-        "line-dasharray": [
-          5,
-          2
-        ]
-      }
-    },
-    {
-      "id": "streets_line_81",
-      "source": "openmaptiles",
-      "source-layer": "streets",
-      "type": "line",
-      "layout": {
-        "line-cap": "butt",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": "#efefef",
-        "line-width": 3,
-        "line-opacity": 1,
-        "line-dasharray": [
-          5,
-          2
-        ]
-      }
-    },
-    {
-      "id": "streets_line_82",
-      "source": "openmaptiles",
-      "source-layer": "streets",
-      "type": "line",
-      "layout": {
-        "line-cap": "butt",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": "#efefef",
-        "line-width": 3,
-        "line-opacity": 1,
-        "line-dasharray": [
-          5,
-          2
-        ]
-      }
-    },
-    {
-      "id": "streets_line_83",
-      "source": "openmaptiles",
-      "source-layer": "streets",
-      "type": "line",
-      "layout": {
-        "line-cap": "butt",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": "#efefef",
-        "line-width": 3,
-        "line-opacity": 1,
-        "line-dasharray": [
-          5,
-          2
-        ]
-      }
-    },
-    {
-      "id": "streets_line_84",
-      "source": "openmaptiles",
-      "source-layer": "streets",
-      "type": "line",
-      "layout": {
-        "line-cap": "butt",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": "#efefef",
-        "line-width": 3,
-        "line-opacity": 1,
-        "line-dasharray": [
-          5,
-          2
-        ]
-      }
-    },
-    {
-      "id": "streets_line_85",
-      "source": "openmaptiles",
-      "source-layer": "streets",
-      "type": "line",
-      "layout": {
-        "line-cap": "butt",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": "#efefef",
-        "line-width": 3,
-        "line-opacity": 1,
-        "line-dasharray": [
-          5,
-          2
-        ]
-      }
-    },
-    {
-      "id": "streets_line_86",
-      "source": "openmaptiles",
-      "source-layer": "streets",
-      "type": "line",
-      "layout": {
-        "line-cap": "butt",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": "#efefef",
-        "line-width": 3,
-        "line-opacity": 0.5,
-        "line-dasharray": [
-          5,
-          2
-        ]
-      }
-    },
-    {
-      "id": "streets_line_87",
-      "source": "openmaptiles",
-      "source-layer": "streets",
-      "type": "line",
-      "layout": {
-        "line-cap": "butt",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": "#efefef",
-        "line-width": 3,
-        "line-opacity": 0.5,
-        "line-dasharray": [
-          5,
-          2
-        ]
-      }
-    },
-    {
-      "id": "streets_line_88",
-      "source": "openmaptiles",
-      "source-layer": "streets",
-      "type": "line",
-      "layout": {
-        "line-cap": "butt",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": "#efefef",
-        "line-width": 3,
-        "line-opacity": 0.5,
-        "line-dasharray": [
-          5,
-          2
-        ]
-      }
-    },
-    {
-      "id": "streets_line_89",
-      "source": "openmaptiles",
-      "source-layer": "streets",
-      "type": "line",
-      "layout": {
-        "line-cap": "butt",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": "#efefef",
-        "line-width": 3,
-        "line-opacity": 0.5,
-        "line-dasharray": [
-          5,
-          2
-        ]
-      }
-    },
-    {
-      "id": "streets_line_90",
-      "source": "openmaptiles",
-      "source-layer": "streets",
-      "type": "line",
-      "layout": {
-        "line-cap": "butt",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": "#efefef",
-        "line-width": 3,
-        "line-opacity": 1,
-        "line-dasharray": [
-          5,
-          2
-        ]
-      }
-    },
-    {
-      "id": "streets_line_91",
-      "source": "openmaptiles",
-      "source-layer": "streets",
-      "type": "line",
-      "layout": {
-        "line-cap": "butt",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": "#efefef",
-        "line-width": 3,
-        "line-opacity": 1,
-        "line-dasharray": [
-          5,
-          2
-        ]
-      }
-    },
-    {
-      "id": "streets_line_92",
-      "source": "openmaptiles",
-      "source-layer": "streets",
-      "type": "line",
-      "layout": {
-        "line-cap": "butt",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": "#efefef",
-        "line-width": 0,
-        "line-opacity": 0.5,
-        "line-dasharray": [
-          5,
-          2
-        ]
-      }
-    },
-    {
-      "id": "streets_line_93",
-      "source": "openmaptiles",
-      "source-layer": "streets",
-      "type": "line",
-      "layout": {
-        "line-cap": "butt",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": "#efefef",
-        "line-width": 0,
-        "line-opacity": 0.5,
-        "line-dasharray": [
-          5,
-          2
-        ]
-      }
-    },
-    {
-      "id": "streets_line_94",
-      "source": "openmaptiles",
-      "source-layer": "streets",
-      "type": "line",
-      "layout": {
-        "line-cap": "butt",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": "#efefef",
-        "line-width": 0,
-        "line-opacity": 0.5,
-        "line-dasharray": [
-          5,
-          2
-        ]
-      }
-    },
-    {
-      "id": "street_polygons_fill_4",
+      "id": "bridge-street-pedestrian-zone_fill",
       "source": "openmaptiles",
       "source-layer": "street_polygons",
       "type": "fill",
@@ -2288,9 +2414,10 @@
       }
     },
     {
-      "id": "streets_line_95",
+      "id": "bridge-way-footway_line",
       "source": "openmaptiles",
       "source-layer": "streets",
+      "minzoom": 15,
       "type": "line",
       "layout": {
         "line-cap": "butt",
@@ -2307,9 +2434,10 @@
       }
     },
     {
-      "id": "streets_line_96",
+      "id": "bridge-way-steps_line",
       "source": "openmaptiles",
       "source-layer": "streets",
+      "minzoom": 15,
       "type": "line",
       "layout": {
         "line-cap": "butt",
@@ -2326,9 +2454,10 @@
       }
     },
     {
-      "id": "streets_line_97",
+      "id": "bridge-way-path_line",
       "source": "openmaptiles",
       "source-layer": "streets",
+      "minzoom": 15,
       "type": "line",
       "layout": {
         "line-cap": "butt",
@@ -2345,9 +2474,10 @@
       }
     },
     {
-      "id": "streets_line_98",
+      "id": "bridge-way-cycleway_line",
       "source": "openmaptiles",
       "source-layer": "streets",
+      "minzoom": 15,
       "type": "line",
       "layout": {
         "line-cap": "butt",
@@ -2364,7 +2494,7 @@
       }
     },
     {
-      "id": "streets_line_99",
+      "id": "bridge-street-track_line",
       "source": "openmaptiles",
       "source-layer": "streets",
       "type": "line",
@@ -2383,7 +2513,7 @@
       }
     },
     {
-      "id": "streets_line_100",
+      "id": "bridge-street-pedestrian_line",
       "source": "openmaptiles",
       "source-layer": "streets",
       "type": "line",
@@ -2402,7 +2532,7 @@
       }
     },
     {
-      "id": "streets_line_101",
+      "id": "bridge-street-service_line",
       "source": "openmaptiles",
       "source-layer": "streets",
       "type": "line",
@@ -2421,7 +2551,7 @@
       }
     },
     {
-      "id": "streets_line_102",
+      "id": "bridge-street-livingstreet_line",
       "source": "openmaptiles",
       "source-layer": "streets",
       "type": "line",
@@ -2440,7 +2570,7 @@
       }
     },
     {
-      "id": "streets_line_103",
+      "id": "bridge-street-residential_line",
       "source": "openmaptiles",
       "source-layer": "streets",
       "type": "line",
@@ -2459,7 +2589,7 @@
       }
     },
     {
-      "id": "streets_line_104",
+      "id": "bridge-street-unclassified_line",
       "source": "openmaptiles",
       "source-layer": "streets",
       "type": "line",
@@ -2478,7 +2608,7 @@
       }
     },
     {
-      "id": "streets_line_105",
+      "id": "bridge-street-track-bicycle_line",
       "source": "openmaptiles",
       "source-layer": "streets",
       "type": "line",
@@ -2497,7 +2627,7 @@
       }
     },
     {
-      "id": "streets_line_106",
+      "id": "bridge-street-pedestrian-bicycle_line",
       "source": "openmaptiles",
       "source-layer": "streets",
       "type": "line",
@@ -2516,7 +2646,7 @@
       }
     },
     {
-      "id": "streets_line_107",
+      "id": "bridge-street-service-bicycle_line",
       "source": "openmaptiles",
       "source-layer": "streets",
       "type": "line",
@@ -2535,7 +2665,7 @@
       }
     },
     {
-      "id": "streets_line_108",
+      "id": "bridge-street-livingstreet-bicycle_line",
       "source": "openmaptiles",
       "source-layer": "streets",
       "type": "line",
@@ -2554,7 +2684,7 @@
       }
     },
     {
-      "id": "streets_line_109",
+      "id": "bridge-street-residential-bicycle_line",
       "source": "openmaptiles",
       "source-layer": "streets",
       "type": "line",
@@ -2573,7 +2703,7 @@
       }
     },
     {
-      "id": "streets_line_110",
+      "id": "bridge-street-unclassified-bicycle_line",
       "source": "openmaptiles",
       "source-layer": "streets",
       "type": "line",
@@ -2592,7 +2722,7 @@
       }
     },
     {
-      "id": "streets_line_111",
+      "id": "bridge-street-tertiary-link_line",
       "source": "openmaptiles",
       "source-layer": "streets",
       "type": "line",
@@ -2611,9 +2741,10 @@
       }
     },
     {
-      "id": "streets_line_112",
+      "id": "bridge-street-secondary-link_line",
       "source": "openmaptiles",
       "source-layer": "streets",
+      "minzoom": 13,
       "type": "line",
       "layout": {
         "line-cap": "butt",
@@ -2630,9 +2761,10 @@
       }
     },
     {
-      "id": "streets_line_113",
+      "id": "bridge-street-primary-link_line",
       "source": "openmaptiles",
       "source-layer": "streets",
+      "minzoom": 13,
       "type": "line",
       "layout": {
         "line-cap": "butt",
@@ -2649,9 +2781,10 @@
       }
     },
     {
-      "id": "streets_line_114",
+      "id": "bridge-street-trunk-link_line",
       "source": "openmaptiles",
       "source-layer": "streets",
+      "minzoom": 13,
       "type": "line",
       "layout": {
         "line-cap": "butt",
@@ -2668,9 +2801,10 @@
       }
     },
     {
-      "id": "streets_line_115",
+      "id": "bridge-street-motorway-link_line",
       "source": "openmaptiles",
       "source-layer": "streets",
+      "minzoom": 12,
       "type": "line",
       "layout": {
         "line-cap": "butt",
@@ -2687,7 +2821,7 @@
       }
     },
     {
-      "id": "streets_line_116",
+      "id": "bridge-street-tertiary_line",
       "source": "openmaptiles",
       "source-layer": "streets",
       "type": "line",
@@ -2706,7 +2840,7 @@
       }
     },
     {
-      "id": "streets_line_117",
+      "id": "bridge-street-secondary_line",
       "source": "openmaptiles",
       "source-layer": "streets",
       "type": "line",
@@ -2725,7 +2859,7 @@
       }
     },
     {
-      "id": "streets_line_118",
+      "id": "bridge-street-primary_line",
       "source": "openmaptiles",
       "source-layer": "streets",
       "type": "line",
@@ -2744,7 +2878,7 @@
       }
     },
     {
-      "id": "streets_line_119",
+      "id": "bridge-street-trunk_line",
       "source": "openmaptiles",
       "source-layer": "streets",
       "type": "line",
@@ -2763,7 +2897,7 @@
       }
     },
     {
-      "id": "streets_line_120",
+      "id": "bridge-street-motorway_line",
       "source": "openmaptiles",
       "source-layer": "streets",
       "type": "line",
@@ -2782,9 +2916,10 @@
       }
     },
     {
-      "id": "streets_line_121",
+      "id": "bridge-transport-tram_line",
       "source": "openmaptiles",
       "source-layer": "streets",
+      "minzoom": 13,
       "type": "line",
       "layout": {
         "line-cap": "butt",
@@ -2801,9 +2936,10 @@
       }
     },
     {
-      "id": "streets_line_122",
+      "id": "bridge-transport-narrowgauge_line",
       "source": "openmaptiles",
       "source-layer": "streets",
+      "minzoom": 13,
       "type": "line",
       "layout": {
         "line-cap": "butt",
@@ -2820,7 +2956,7 @@
       }
     },
     {
-      "id": "streets_line_123",
+      "id": "bridge-transport-subway_line",
       "source": "openmaptiles",
       "source-layer": "streets",
       "type": "line",
@@ -2835,9 +2971,10 @@
       }
     },
     {
-      "id": "streets_line_124",
+      "id": "bridge-transport-lightrail_line",
       "source": "openmaptiles",
       "source-layer": "streets",
+      "minzoom": 14,
       "type": "line",
       "layout": {
         "line-cap": "butt",
@@ -2850,9 +2987,10 @@
       }
     },
     {
-      "id": "streets_line_125",
+      "id": "bridge-transport-lightrail-service_line",
       "source": "openmaptiles",
       "source-layer": "streets",
+      "minzoom": 15,
       "type": "line",
       "layout": {
         "line-cap": "butt",
@@ -2865,9 +3003,10 @@
       }
     },
     {
-      "id": "streets_line_126",
+      "id": "bridge-transport-rail_line",
       "source": "openmaptiles",
       "source-layer": "streets",
+      "minzoom": 14,
       "type": "line",
       "layout": {
         "line-cap": "butt",
@@ -2880,9 +3019,10 @@
       }
     },
     {
-      "id": "streets_line_127",
+      "id": "bridge-transport-rail-service_line",
       "source": "openmaptiles",
       "source-layer": "streets",
+      "minzoom": 15,
       "type": "line",
       "layout": {
         "line-cap": "butt",
@@ -2895,9 +3035,10 @@
       }
     },
     {
-      "id": "streets_line_128",
+      "id": "bridge-transport-monorail_line",
       "source": "openmaptiles",
       "source-layer": "streets",
+      "minzoom": 13,
       "type": "line",
       "layout": {
         "line-cap": "butt",
@@ -2914,9 +3055,10 @@
       }
     },
     {
-      "id": "streets_line_129",
+      "id": "bridge-transport-funicular_line",
       "source": "openmaptiles",
       "source-layer": "streets",
+      "minzoom": 13,
       "type": "line",
       "layout": {
         "line-cap": "butt",
@@ -2933,9 +3075,10 @@
       }
     },
     {
-      "id": "pois_marker",
+      "id": "poi-amenity_marker",
       "source": "openmaptiles",
       "source-layer": "pois",
+      "minzoom": 16,
       "type": "circle",
       "paint": {
         "circle-color": "#808080",
@@ -2948,9 +3091,10 @@
       }
     },
     {
-      "id": "pois_marker_2",
+      "id": "poi-leisure_marker",
       "source": "openmaptiles",
       "source-layer": "pois",
+      "minzoom": 16,
       "type": "circle",
       "paint": {
         "circle-color": "#808080",
@@ -2963,9 +3107,10 @@
       }
     },
     {
-      "id": "pois_marker_3",
+      "id": "poi-tourism_marker",
       "source": "openmaptiles",
       "source-layer": "pois",
+      "minzoom": 16,
       "type": "circle",
       "paint": {
         "circle-color": "#808080",
@@ -2978,9 +3123,10 @@
       }
     },
     {
-      "id": "pois_marker_4",
+      "id": "poi-shop_marker",
       "source": "openmaptiles",
       "source-layer": "pois",
+      "minzoom": 16,
       "type": "circle",
       "paint": {
         "circle-color": "#808080",
@@ -2993,9 +3139,10 @@
       }
     },
     {
-      "id": "pois_marker_5",
+      "id": "poi-man_made_marker",
       "source": "openmaptiles",
       "source-layer": "pois",
+      "minzoom": 16,
       "type": "circle",
       "paint": {
         "circle-color": "#808080",
@@ -3008,9 +3155,10 @@
       }
     },
     {
-      "id": "pois_marker_6",
+      "id": "poi-historic_marker",
       "source": "openmaptiles",
       "source-layer": "pois",
+      "minzoom": 16,
       "type": "circle",
       "paint": {
         "circle-color": "#808080",
@@ -3023,9 +3171,10 @@
       }
     },
     {
-      "id": "pois_marker_7",
+      "id": "poi-emergency_marker",
       "source": "openmaptiles",
       "source-layer": "pois",
+      "minzoom": 16,
       "type": "circle",
       "paint": {
         "circle-color": "#808080",
@@ -3038,7 +3187,7 @@
       }
     },
     {
-      "id": "boundaries_line",
+      "id": "boundary-country_outline_line",
       "source": "openmaptiles",
       "source-layer": "boundaries",
       "type": "line",
@@ -3057,7 +3206,7 @@
       }
     },
     {
-      "id": "boundaries_line_2",
+      "id": "boundary-country-disputed_outline_line",
       "source": "openmaptiles",
       "source-layer": "boundaries",
       "type": "line",
@@ -3076,7 +3225,7 @@
       }
     },
     {
-      "id": "boundaries_line_3",
+      "id": "boundary-state_outline_line",
       "source": "openmaptiles",
       "source-layer": "boundaries",
       "type": "line",
@@ -3095,7 +3244,7 @@
       }
     },
     {
-      "id": "boundaries_line_4",
+      "id": "boundary-country_line",
       "source": "openmaptiles",
       "source-layer": "boundaries",
       "type": "line",
@@ -3114,7 +3263,7 @@
       }
     },
     {
-      "id": "boundaries_line_5",
+      "id": "boundary-country-disputed_line",
       "source": "openmaptiles",
       "source-layer": "boundaries",
       "type": "line",
@@ -3129,7 +3278,7 @@
       }
     },
     {
-      "id": "boundaries_line_6",
+      "id": "boundary-state_line",
       "source": "openmaptiles",
       "source-layer": "boundaries",
       "type": "line",
@@ -3148,9 +3297,10 @@
       }
     },
     {
-      "id": "streets_line_130_path",
+      "id": "marking-oneway_line_path",
       "source": "openmaptiles",
       "source-layer": "streets",
+      "minzoom": 16,
       "type": "line",
       "layout": {
         "line-cap": "round",
@@ -3166,9 +3316,10 @@
       }
     },
     {
-      "id": "streets_line_130_dots",
+      "id": "marking-oneway_line_dots",
       "source": "openmaptiles",
       "source-layer": "streets",
+      "minzoom": 16,
       "type": "symbol",
       "layout": {
         "symbol-placement": "line",
@@ -3190,9 +3341,10 @@
       }
     },
     {
-      "id": "streets_line_131_path",
+      "id": "marking-oneway-reverse_line_path",
       "source": "openmaptiles",
       "source-layer": "streets",
+      "minzoom": 16,
       "type": "line",
       "layout": {
         "line-cap": "round",
@@ -3208,9 +3360,10 @@
       }
     },
     {
-      "id": "streets_line_131_dots",
+      "id": "marking-oneway-reverse_line_dots",
       "source": "openmaptiles",
       "source-layer": "streets",
+      "minzoom": 16,
       "type": "symbol",
       "layout": {
         "symbol-placement": "line",
