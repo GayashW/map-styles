@@ -2,11 +2,13 @@
   "version": 8,
   "name": "QGIS Converted Style",
   "sources": {
-    "openmaptiles": {
-      "type": "vector",
-      "url": "https://your-tile-source/tiles.json"
-    }
-  },
+  "openmaptiles": {
+    "type": "vector",
+    "tiles": ["https://vector.openstreetmap.org/shortbread_v1/{z}/{x}/{y}.mvt"],
+    "maxzoom": 14,
+    "attribution": "© OpenStreetMap contributors"
+  }
+},
   "layers": [
     {
       "id": "background_fill",
