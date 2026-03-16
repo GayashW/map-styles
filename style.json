@@ -14,7 +14,12 @@
       "paint": {
         "background-color": "#efefef"
       },
-      "metadata": {}
+      "metadata": {
+        "qgis:enabled": true
+      },
+      "layout": {
+        "visibility": "visible"
+      }
     },
     {
       "id": "site-school_fill",
@@ -35,7 +40,11 @@
         "fill-outline-color": "#bfbfbf"
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "\"kind\" IN ('school')"
+      },
+      "layout": {
+        "visibility": "visible"
       }
     },
     {
@@ -56,7 +65,11 @@
         "fill-opacity": 0
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "\"kind\" IN ('danger_area')"
+      },
+      "layout": {
+        "visibility": "visible"
       }
     },
     {
@@ -78,7 +91,11 @@
         "fill-outline-color": "#bfbfbf"
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "\"kind\" IN ('university')"
+      },
+      "layout": {
+        "visibility": "visible"
       }
     },
     {
@@ -100,7 +117,11 @@
         "fill-outline-color": "#bfbfbf"
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "\"kind\" IN ('college')"
+      },
+      "layout": {
+        "visibility": "visible"
       }
     },
     {
@@ -122,7 +143,11 @@
         "fill-outline-color": "#b2b2b2"
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "\"kind\" IN ('hospital')"
+      },
+      "layout": {
+        "visibility": "visible"
       }
     },
     {
@@ -143,7 +168,11 @@
         "fill-opacity": 0
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "\"kind\" IN ('prison')"
+      },
+      "layout": {
+        "visibility": "visible"
       }
     },
     {
@@ -165,7 +194,11 @@
         "fill-outline-color": "#e8e8e8"
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "\"kind\" IN ('parking')"
+      },
+      "layout": {
+        "visibility": "visible"
       }
     },
     {
@@ -187,7 +220,11 @@
         "fill-outline-color": "#e8e8e8"
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "\"kind\" IN ('bicycle_parking')"
+      },
+      "layout": {
+        "visibility": "visible"
       }
     },
     {
@@ -208,7 +245,11 @@
         "fill-opacity": 0
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "\"kind\" IN ('construction')"
+      },
+      "layout": {
+        "visibility": "visible"
       }
     },
     {
@@ -221,7 +262,12 @@
         "fill-opacity": 1,
         "fill-outline-color": "#d8d8d8"
       },
-      "metadata": {}
+      "metadata": {
+        "qgis:enabled": true
+      },
+      "layout": {
+        "visibility": "visible"
+      }
     },
     {
       "id": "land-glacier_fill",
@@ -242,7 +288,11 @@
         "fill-outline-color": "#ffffff"
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"kind\" IS 'glacier')"
+      },
+      "layout": {
+        "visibility": "visible"
       }
     },
     {
@@ -269,7 +319,11 @@
         "fill-opacity": 0.3333
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"kind\" IN ('industrial', 'quarry', 'railway'))"
+      },
+      "layout": {
+        "visibility": "visible"
       }
     },
     {
@@ -295,7 +349,11 @@
         "fill-opacity": 0.2
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"kind\" IN ('garages', 'residential'))"
+      },
+      "layout": {
+        "visibility": "visible"
       }
     },
     {
@@ -328,7 +386,11 @@
         "fill-outline-color": "#e0e0e0"
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"kind\" IN ('brownfield', 'farmland', 'farmyard', 'greenfield', 'greenhouse_horticulture', 'orchard', 'plant_nursery', 'vineyard'))"
+      },
+      "layout": {
+        "visibility": "visible"
       }
     },
     {
@@ -350,7 +412,11 @@
         "fill-outline-color": "#cccccc"
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"kind\" IN ('landfill'))"
+      },
+      "layout": {
+        "visibility": "visible"
       }
     },
     {
@@ -378,7 +444,11 @@
         "fill-outline-color": "#bfbfbf"
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"kind\" IN ('park', 'village_green', 'recreation_ground'))"
+      },
+      "layout": {
+        "visibility": "visible"
       }
     },
     {
@@ -405,7 +475,11 @@
         "fill-outline-color": "#bfbfbf"
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"kind\" IN ('allotments', 'garden'))"
+      },
+      "layout": {
+        "visibility": "visible"
       }
     },
     {
@@ -432,7 +506,11 @@
         "fill-outline-color": "#d5d5d5"
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"kind\" IN ('cemetery', 'grave_yard'))"
+      },
+      "layout": {
+        "visibility": "visible"
       }
     },
     {
@@ -460,7 +538,11 @@
         "fill-outline-color": "#e5e5e5"
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"kind\" IN ('miniature_golf', 'playground', 'golf_course'))"
+      },
+      "layout": {
+        "visibility": "visible"
       }
     },
     {
@@ -488,7 +570,11 @@
         "fill-outline-color": "#e2e2e2"
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"kind\" IN ('bare_rock', 'scree', 'shingle'))"
+      },
+      "layout": {
+        "visibility": "visible"
       }
     },
     {
@@ -509,7 +595,11 @@
         "fill-opacity": 1
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"kind\" IN ('forest'))"
+      },
+      "layout": {
+        "visibility": "visible"
       }
     },
     {
@@ -538,7 +628,11 @@
         "fill-outline-color": "#d8d8d8"
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"kind\" IN ('grass', 'grassland', 'meadow', 'wet_meadow'))"
+      },
+      "layout": {
+        "visibility": "visible"
       }
     },
     {
@@ -564,7 +658,11 @@
         "fill-opacity": 1
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"kind\" IN ('heath', 'scrub'))"
+      },
+      "layout": {
+        "visibility": "visible"
       }
     },
     {
@@ -591,7 +689,11 @@
         "fill-outline-color": "#f2f2f2"
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"kind\" IN ('beach', 'sand'))"
+      },
+      "layout": {
+        "visibility": "visible"
       }
     },
     {
@@ -620,7 +722,11 @@
         "fill-outline-color": "#dbdbdb"
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"kind\" IN ('bog', 'marsh', 'string_bog', 'swamp'))"
+      },
+      "layout": {
+        "visibility": "visible"
       }
     },
     {
@@ -657,7 +763,8 @@
       "type": "line",
       "layout": {
         "line-cap": "round",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#61aab1",
@@ -669,6 +776,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"kind\" IN ('river')) AND (\"tunnel\" IS NOT TRUE) AND (\"bridge\" IS NOT TRUE)"
       }
     },
@@ -706,7 +814,8 @@
       "type": "line",
       "layout": {
         "line-cap": "round",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#61aab1",
@@ -718,6 +827,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"kind\" IN ('canal')) AND (\"tunnel\" IS NOT TRUE) AND (\"bridge\" IS NOT TRUE)"
       }
     },
@@ -755,7 +865,8 @@
       "type": "line",
       "layout": {
         "line-cap": "round",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#61aab1",
@@ -767,6 +878,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"kind\" IN ('stream')) AND (\"tunnel\" IS NOT TRUE) AND (\"bridge\" IS NOT TRUE)"
       }
     },
@@ -804,7 +916,8 @@
       "type": "line",
       "layout": {
         "line-cap": "round",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#61aab1",
@@ -816,6 +929,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"kind\" IN ('ditch')) AND (\"tunnel\" IS NOT TRUE) AND (\"bridge\" IS NOT TRUE)"
       }
     },
@@ -838,7 +952,11 @@
         "fill-outline-color": "#d8d8d8"
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "\"kind\" IS 'water'"
+      },
+      "layout": {
+        "visibility": "visible"
       }
     },
     {
@@ -860,7 +978,11 @@
         "fill-outline-color": "#d8d8d8"
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "\"kind\" IS 'river'"
+      },
+      "layout": {
+        "visibility": "visible"
       }
     },
     {
@@ -888,7 +1010,11 @@
         "fill-outline-color": "#d8d8d8"
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "\"kind\" IN ('reservoir', 'basin', 'dock')"
+      },
+      "layout": {
+        "visibility": "visible"
       }
     },
     {
@@ -910,7 +1036,11 @@
         "fill-outline-color": "#f2f2f2"
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "\"kind\" IS 'dam'"
+      },
+      "layout": {
+        "visibility": "visible"
       }
     },
     {
@@ -928,7 +1058,8 @@
       "type": "line",
       "layout": {
         "line-cap": "round",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#d8d8d8",
@@ -940,6 +1071,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "\"kind\" IS 'dam'"
       }
     },
@@ -968,7 +1100,11 @@
         "fill-outline-color": "#f2f2f2"
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "\"kind\" IN ('pier', 'breakwater', 'groyne')"
+      },
+      "layout": {
+        "visibility": "visible"
       }
     },
     {
@@ -992,7 +1128,8 @@
       "type": "line",
       "layout": {
         "line-cap": "round",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#f2f2f2",
@@ -1004,6 +1141,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "\"kind\" IN ('pier', 'breakwater', 'groyne')"
       }
     },
@@ -1031,7 +1169,11 @@
         "fill-outline-color": "#ffffff"
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "\"kind\" IN ('runway', 'taxiway')"
+      },
+      "layout": {
+        "visibility": "visible"
       }
     },
     {
@@ -1049,7 +1191,8 @@
       "type": "line",
       "layout": {
         "line-cap": "butt",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#cccccc",
@@ -1061,6 +1204,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "\"kind\" IS 'taxiway'"
       }
     },
@@ -1079,7 +1223,8 @@
       "type": "line",
       "layout": {
         "line-cap": "butt",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#cccccc",
@@ -1091,6 +1236,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "\"kind\" IS 'runway'"
       }
     },
@@ -1109,7 +1255,8 @@
       "type": "line",
       "layout": {
         "line-cap": "butt",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#ffffff",
@@ -1121,6 +1268,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "\"kind\" IS 'taxiway'"
       }
     },
@@ -1139,7 +1287,8 @@
       "type": "line",
       "layout": {
         "line-cap": "butt",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#ffffff",
@@ -1151,6 +1300,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "\"kind\" IS 'runway'"
       }
     },
@@ -1164,7 +1314,12 @@
         "fill-opacity": 1,
         "fill-outline-color": "#dbdbdb"
       },
-      "metadata": {}
+      "metadata": {
+        "qgis:enabled": true
+      },
+      "layout": {
+        "visibility": "visible"
+      }
     },
     {
       "id": "building_fill",
@@ -1176,7 +1331,12 @@
         "fill-opacity": 1,
         "fill-outline-color": "#e8e8e8"
       },
-      "metadata": {}
+      "metadata": {
+        "qgis:enabled": true
+      },
+      "layout": {
+        "visibility": "visible"
+      }
     },
     {
       "id": "tunnel-street-pedestrian-zone_fill",
@@ -1208,7 +1368,11 @@
         "fill-outline-color": "#f7f7f7"
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"tunnel\" IS TRUE) AND (\"kind\" IS 'pedestrian')"
+      },
+      "layout": {
+        "visibility": "visible"
       }
     },
     {
@@ -1238,7 +1402,8 @@
       "type": "line",
       "layout": {
         "line-cap": "round",
-        "line-join": "miter"
+        "line-join": "miter",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#efefef",
@@ -1246,6 +1411,7 @@
         "line-opacity": 1
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"tunnel\" IS TRUE) AND (\"kind\" IN ('footway'))"
       }
     },
@@ -1276,7 +1442,8 @@
       "type": "line",
       "layout": {
         "line-cap": "round",
-        "line-join": "miter"
+        "line-join": "miter",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#efefef",
@@ -1284,6 +1451,7 @@
         "line-opacity": 1
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"tunnel\" IS TRUE) AND (\"kind\" IN ('steps'))"
       }
     },
@@ -1314,7 +1482,8 @@
       "type": "line",
       "layout": {
         "line-cap": "round",
-        "line-join": "miter"
+        "line-join": "miter",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#efefef",
@@ -1322,6 +1491,7 @@
         "line-opacity": 1
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"tunnel\" IS TRUE) AND (\"kind\" IN ('path'))"
       }
     },
@@ -1352,7 +1522,8 @@
       "type": "line",
       "layout": {
         "line-cap": "round",
-        "line-join": "miter"
+        "line-join": "miter",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#f2f2f2",
@@ -1360,6 +1531,7 @@
         "line-opacity": 1
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"tunnel\" IS TRUE) AND (\"kind\" IN ('cycleway'))"
       }
     },
@@ -1389,7 +1561,8 @@
       "type": "line",
       "layout": {
         "line-cap": "round",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#f7f7f7",
@@ -1401,6 +1574,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"kind\" IS 'track') AND (\"tunnel\" IS TRUE)"
       }
     },
@@ -1430,7 +1604,8 @@
       "type": "line",
       "layout": {
         "line-cap": "round",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#f7f7f7",
@@ -1442,6 +1617,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"kind\" IS 'pedestrian') AND (\"tunnel\" IS TRUE)"
       }
     },
@@ -1471,7 +1647,8 @@
       "type": "line",
       "layout": {
         "line-cap": "round",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#f7f7f7",
@@ -1483,6 +1660,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"kind\" IS 'service') AND (\"tunnel\" IS TRUE)"
       }
     },
@@ -1512,7 +1690,8 @@
       "type": "line",
       "layout": {
         "line-cap": "round",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#f7f7f7",
@@ -1524,6 +1703,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"kind\" IS 'living_street') AND (\"tunnel\" IS TRUE)"
       }
     },
@@ -1553,7 +1733,8 @@
       "type": "line",
       "layout": {
         "line-cap": "round",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#f7f7f7",
@@ -1565,6 +1746,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"kind\" IS 'residential') AND (\"tunnel\" IS TRUE)"
       }
     },
@@ -1594,7 +1776,8 @@
       "type": "line",
       "layout": {
         "line-cap": "round",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#f7f7f7",
@@ -1606,6 +1789,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"kind\" IS 'unclassified') AND (\"tunnel\" IS TRUE)"
       }
     },
@@ -1643,7 +1827,8 @@
       "type": "line",
       "layout": {
         "line-cap": "round",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#f7f7f7",
@@ -1655,6 +1840,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"kind\" IS 'track') AND (\"bicycle\" IS 'designated') AND (\"tunnel\" IS TRUE)"
       }
     },
@@ -1692,7 +1878,8 @@
       "type": "line",
       "layout": {
         "line-cap": "round",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#f7f7f7",
@@ -1704,6 +1891,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"kind\" IS 'pedestrian') AND (\"bicycle\" IS 'designated') AND (\"tunnel\" IS TRUE)"
       }
     },
@@ -1741,7 +1929,8 @@
       "type": "line",
       "layout": {
         "line-cap": "round",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#f7f7f7",
@@ -1753,6 +1942,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"kind\" IS 'service') AND (\"bicycle\" IS 'designated') AND (\"tunnel\" IS TRUE)"
       }
     },
@@ -1790,7 +1980,8 @@
       "type": "line",
       "layout": {
         "line-cap": "round",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#f7f7f7",
@@ -1802,6 +1993,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"kind\" IS 'living_street') AND (\"bicycle\" IS 'designated') AND (\"tunnel\" IS TRUE)"
       }
     },
@@ -1839,7 +2031,8 @@
       "type": "line",
       "layout": {
         "line-cap": "round",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#f7f7f7",
@@ -1851,6 +2044,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"kind\" IS 'residential') AND (\"bicycle\" IS 'designated') AND (\"tunnel\" IS TRUE)"
       }
     },
@@ -1888,7 +2082,8 @@
       "type": "line",
       "layout": {
         "line-cap": "round",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#f7f7f7",
@@ -1900,6 +2095,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"kind\" IS 'unclassified') AND (\"bicycle\" IS 'designated') AND (\"tunnel\" IS TRUE)"
       }
     },
@@ -1937,7 +2133,8 @@
       "type": "line",
       "layout": {
         "line-cap": "round",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#f7f7f7",
@@ -1949,6 +2146,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"tunnel\" IS TRUE) AND (\"kind\" IN ('tertiary')) AND (\"link\" IS TRUE)"
       }
     },
@@ -1987,7 +2185,8 @@
       "type": "line",
       "layout": {
         "line-cap": "butt",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#d9d9d9",
@@ -1999,6 +2198,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"tunnel\" IS TRUE) AND (\"kind\" IN ('secondary')) AND (\"link\" IS TRUE)"
       }
     },
@@ -2037,7 +2237,8 @@
       "type": "line",
       "layout": {
         "line-cap": "butt",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#d9d9d9",
@@ -2049,6 +2250,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"tunnel\" IS TRUE) AND (\"kind\" IN ('primary')) AND (\"link\" IS TRUE)"
       }
     },
@@ -2087,7 +2289,8 @@
       "type": "line",
       "layout": {
         "line-cap": "butt",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#d9d9d9",
@@ -2099,6 +2302,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"tunnel\" IS TRUE) AND (\"kind\" IN ('trunk')) AND (\"link\" IS TRUE)"
       }
     },
@@ -2137,7 +2341,8 @@
       "type": "line",
       "layout": {
         "line-cap": "butt",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#c9c9c9",
@@ -2149,6 +2354,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"tunnel\" IS TRUE) AND (\"kind\" IN ('motorway')) AND (\"link\" IS TRUE)"
       }
     },
@@ -2186,7 +2392,8 @@
       "type": "line",
       "layout": {
         "line-cap": "round",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#f7f7f7",
@@ -2198,6 +2405,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"tunnel\" IS TRUE) AND (\"kind\" IN ('tertiary')) AND (\"link\" IS NOT TRUE)"
       }
     },
@@ -2235,7 +2443,8 @@
       "type": "line",
       "layout": {
         "line-cap": "butt",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#d9d9d9",
@@ -2247,6 +2456,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"tunnel\" IS TRUE) AND (\"kind\" IN ('secondary')) AND (\"link\" IS NOT TRUE)"
       }
     },
@@ -2284,7 +2494,8 @@
       "type": "line",
       "layout": {
         "line-cap": "butt",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#d9d9d9",
@@ -2296,6 +2507,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"tunnel\" IS TRUE) AND (\"kind\" IN ('primary')) AND (\"link\" IS NOT TRUE)"
       }
     },
@@ -2333,7 +2545,8 @@
       "type": "line",
       "layout": {
         "line-cap": "butt",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#d9d9d9",
@@ -2345,6 +2558,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"tunnel\" IS TRUE) AND (\"kind\" IN ('trunk')) AND (\"link\" IS NOT TRUE)"
       }
     },
@@ -2382,7 +2596,8 @@
       "type": "line",
       "layout": {
         "line-cap": "butt",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#c9c9c9",
@@ -2394,6 +2609,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"tunnel\" IS TRUE) AND (\"kind\" IN ('motorway')) AND (\"link\" IS NOT TRUE)"
       }
     },
@@ -2431,7 +2647,8 @@
       "type": "line",
       "layout": {
         "line-cap": "butt",
-        "line-join": "miter"
+        "line-join": "miter",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#bababa",
@@ -2443,6 +2660,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"kind\" IN ('tram')) AND (\"service\" IS NULL) AND (\"tunnel\" IS TRUE)"
       }
     },
@@ -2480,7 +2698,8 @@
       "type": "line",
       "layout": {
         "line-cap": "butt",
-        "line-join": "miter"
+        "line-join": "miter",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#bababa",
@@ -2492,6 +2711,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"kind\" IN ('narrow_gauge')) AND (\"service\" IS NULL) AND (\"tunnel\" IS TRUE)"
       }
     },
@@ -2528,7 +2748,8 @@
       "type": "line",
       "layout": {
         "line-cap": "butt",
-        "line-join": "miter"
+        "line-join": "miter",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#c9c9c9",
@@ -2536,6 +2757,7 @@
         "line-opacity": 1
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"kind\" IN ('subway')) AND (\"service\" IS NULL) AND (\"tunnel\" IS TRUE)"
       }
     },
@@ -2573,7 +2795,8 @@
       "type": "line",
       "layout": {
         "line-cap": "butt",
-        "line-join": "miter"
+        "line-join": "miter",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#cccccc",
@@ -2581,6 +2804,7 @@
         "line-opacity": 1
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"kind\" IN ('light_rail')) AND (\"service\" IS NULL) AND (\"tunnel\" IS TRUE)"
       }
     },
@@ -2615,7 +2839,8 @@
       "type": "line",
       "layout": {
         "line-cap": "butt",
-        "line-join": "miter"
+        "line-join": "miter",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#cccccc",
@@ -2623,6 +2848,7 @@
         "line-opacity": 1
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"kind\" IN ('light_rail')) AND (\"service\" IS NOT NULL) AND (\"tunnel\" IS TRUE)"
       }
     },
@@ -2660,7 +2886,8 @@
       "type": "line",
       "layout": {
         "line-cap": "butt",
-        "line-join": "miter"
+        "line-join": "miter",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#cccccc",
@@ -2668,6 +2895,7 @@
         "line-opacity": 1
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"kind\" IN ('rail')) AND (\"service\" IS NULL) AND (\"tunnel\" IS TRUE)"
       }
     },
@@ -2702,7 +2930,8 @@
       "type": "line",
       "layout": {
         "line-cap": "butt",
-        "line-join": "miter"
+        "line-join": "miter",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#cccccc",
@@ -2710,6 +2939,7 @@
         "line-opacity": 1
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"kind\" IN ('rail')) AND (\"service\" IS NOT NULL) AND (\"tunnel\" IS TRUE)"
       }
     },
@@ -2740,7 +2970,8 @@
       "type": "line",
       "layout": {
         "line-cap": "butt",
-        "line-join": "miter"
+        "line-join": "miter",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#bababa",
@@ -2752,6 +2983,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"kind\" IN ('funicular')) AND (\"tunnel\" IS TRUE)"
       }
     },
@@ -2765,7 +2997,12 @@
         "fill-opacity": 0.8,
         "fill-outline-color": "#efefef"
       },
-      "metadata": {}
+      "metadata": {
+        "qgis:enabled": true
+      },
+      "layout": {
+        "visibility": "visible"
+      }
     },
     {
       "id": "street-pedestrian-zone_fill",
@@ -2804,7 +3041,11 @@
         "fill-opacity": 0.251
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"bridge\" IS NOT TRUE) AND (\"tunnel\" IS NOT TRUE) AND (\"kind\" IS 'pedestrian')"
+      },
+      "layout": {
+        "visibility": "visible"
       }
     },
     {
@@ -2842,7 +3083,8 @@
       "type": "line",
       "layout": {
         "line-cap": "round",
-        "line-join": "miter"
+        "line-join": "miter",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#f5f5f5",
@@ -2854,6 +3096,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"bridge\" IS NOT TRUE) AND (\"tunnel\" IS NOT TRUE) AND (\"kind\" IN ('footway'))"
       }
     },
@@ -2892,7 +3135,8 @@
       "type": "line",
       "layout": {
         "line-cap": "round",
-        "line-join": "miter"
+        "line-join": "miter",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#f5f5f5",
@@ -2904,6 +3148,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"bridge\" IS NOT TRUE) AND (\"tunnel\" IS NOT TRUE) AND (\"kind\" IN ('steps'))"
       }
     },
@@ -2942,7 +3187,8 @@
       "type": "line",
       "layout": {
         "line-cap": "round",
-        "line-join": "miter"
+        "line-join": "miter",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#f5f5f5",
@@ -2954,6 +3200,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"bridge\" IS NOT TRUE) AND (\"tunnel\" IS NOT TRUE) AND (\"kind\" IN ('path'))"
       }
     },
@@ -2992,7 +3239,8 @@
       "type": "line",
       "layout": {
         "line-cap": "round",
-        "line-join": "miter"
+        "line-join": "miter",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#f7f7f7",
@@ -3004,6 +3252,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"bridge\" IS NOT TRUE) AND (\"tunnel\" IS NOT TRUE) AND (\"kind\" IN ('cycleway'))"
       }
     },
@@ -3041,7 +3290,8 @@
       "type": "line",
       "layout": {
         "line-cap": "round",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#ffffff",
@@ -3053,6 +3303,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"kind\" IS 'track') AND (\"bridge\" IS NOT TRUE) AND (\"tunnel\" IS NOT TRUE)"
       }
     },
@@ -3090,7 +3341,8 @@
       "type": "line",
       "layout": {
         "line-cap": "round",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#f4f4f4",
@@ -3102,6 +3354,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"kind\" IS 'pedestrian') AND (\"bridge\" IS NOT TRUE) AND (\"tunnel\" IS NOT TRUE)"
       }
     },
@@ -3139,7 +3392,8 @@
       "type": "line",
       "layout": {
         "line-cap": "round",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#f7f7f7",
@@ -3151,6 +3405,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"kind\" IS 'service') AND (\"bridge\" IS NOT TRUE) AND (\"tunnel\" IS NOT TRUE)"
       }
     },
@@ -3188,7 +3443,8 @@
       "type": "line",
       "layout": {
         "line-cap": "round",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#ffffff",
@@ -3200,6 +3456,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"kind\" IS 'living_street') AND (\"bridge\" IS NOT TRUE) AND (\"tunnel\" IS NOT TRUE)"
       }
     },
@@ -3237,7 +3494,8 @@
       "type": "line",
       "layout": {
         "line-cap": "round",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#ffffff",
@@ -3249,6 +3507,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"kind\" IS 'residential') AND (\"bridge\" IS NOT TRUE) AND (\"tunnel\" IS NOT TRUE)"
       }
     },
@@ -3286,7 +3545,8 @@
       "type": "line",
       "layout": {
         "line-cap": "round",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#ffffff",
@@ -3298,6 +3558,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"kind\" IS 'unclassified') AND (\"bridge\" IS NOT TRUE) AND (\"tunnel\" IS NOT TRUE)"
       }
     },
@@ -3343,7 +3604,8 @@
       "type": "line",
       "layout": {
         "line-cap": "round",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#ffffff",
@@ -3355,6 +3617,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"kind\" IS 'track') AND (\"bicycle\" IS 'designated') AND (\"bridge\" IS NOT TRUE) AND (\"tunnel\" IS NOT TRUE)"
       }
     },
@@ -3400,7 +3663,8 @@
       "type": "line",
       "layout": {
         "line-cap": "round",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#f7f7f7",
@@ -3412,6 +3676,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"kind\" IS 'pedestrian') AND (\"bicycle\" IS 'designated') AND (\"bridge\" IS NOT TRUE) AND (\"tunnel\" IS NOT TRUE)"
       }
     },
@@ -3457,7 +3722,8 @@
       "type": "line",
       "layout": {
         "line-cap": "round",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#ffffff",
@@ -3469,6 +3735,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"kind\" IS 'service') AND (\"bicycle\" IS 'designated') AND (\"bridge\" IS NOT TRUE) AND (\"tunnel\" IS NOT TRUE)"
       }
     },
@@ -3514,7 +3781,8 @@
       "type": "line",
       "layout": {
         "line-cap": "round",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#f7f7f7",
@@ -3526,6 +3794,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"kind\" IS 'living_street') AND (\"bicycle\" IS 'designated') AND (\"bridge\" IS NOT TRUE) AND (\"tunnel\" IS NOT TRUE)"
       }
     },
@@ -3571,7 +3840,8 @@
       "type": "line",
       "layout": {
         "line-cap": "round",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#f7f7f7",
@@ -3583,6 +3853,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"kind\" IS 'residential') AND (\"bicycle\" IS 'designated') AND (\"bridge\" IS NOT TRUE) AND (\"tunnel\" IS NOT TRUE)"
       }
     },
@@ -3628,7 +3899,8 @@
       "type": "line",
       "layout": {
         "line-cap": "round",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#f7f7f7",
@@ -3640,6 +3912,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"kind\" IS 'unclassified') AND (\"bicycle\" IS 'designated') AND (\"bridge\" IS NOT TRUE) AND (\"tunnel\" IS NOT TRUE)"
       }
     },
@@ -3685,7 +3958,8 @@
       "type": "line",
       "layout": {
         "line-cap": "round",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#ffffff",
@@ -3697,6 +3971,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"bridge\" IS NOT TRUE) AND (\"tunnel\" IS NOT TRUE) AND (\"kind\" IN ('tertiary')) AND (\"link\" IS TRUE)"
       }
     },
@@ -3743,7 +4018,8 @@
       "type": "line",
       "layout": {
         "line-cap": "round",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#ffffff",
@@ -3755,6 +4031,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"bridge\" IS NOT TRUE) AND (\"tunnel\" IS NOT TRUE) AND (\"kind\" IN ('secondary')) AND (\"link\" IS TRUE)"
       }
     },
@@ -3801,7 +4078,8 @@
       "type": "line",
       "layout": {
         "line-cap": "round",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#ffffff",
@@ -3813,6 +4091,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"bridge\" IS NOT TRUE) AND (\"tunnel\" IS NOT TRUE) AND (\"kind\" IN ('primary')) AND (\"link\" IS TRUE)"
       }
     },
@@ -3859,7 +4138,8 @@
       "type": "line",
       "layout": {
         "line-cap": "round",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#d3d3d3",
@@ -3871,6 +4151,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"bridge\" IS NOT TRUE) AND (\"tunnel\" IS NOT TRUE) AND (\"kind\" IN ('trunk')) AND (\"link\" IS TRUE)"
       }
     },
@@ -3917,7 +4198,8 @@
       "type": "line",
       "layout": {
         "line-cap": "round",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#c4c4c4",
@@ -3929,6 +4211,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"bridge\" IS NOT TRUE) AND (\"tunnel\" IS NOT TRUE) AND (\"kind\" IN ('motorway')) AND (\"link\" IS TRUE)"
       }
     },
@@ -3974,7 +4257,8 @@
       "type": "line",
       "layout": {
         "line-cap": "round",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#ffffff",
@@ -3986,6 +4270,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"bridge\" IS NOT TRUE) AND (\"tunnel\" IS NOT TRUE) AND (\"kind\" IN ('tertiary')) AND (\"link\" IS NOT TRUE)"
       }
     },
@@ -4031,7 +4316,8 @@
       "type": "line",
       "layout": {
         "line-cap": "round",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#ffffff",
@@ -4043,6 +4329,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"bridge\" IS NOT TRUE) AND (\"tunnel\" IS NOT TRUE) AND (\"kind\" IN ('secondary')) AND (\"link\" IS NOT TRUE)"
       }
     },
@@ -4088,7 +4375,8 @@
       "type": "line",
       "layout": {
         "line-cap": "round",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#fcfcfc",
@@ -4100,6 +4388,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"bridge\" IS NOT TRUE) AND (\"tunnel\" IS NOT TRUE) AND (\"kind\" IN ('primary')) AND (\"link\" IS NOT TRUE)"
       }
     },
@@ -4145,7 +4434,8 @@
       "type": "line",
       "layout": {
         "line-cap": "round",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#ffffff",
@@ -4157,6 +4447,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"bridge\" IS NOT TRUE) AND (\"tunnel\" IS NOT TRUE) AND (\"kind\" IN ('trunk')) AND (\"link\" IS NOT TRUE)"
       }
     },
@@ -4202,7 +4493,8 @@
       "type": "line",
       "layout": {
         "line-cap": "round",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#c4c4c4",
@@ -4214,6 +4506,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"bridge\" IS NOT TRUE) AND (\"tunnel\" IS NOT TRUE) AND (\"kind\" IN ('motorway')) AND (\"link\" IS NOT TRUE)"
       }
     },
@@ -4259,7 +4552,8 @@
       "type": "line",
       "layout": {
         "line-cap": "butt",
-        "line-join": "miter"
+        "line-join": "miter",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#bababa",
@@ -4271,6 +4565,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"kind\" IN ('tram')) AND (\"service\" IS NULL) AND (\"bridge\" IS NOT TRUE) AND (\"tunnel\" IS NOT TRUE)"
       }
     },
@@ -4316,7 +4611,8 @@
       "type": "line",
       "layout": {
         "line-cap": "butt",
-        "line-join": "miter"
+        "line-join": "miter",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#bababa",
@@ -4328,6 +4624,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"kind\" IN ('narrow_gauge')) AND (\"service\" IS NULL) AND (\"bridge\" IS NOT TRUE) AND (\"tunnel\" IS NOT TRUE)"
       }
     },
@@ -4372,7 +4669,8 @@
       "type": "line",
       "layout": {
         "line-cap": "butt",
-        "line-join": "miter"
+        "line-join": "miter",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#c9c9c9",
@@ -4380,6 +4678,7 @@
         "line-opacity": 1
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"kind\" IN ('subway')) AND (\"service\" IS NULL) AND (\"bridge\" IS NOT TRUE) AND (\"tunnel\" IS NOT TRUE)"
       }
     },
@@ -4425,7 +4724,8 @@
       "type": "line",
       "layout": {
         "line-cap": "butt",
-        "line-join": "miter"
+        "line-join": "miter",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#cccccc",
@@ -4433,6 +4733,7 @@
         "line-opacity": 1
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"kind\" IN ('light_rail')) AND (\"service\" IS NULL) AND (\"bridge\" IS NOT TRUE) AND (\"tunnel\" IS NOT TRUE)"
       }
     },
@@ -4475,7 +4776,8 @@
       "type": "line",
       "layout": {
         "line-cap": "butt",
-        "line-join": "miter"
+        "line-join": "miter",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#cccccc",
@@ -4483,6 +4785,7 @@
         "line-opacity": 1
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"kind\" IN ('light_rail')) AND (\"service\" IS NOT NULL) AND (\"bridge\" IS NOT TRUE) AND (\"tunnel\" IS NOT TRUE)"
       }
     },
@@ -4528,7 +4831,8 @@
       "type": "line",
       "layout": {
         "line-cap": "butt",
-        "line-join": "miter"
+        "line-join": "miter",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#8d8b86",
@@ -4540,6 +4844,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"kind\" IN ('rail')) AND (\"service\" IS NULL) AND (\"bridge\" IS NOT TRUE) AND (\"tunnel\" IS NOT TRUE)"
       }
     },
@@ -4582,7 +4887,8 @@
       "type": "line",
       "layout": {
         "line-cap": "butt",
-        "line-join": "miter"
+        "line-join": "miter",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#cccccc",
@@ -4590,6 +4896,7 @@
         "line-opacity": 1
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"kind\" IN ('rail')) AND (\"service\" IS NOT NULL) AND (\"bridge\" IS NOT TRUE) AND (\"tunnel\" IS NOT TRUE)"
       }
     },
@@ -4628,7 +4935,8 @@
       "type": "line",
       "layout": {
         "line-cap": "butt",
-        "line-join": "miter"
+        "line-join": "miter",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#bababa",
@@ -4640,6 +4948,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"kind\" IN ('monorail')) AND (\"bridge\" IS NOT TRUE) AND (\"tunnel\" IS NOT TRUE)"
       }
     },
@@ -4678,7 +4987,8 @@
       "type": "line",
       "layout": {
         "line-cap": "butt",
-        "line-join": "miter"
+        "line-join": "miter",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#bababa",
@@ -4690,6 +5000,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"kind\" IN ('funicular')) AND (\"bridge\" IS NOT TRUE) AND (\"tunnel\" IS NOT TRUE)"
       }
     },
@@ -4701,7 +5012,8 @@
       "type": "line",
       "layout": {
         "line-cap": "butt",
-        "line-join": "miter"
+        "line-join": "miter",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#c3c3c3",
@@ -4712,7 +5024,9 @@
           0.264583
         ]
       },
-      "metadata": {}
+      "metadata": {
+        "qgis:enabled": true
+      }
     },
     {
       "id": "bridge-way-footway_bridge_line",
@@ -4741,7 +5055,8 @@
       "type": "line",
       "layout": {
         "line-cap": "butt",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#efefef",
@@ -4753,6 +5068,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"bridge\" IS TRUE) AND (\"kind\" IN ('footway'))"
       }
     },
@@ -4783,7 +5099,8 @@
       "type": "line",
       "layout": {
         "line-cap": "butt",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#efefef",
@@ -4795,6 +5112,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"bridge\" IS TRUE) AND (\"kind\" IN ('steps'))"
       }
     },
@@ -4825,7 +5143,8 @@
       "type": "line",
       "layout": {
         "line-cap": "butt",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#efefef",
@@ -4837,6 +5156,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"bridge\" IS TRUE) AND (\"kind\" IN ('path'))"
       }
     },
@@ -4867,7 +5187,8 @@
       "type": "line",
       "layout": {
         "line-cap": "butt",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#efefef",
@@ -4879,6 +5200,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"bridge\" IS TRUE) AND (\"kind\" IN ('cycleway'))"
       }
     },
@@ -4908,7 +5230,8 @@
       "type": "line",
       "layout": {
         "line-cap": "butt",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#efefef",
@@ -4920,6 +5243,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"kind\" IS 'track') AND (\"bridge\" IS TRUE)"
       }
     },
@@ -4949,7 +5273,8 @@
       "type": "line",
       "layout": {
         "line-cap": "butt",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#efefef",
@@ -4961,6 +5286,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"kind\" IS 'pedestrian') AND (\"bridge\" IS TRUE)"
       }
     },
@@ -4990,7 +5316,8 @@
       "type": "line",
       "layout": {
         "line-cap": "butt",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#efefef",
@@ -5002,6 +5329,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"kind\" IS 'service') AND (\"bridge\" IS TRUE)"
       }
     },
@@ -5031,7 +5359,8 @@
       "type": "line",
       "layout": {
         "line-cap": "butt",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#efefef",
@@ -5043,6 +5372,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"kind\" IS 'living_street') AND (\"bridge\" IS TRUE)"
       }
     },
@@ -5072,7 +5402,8 @@
       "type": "line",
       "layout": {
         "line-cap": "butt",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#efefef",
@@ -5084,6 +5415,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"kind\" IS 'residential') AND (\"bridge\" IS TRUE)"
       }
     },
@@ -5113,7 +5445,8 @@
       "type": "line",
       "layout": {
         "line-cap": "butt",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#efefef",
@@ -5125,6 +5458,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"kind\" IS 'unclassified') AND (\"bridge\" IS TRUE)"
       }
     },
@@ -5162,7 +5496,8 @@
       "type": "line",
       "layout": {
         "line-cap": "butt",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#efefef",
@@ -5174,6 +5509,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"bridge\" IS TRUE) AND (\"kind\" IN ('tertiary')) AND (\"link\" IS TRUE)"
       }
     },
@@ -5212,7 +5548,8 @@
       "type": "line",
       "layout": {
         "line-cap": "butt",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#efefef",
@@ -5224,6 +5561,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"bridge\" IS TRUE) AND (\"kind\" IN ('secondary')) AND (\"link\" IS TRUE)"
       }
     },
@@ -5262,7 +5600,8 @@
       "type": "line",
       "layout": {
         "line-cap": "butt",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#efefef",
@@ -5274,6 +5613,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"bridge\" IS TRUE) AND (\"kind\" IN ('primary')) AND (\"link\" IS TRUE)"
       }
     },
@@ -5312,7 +5652,8 @@
       "type": "line",
       "layout": {
         "line-cap": "butt",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#efefef",
@@ -5324,6 +5665,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"bridge\" IS TRUE) AND (\"kind\" IN ('trunk')) AND (\"link\" IS TRUE)"
       }
     },
@@ -5362,7 +5704,8 @@
       "type": "line",
       "layout": {
         "line-cap": "butt",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#efefef",
@@ -5374,6 +5717,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"bridge\" IS TRUE) AND (\"kind\" IN ('motorway')) AND (\"link\" IS TRUE)"
       }
     },
@@ -5411,7 +5755,8 @@
       "type": "line",
       "layout": {
         "line-cap": "butt",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#efefef",
@@ -5423,6 +5768,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"bridge\" IS TRUE) AND (\"kind\" IN ('tertiary')) AND (\"link\" IS NOT TRUE)"
       }
     },
@@ -5460,7 +5806,8 @@
       "type": "line",
       "layout": {
         "line-cap": "butt",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#efefef",
@@ -5472,6 +5819,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"bridge\" IS TRUE) AND (\"kind\" IN ('secondary')) AND (\"link\" IS NOT TRUE)"
       }
     },
@@ -5509,7 +5857,8 @@
       "type": "line",
       "layout": {
         "line-cap": "butt",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#efefef",
@@ -5521,6 +5870,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"bridge\" IS TRUE) AND (\"kind\" IN ('primary')) AND (\"link\" IS NOT TRUE)"
       }
     },
@@ -5558,7 +5908,8 @@
       "type": "line",
       "layout": {
         "line-cap": "butt",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#efefef",
@@ -5570,6 +5921,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"bridge\" IS TRUE) AND (\"kind\" IN ('trunk')) AND (\"link\" IS NOT TRUE)"
       }
     },
@@ -5607,7 +5959,8 @@
       "type": "line",
       "layout": {
         "line-cap": "butt",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#efefef",
@@ -5619,6 +5972,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"bridge\" IS TRUE) AND (\"kind\" IN ('motorway')) AND (\"link\" IS NOT TRUE)"
       }
     },
@@ -5652,7 +6006,11 @@
         "fill-outline-color": "#ffffff"
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"bridge\" IS TRUE) AND (\"kind\" IS 'pedestrian')"
+      },
+      "layout": {
+        "visibility": "visible"
       }
     },
     {
@@ -5682,7 +6040,8 @@
       "type": "line",
       "layout": {
         "line-cap": "butt",
-        "line-join": "miter"
+        "line-join": "miter",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#f5f5f5",
@@ -5694,6 +6053,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"bridge\" IS TRUE) AND (\"kind\" IN ('footway'))"
       }
     },
@@ -5724,7 +6084,8 @@
       "type": "line",
       "layout": {
         "line-cap": "butt",
-        "line-join": "miter"
+        "line-join": "miter",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#f5f5f5",
@@ -5736,6 +6097,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"bridge\" IS TRUE) AND (\"kind\" IN ('steps'))"
       }
     },
@@ -5766,7 +6128,8 @@
       "type": "line",
       "layout": {
         "line-cap": "butt",
-        "line-join": "miter"
+        "line-join": "miter",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#f5f5f5",
@@ -5778,6 +6141,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"bridge\" IS TRUE) AND (\"kind\" IN ('path'))"
       }
     },
@@ -5808,7 +6172,8 @@
       "type": "line",
       "layout": {
         "line-cap": "butt",
-        "line-join": "miter"
+        "line-join": "miter",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#f7f7f7",
@@ -5820,6 +6185,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"bridge\" IS TRUE) AND (\"kind\" IN ('cycleway'))"
       }
     },
@@ -5849,7 +6215,8 @@
       "type": "line",
       "layout": {
         "line-cap": "butt",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#ffffff",
@@ -5861,6 +6228,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"kind\" IS 'track') AND (\"bridge\" IS TRUE)"
       }
     },
@@ -5890,7 +6258,8 @@
       "type": "line",
       "layout": {
         "line-cap": "butt",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#ffffff",
@@ -5902,6 +6271,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"kind\" IS 'pedestrian') AND (\"bridge\" IS TRUE)"
       }
     },
@@ -5931,7 +6301,8 @@
       "type": "line",
       "layout": {
         "line-cap": "butt",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#f7f7f7",
@@ -5943,6 +6314,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"kind\" IS 'service') AND (\"bridge\" IS TRUE)"
       }
     },
@@ -5972,7 +6344,8 @@
       "type": "line",
       "layout": {
         "line-cap": "butt",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#ffffff",
@@ -5984,6 +6357,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"kind\" IS 'living_street') AND (\"bridge\" IS TRUE)"
       }
     },
@@ -6013,7 +6387,8 @@
       "type": "line",
       "layout": {
         "line-cap": "butt",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#ffffff",
@@ -6025,6 +6400,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"kind\" IS 'residential') AND (\"bridge\" IS TRUE)"
       }
     },
@@ -6054,7 +6430,8 @@
       "type": "line",
       "layout": {
         "line-cap": "butt",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#ffffff",
@@ -6066,6 +6443,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"kind\" IS 'unclassified') AND (\"bridge\" IS TRUE)"
       }
     },
@@ -6103,7 +6481,8 @@
       "type": "line",
       "layout": {
         "line-cap": "butt",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#ffffff",
@@ -6115,6 +6494,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"kind\" IS 'track') AND (\"bicycle\" IS 'designated') AND (\"bridge\" IS TRUE)"
       }
     },
@@ -6152,7 +6532,8 @@
       "type": "line",
       "layout": {
         "line-cap": "round",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#f7f7f7",
@@ -6164,6 +6545,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"kind\" IS 'pedestrian') AND (\"bicycle\" IS 'designated') AND (\"bridge\" IS TRUE)"
       }
     },
@@ -6201,7 +6583,8 @@
       "type": "line",
       "layout": {
         "line-cap": "butt",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#ffffff",
@@ -6213,6 +6596,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"kind\" IS 'service') AND (\"bicycle\" IS 'designated') AND (\"bridge\" IS TRUE)"
       }
     },
@@ -6250,7 +6634,8 @@
       "type": "line",
       "layout": {
         "line-cap": "round",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#f7f7f7",
@@ -6262,6 +6647,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"kind\" IS 'living_street') AND (\"bicycle\" IS 'designated') AND (\"bridge\" IS TRUE)"
       }
     },
@@ -6299,7 +6685,8 @@
       "type": "line",
       "layout": {
         "line-cap": "round",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#f7f7f7",
@@ -6311,6 +6698,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"kind\" IS 'residential') AND (\"bicycle\" IS 'designated') AND (\"bridge\" IS TRUE)"
       }
     },
@@ -6348,7 +6736,8 @@
       "type": "line",
       "layout": {
         "line-cap": "round",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#f7f7f7",
@@ -6360,6 +6749,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"kind\" IS 'unclassified') AND (\"bicycle\" IS 'designated') AND (\"bridge\" IS TRUE)"
       }
     },
@@ -6397,7 +6787,8 @@
       "type": "line",
       "layout": {
         "line-cap": "butt",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#ffffff",
@@ -6409,6 +6800,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"bridge\" IS TRUE) AND (\"kind\" IN ('tertiary')) AND (\"link\" IS TRUE)"
       }
     },
@@ -6447,7 +6839,8 @@
       "type": "line",
       "layout": {
         "line-cap": "butt",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#d3d3d3",
@@ -6459,6 +6852,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"bridge\" IS TRUE) AND (\"kind\" IN ('secondary')) AND (\"link\" IS TRUE)"
       }
     },
@@ -6497,7 +6891,8 @@
       "type": "line",
       "layout": {
         "line-cap": "butt",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#d3d3d3",
@@ -6509,6 +6904,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"bridge\" IS TRUE) AND (\"kind\" IN ('primary')) AND (\"link\" IS TRUE)"
       }
     },
@@ -6547,7 +6943,8 @@
       "type": "line",
       "layout": {
         "line-cap": "butt",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#d3d3d3",
@@ -6559,6 +6956,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"bridge\" IS TRUE) AND (\"kind\" IN ('trunk')) AND (\"link\" IS TRUE)"
       }
     },
@@ -6597,7 +6995,8 @@
       "type": "line",
       "layout": {
         "line-cap": "butt",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#c4c4c4",
@@ -6609,6 +7008,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"bridge\" IS TRUE) AND (\"kind\" IN ('motorway')) AND (\"link\" IS TRUE)"
       }
     },
@@ -6646,7 +7046,8 @@
       "type": "line",
       "layout": {
         "line-cap": "butt",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#ffffff",
@@ -6658,6 +7059,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"bridge\" IS TRUE) AND (\"kind\" IN ('tertiary')) AND (\"link\" IS NOT TRUE)"
       }
     },
@@ -6695,7 +7097,8 @@
       "type": "line",
       "layout": {
         "line-cap": "butt",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#d3d3d3",
@@ -6707,6 +7110,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"bridge\" IS TRUE) AND (\"kind\" IN ('secondary')) AND (\"link\" IS NOT TRUE)"
       }
     },
@@ -6744,7 +7148,8 @@
       "type": "line",
       "layout": {
         "line-cap": "butt",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#d3d3d3",
@@ -6756,6 +7161,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"bridge\" IS TRUE) AND (\"kind\" IN ('primary')) AND (\"link\" IS NOT TRUE)"
       }
     },
@@ -6793,7 +7199,8 @@
       "type": "line",
       "layout": {
         "line-cap": "butt",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#d3d3d3",
@@ -6805,6 +7212,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"bridge\" IS TRUE) AND (\"kind\" IN ('trunk')) AND (\"link\" IS NOT TRUE)"
       }
     },
@@ -6842,7 +7250,8 @@
       "type": "line",
       "layout": {
         "line-cap": "butt",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#c4c4c4",
@@ -6854,6 +7263,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"bridge\" IS TRUE) AND (\"kind\" IN ('motorway')) AND (\"link\" IS NOT TRUE)"
       }
     },
@@ -6891,7 +7301,8 @@
       "type": "line",
       "layout": {
         "line-cap": "butt",
-        "line-join": "miter"
+        "line-join": "miter",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#bababa",
@@ -6903,6 +7314,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"kind\" IN ('tram')) AND (\"service\" IS NULL) AND (\"bridge\" IS TRUE)"
       }
     },
@@ -6940,7 +7352,8 @@
       "type": "line",
       "layout": {
         "line-cap": "butt",
-        "line-join": "miter"
+        "line-join": "miter",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#bababa",
@@ -6952,6 +7365,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"kind\" IN ('narrow_gauge')) AND (\"service\" IS NULL) AND (\"bridge\" IS TRUE)"
       }
     },
@@ -6988,7 +7402,8 @@
       "type": "line",
       "layout": {
         "line-cap": "butt",
-        "line-join": "miter"
+        "line-join": "miter",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#c9c9c9",
@@ -6996,6 +7411,7 @@
         "line-opacity": 1
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"kind\" IN ('subway')) AND (\"service\" IS NULL) AND (\"bridge\" IS TRUE)"
       }
     },
@@ -7033,7 +7449,8 @@
       "type": "line",
       "layout": {
         "line-cap": "butt",
-        "line-join": "miter"
+        "line-join": "miter",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#cccccc",
@@ -7041,6 +7458,7 @@
         "line-opacity": 1
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"kind\" IN ('light_rail')) AND (\"service\" IS NULL) AND (\"bridge\" IS TRUE)"
       }
     },
@@ -7075,7 +7493,8 @@
       "type": "line",
       "layout": {
         "line-cap": "butt",
-        "line-join": "miter"
+        "line-join": "miter",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#cccccc",
@@ -7083,6 +7502,7 @@
         "line-opacity": 1
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"kind\" IN ('light_rail')) AND (\"service\" IS NOT NULL) AND (\"bridge\" IS TRUE)"
       }
     },
@@ -7120,7 +7540,8 @@
       "type": "line",
       "layout": {
         "line-cap": "butt",
-        "line-join": "miter"
+        "line-join": "miter",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#cccccc",
@@ -7128,6 +7549,7 @@
         "line-opacity": 1
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"kind\" IN ('rail')) AND (\"service\" IS NULL) AND (\"bridge\" IS TRUE)"
       }
     },
@@ -7162,7 +7584,8 @@
       "type": "line",
       "layout": {
         "line-cap": "butt",
-        "line-join": "miter"
+        "line-join": "miter",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#cccccc",
@@ -7170,6 +7593,7 @@
         "line-opacity": 1
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"kind\" IN ('rail')) AND (\"service\" IS NOT NULL) AND (\"bridge\" IS TRUE)"
       }
     },
@@ -7200,7 +7624,8 @@
       "type": "line",
       "layout": {
         "line-cap": "butt",
-        "line-join": "miter"
+        "line-join": "miter",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#bababa",
@@ -7212,6 +7637,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"kind\" IN ('monorail')) AND (\"bridge\" IS TRUE)"
       }
     },
@@ -7242,7 +7668,8 @@
       "type": "line",
       "layout": {
         "line-cap": "butt",
-        "line-join": "miter"
+        "line-join": "miter",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#bababa",
@@ -7254,6 +7681,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"kind\" IN ('funicular')) AND (\"bridge\" IS TRUE)"
       }
     },
@@ -7270,7 +7698,11 @@
       },
       "metadata": {
         "qgis:class": "RasterMarker",
-        "qgis:note": "converted to circle"
+        "qgis:note": "converted to circle",
+        "qgis:enabled": true
+      },
+      "layout": {
+        "visibility": "visible"
       }
     },
     {
@@ -7286,7 +7718,11 @@
       },
       "metadata": {
         "qgis:class": "RasterMarker",
-        "qgis:note": "converted to circle"
+        "qgis:note": "converted to circle",
+        "qgis:enabled": true
+      },
+      "layout": {
+        "visibility": "visible"
       }
     },
     {
@@ -7302,7 +7738,11 @@
       },
       "metadata": {
         "qgis:class": "RasterMarker",
-        "qgis:note": "converted to circle"
+        "qgis:note": "converted to circle",
+        "qgis:enabled": true
+      },
+      "layout": {
+        "visibility": "visible"
       }
     },
     {
@@ -7318,7 +7758,11 @@
       },
       "metadata": {
         "qgis:class": "RasterMarker",
-        "qgis:note": "converted to circle"
+        "qgis:note": "converted to circle",
+        "qgis:enabled": true
+      },
+      "layout": {
+        "visibility": "visible"
       }
     },
     {
@@ -7334,7 +7778,11 @@
       },
       "metadata": {
         "qgis:class": "RasterMarker",
-        "qgis:note": "converted to circle"
+        "qgis:note": "converted to circle",
+        "qgis:enabled": true
+      },
+      "layout": {
+        "visibility": "visible"
       }
     },
     {
@@ -7350,7 +7798,11 @@
       },
       "metadata": {
         "qgis:class": "RasterMarker",
-        "qgis:note": "converted to circle"
+        "qgis:note": "converted to circle",
+        "qgis:enabled": true
+      },
+      "layout": {
+        "visibility": "visible"
       }
     },
     {
@@ -7366,7 +7818,11 @@
       },
       "metadata": {
         "qgis:class": "RasterMarker",
-        "qgis:note": "converted to circle"
+        "qgis:note": "converted to circle",
+        "qgis:enabled": true
+      },
+      "layout": {
+        "visibility": "visible"
       }
     },
     {
@@ -7411,7 +7867,8 @@
       "type": "line",
       "layout": {
         "line-cap": "round",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#f4f4f4",
@@ -7423,6 +7880,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"admin_level\" IS 2) AND (\"maritime\" IS NOT TRUE) AND (\"disputed\" IS NOT TRUE) AND (\"coastline\" IS NOT TRUE)"
       }
     },
@@ -7468,7 +7926,8 @@
       "type": "line",
       "layout": {
         "line-cap": "butt",
-        "line-join": "miter"
+        "line-join": "miter",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#f4f4f4",
@@ -7480,6 +7939,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"admin_level\" IS 2) AND (\"disputed\" IS TRUE) AND (\"maritime\" IS NOT TRUE) AND (\"coastline\" IS NOT TRUE)"
       }
     },
@@ -7525,7 +7985,8 @@
       "type": "line",
       "layout": {
         "line-cap": "round",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#f5f5f5",
@@ -7537,6 +7998,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"admin_level\" IS 4) AND (\"maritime\" IS NOT TRUE) AND (\"disputed\" IS NOT TRUE) AND (\"coastline\" IS NOT TRUE)"
       }
     },
@@ -7582,7 +8044,8 @@
       "type": "line",
       "layout": {
         "line-cap": "round",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#b7b7b7",
@@ -7594,6 +8057,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"admin_level\" IS 2) AND (\"maritime\" IS NOT TRUE) AND (\"disputed\" IS NOT TRUE) AND (\"coastline\" IS NOT TRUE)"
       }
     },
@@ -7639,7 +8103,8 @@
       "type": "line",
       "layout": {
         "line-cap": "square",
-        "line-join": "miter"
+        "line-join": "miter",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#c4c4c4",
@@ -7647,6 +8112,7 @@
         "line-opacity": 1
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"admin_level\" IS 2) AND (\"disputed\" IS TRUE) AND (\"maritime\" IS NOT TRUE) AND (\"coastline\" IS NOT TRUE)"
       }
     },
@@ -7692,7 +8158,8 @@
       "type": "line",
       "layout": {
         "line-cap": "round",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#b7b7b7",
@@ -7704,6 +8171,7 @@
         ]
       },
       "metadata": {
+        "qgis:enabled": true,
         "qgis:expression": "(\"admin_level\" IS 4) AND (\"maritime\" IS NOT TRUE) AND (\"disputed\" IS NOT TRUE) AND (\"coastline\" IS NOT TRUE)"
       }
     },
@@ -7744,7 +8212,8 @@
       "type": "line",
       "layout": {
         "line-cap": "round",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#888888",
@@ -7753,6 +8222,7 @@
       },
       "metadata": {
         "qgis:class": "MarkerLine",
+        "qgis:enabled": true,
         "qgis:expression": "(\"oneway\" IS TRUE) AND (\"kind\" IN ('trunk', 'primary', 'secondary', 'tertiary', 'unclassified', 'residential', 'living_street'))"
       }
     },
@@ -7800,7 +8270,8 @@
         ],
         "text-size": 10,
         "text-allow-overlap": true,
-        "icon-allow-overlap": true
+        "icon-allow-overlap": true,
+        "visibility": "visible"
       },
       "paint": {
         "text-color": "#888888",
@@ -7808,6 +8279,7 @@
       },
       "metadata": {
         "qgis:class": "MarkerLine",
+        "qgis:enabled": true,
         "qgis:expression": "(\"oneway\" IS TRUE) AND (\"kind\" IN ('trunk', 'primary', 'secondary', 'tertiary', 'unclassified', 'residential', 'living_street'))"
       }
     },
@@ -7848,7 +8320,8 @@
       "type": "line",
       "layout": {
         "line-cap": "round",
-        "line-join": "round"
+        "line-join": "round",
+        "visibility": "visible"
       },
       "paint": {
         "line-color": "#888888",
@@ -7857,6 +8330,7 @@
       },
       "metadata": {
         "qgis:class": "MarkerLine",
+        "qgis:enabled": true,
         "qgis:expression": "(\"oneway_reverse\" IS TRUE) AND (\"kind\" IN ('trunk', 'primary', 'secondary', 'tertiary', 'unclassified', 'residential', 'living_street'))"
       }
     },
@@ -7904,7 +8378,8 @@
         ],
         "text-size": 10,
         "text-allow-overlap": true,
-        "icon-allow-overlap": true
+        "icon-allow-overlap": true,
+        "visibility": "visible"
       },
       "paint": {
         "text-color": "#888888",
@@ -7912,6 +8387,7 @@
       },
       "metadata": {
         "qgis:class": "MarkerLine",
+        "qgis:enabled": true,
         "qgis:expression": "(\"oneway_reverse\" IS TRUE) AND (\"kind\" IN ('trunk', 'primary', 'secondary', 'tertiary', 'unclassified', 'residential', 'living_street'))"
       }
     }
