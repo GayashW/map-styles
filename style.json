@@ -2,13 +2,11 @@
   "version": 8,
   "name": "QGIS Converted Style",
   "sources": {
-  "openmaptiles": {
-    "type": "vector",
-    "tiles": ["https://vector.openstreetmap.org/shortbread_v1/{z}/{x}/{y}.mvt"],
-    "maxzoom": 14,
-    "attribution": "© OpenStreetMap contributors"
-  }
-},
+    "openmaptiles": {
+      "type": "vector",
+      "url": "https://your-tile-source/tiles.json"
+    }
+  },
   "layers": [
     {
       "id": "background_fill",
@@ -205,7 +203,20 @@
         "fill-color": "#61aab1",
         "fill-opacity": 1,
         "fill-outline-color": "#ffffff"
-      }
+      },
+      "filter": [
+        "!",
+        [
+          "in",
+          [
+            "get",
+            "kind"
+          ],
+          "reservoir",
+          "basin",
+          "dock"
+        ]
+      ]
     },
     {
       "id": "land-industrial_fill",
@@ -442,7 +453,20 @@
         "fill-color": "#61aab1",
         "fill-opacity": 1,
         "fill-outline-color": "#d8d8d8"
-      }
+      },
+      "filter": [
+        "!",
+        [
+          "in",
+          [
+            "get",
+            "kind"
+          ],
+          "reservoir",
+          "basin",
+          "dock"
+        ]
+      ]
     },
     {
       "id": "water-area-river_fill",
@@ -453,7 +477,20 @@
         "fill-color": "#61aab1",
         "fill-opacity": 1,
         "fill-outline-color": "#d8d8d8"
-      }
+      },
+      "filter": [
+        "!",
+        [
+          "in",
+          [
+            "get",
+            "kind"
+          ],
+          "reservoir",
+          "basin",
+          "dock"
+        ]
+      ]
     },
     {
       "id": "water-area-small_fill",
@@ -683,7 +720,19 @@
         "fill-color": "#f7f7f7",
         "fill-opacity": 1,
         "fill-outline-color": "#f7f7f7"
-      }
+      },
+      "filter": [
+        "!",
+        [
+          "in",
+          [
+            "get",
+            "kind"
+          ],
+          "runway",
+          "taxiway"
+        ]
+      ]
     },
     {
       "id": "tunnel-way-footway_line",
@@ -1329,7 +1378,19 @@
       "paint": {
         "fill-color": "rgba(245,245,245,0.251)",
         "fill-opacity": 0.251
-      }
+      },
+      "filter": [
+        "!",
+        [
+          "in",
+          [
+            "get",
+            "kind"
+          ],
+          "runway",
+          "taxiway"
+        ]
+      ]
     },
     {
       "id": "way-footway_line",
@@ -2413,7 +2474,19 @@
         "fill-color": "#ffffff",
         "fill-opacity": 1,
         "fill-outline-color": "#ffffff"
-      }
+      },
+      "filter": [
+        "!",
+        [
+          "in",
+          [
+            "get",
+            "kind"
+          ],
+          "runway",
+          "taxiway"
+        ]
+      ]
     },
     {
       "id": "bridge-way-footway_line",
