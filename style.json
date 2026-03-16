@@ -227,6 +227,14 @@
       "id": "land-glacier_fill",
       "source": "openmaptiles",
       "source-layer": "water_polygons",
+      "filter": [
+        "==",
+        [
+          "get",
+          "kind"
+        ],
+        "glacier"
+      ],
       "type": "fill",
       "paint": {
         "fill-color": "#61aab1",
@@ -234,8 +242,7 @@
         "fill-outline-color": "#ffffff"
       },
       "metadata": {
-        "qgis:expression": "(\"kind\" IS 'glacier')",
-        "qgis:expression-failed": true
+        "qgis:expression": "(\"kind\" IS 'glacier')"
       }
     },
     {
@@ -816,6 +823,14 @@
       "id": "water-area_fill",
       "source": "openmaptiles",
       "source-layer": "water_polygons",
+      "filter": [
+        "==",
+        [
+          "get",
+          "kind"
+        ],
+        "water"
+      ],
       "type": "fill",
       "paint": {
         "fill-color": "#61aab1",
@@ -823,14 +838,21 @@
         "fill-outline-color": "#d8d8d8"
       },
       "metadata": {
-        "qgis:expression": "\"kind\" IS 'water'",
-        "qgis:expression-failed": true
+        "qgis:expression": "\"kind\" IS 'water'"
       }
     },
     {
       "id": "water-area-river_fill",
       "source": "openmaptiles",
       "source-layer": "water_polygons",
+      "filter": [
+        "==",
+        [
+          "get",
+          "kind"
+        ],
+        "river"
+      ],
       "type": "fill",
       "paint": {
         "fill-color": "#61aab1",
@@ -838,8 +860,7 @@
         "fill-outline-color": "#d8d8d8"
       },
       "metadata": {
-        "qgis:expression": "\"kind\" IS 'river'",
-        "qgis:expression-failed": true
+        "qgis:expression": "\"kind\" IS 'river'"
       }
     },
     {
@@ -874,6 +895,14 @@
       "id": "water-dam-area_fill",
       "source": "openmaptiles",
       "source-layer": "dam_polygons",
+      "filter": [
+        "==",
+        [
+          "get",
+          "kind"
+        ],
+        "dam"
+      ],
       "type": "fill",
       "paint": {
         "fill-color": "#f2f2f2",
@@ -881,14 +910,21 @@
         "fill-outline-color": "#f2f2f2"
       },
       "metadata": {
-        "qgis:expression": "\"kind\" IS 'dam'",
-        "qgis:expression-failed": true
+        "qgis:expression": "\"kind\" IS 'dam'"
       }
     },
     {
       "id": "water-dam_line",
       "source": "openmaptiles",
       "source-layer": "dam_lines",
+      "filter": [
+        "==",
+        [
+          "get",
+          "kind"
+        ],
+        "dam"
+      ],
       "type": "line",
       "layout": {
         "line-cap": "round",
@@ -904,8 +940,7 @@
         ]
       },
       "metadata": {
-        "qgis:expression": "\"kind\" IS 'dam'",
-        "qgis:expression-failed": true
+        "qgis:expression": "\"kind\" IS 'dam'"
       }
     },
     {
@@ -1003,6 +1038,14 @@
       "id": "airport-taxiway_outline_line",
       "source": "openmaptiles",
       "source-layer": "streets",
+      "filter": [
+        "==",
+        [
+          "get",
+          "kind"
+        ],
+        "taxiway"
+      ],
       "type": "line",
       "layout": {
         "line-cap": "butt",
@@ -1018,14 +1061,21 @@
         ]
       },
       "metadata": {
-        "qgis:expression": "\"kind\" IS 'taxiway'",
-        "qgis:expression-failed": true
+        "qgis:expression": "\"kind\" IS 'taxiway'"
       }
     },
     {
       "id": "airport-runway_outline_line",
       "source": "openmaptiles",
       "source-layer": "streets",
+      "filter": [
+        "==",
+        [
+          "get",
+          "kind"
+        ],
+        "runway"
+      ],
       "type": "line",
       "layout": {
         "line-cap": "butt",
@@ -1041,14 +1091,21 @@
         ]
       },
       "metadata": {
-        "qgis:expression": "\"kind\" IS 'runway'",
-        "qgis:expression-failed": true
+        "qgis:expression": "\"kind\" IS 'runway'"
       }
     },
     {
       "id": "airport-taxiway_line",
       "source": "openmaptiles",
       "source-layer": "streets",
+      "filter": [
+        "==",
+        [
+          "get",
+          "kind"
+        ],
+        "taxiway"
+      ],
       "type": "line",
       "layout": {
         "line-cap": "butt",
@@ -1064,14 +1121,21 @@
         ]
       },
       "metadata": {
-        "qgis:expression": "\"kind\" IS 'taxiway'",
-        "qgis:expression-failed": true
+        "qgis:expression": "\"kind\" IS 'taxiway'"
       }
     },
     {
       "id": "airport-runway_line",
       "source": "openmaptiles",
       "source-layer": "streets",
+      "filter": [
+        "==",
+        [
+          "get",
+          "kind"
+        ],
+        "runway"
+      ],
       "type": "line",
       "layout": {
         "line-cap": "butt",
@@ -1087,8 +1151,7 @@
         ]
       },
       "metadata": {
-        "qgis:expression": "\"kind\" IS 'runway'",
-        "qgis:expression-failed": true
+        "qgis:expression": "\"kind\" IS 'runway'"
       }
     },
     {
@@ -1120,12 +1183,23 @@
       "source": "openmaptiles",
       "source-layer": "street_polygons",
       "filter": [
-        "==",
+        "all",
         [
-          "get",
-          "tunnel"
+          "==",
+          [
+            "get",
+            "tunnel"
+          ],
+          true
         ],
-        true
+        [
+          "==",
+          [
+            "get",
+            "kind"
+          ],
+          "pedestrian"
+        ]
       ],
       "type": "fill",
       "paint": {
@@ -1293,6 +1367,25 @@
       "id": "tunnel-street-track_line",
       "source": "openmaptiles",
       "source-layer": "streets",
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "get",
+            "kind"
+          ],
+          "track"
+        ],
+        [
+          "==",
+          [
+            "get",
+            "tunnel"
+          ],
+          true
+        ]
+      ],
       "type": "line",
       "layout": {
         "line-cap": "round",
@@ -1308,14 +1401,32 @@
         ]
       },
       "metadata": {
-        "qgis:expression": "(\"kind\" IS 'track') AND (\"tunnel\" IS TRUE)",
-        "qgis:expression-failed": true
+        "qgis:expression": "(\"kind\" IS 'track') AND (\"tunnel\" IS TRUE)"
       }
     },
     {
       "id": "tunnel-street-pedestrian_line",
       "source": "openmaptiles",
       "source-layer": "streets",
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "get",
+            "kind"
+          ],
+          "pedestrian"
+        ],
+        [
+          "==",
+          [
+            "get",
+            "tunnel"
+          ],
+          true
+        ]
+      ],
       "type": "line",
       "layout": {
         "line-cap": "round",
@@ -1331,14 +1442,32 @@
         ]
       },
       "metadata": {
-        "qgis:expression": "(\"kind\" IS 'pedestrian') AND (\"tunnel\" IS TRUE)",
-        "qgis:expression-failed": true
+        "qgis:expression": "(\"kind\" IS 'pedestrian') AND (\"tunnel\" IS TRUE)"
       }
     },
     {
       "id": "tunnel-street-service_line",
       "source": "openmaptiles",
       "source-layer": "streets",
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "get",
+            "kind"
+          ],
+          "service"
+        ],
+        [
+          "==",
+          [
+            "get",
+            "tunnel"
+          ],
+          true
+        ]
+      ],
       "type": "line",
       "layout": {
         "line-cap": "round",
@@ -1354,14 +1483,32 @@
         ]
       },
       "metadata": {
-        "qgis:expression": "(\"kind\" IS 'service') AND (\"tunnel\" IS TRUE)",
-        "qgis:expression-failed": true
+        "qgis:expression": "(\"kind\" IS 'service') AND (\"tunnel\" IS TRUE)"
       }
     },
     {
       "id": "tunnel-street-livingstreet_line",
       "source": "openmaptiles",
       "source-layer": "streets",
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "get",
+            "kind"
+          ],
+          "living_street"
+        ],
+        [
+          "==",
+          [
+            "get",
+            "tunnel"
+          ],
+          true
+        ]
+      ],
       "type": "line",
       "layout": {
         "line-cap": "round",
@@ -1377,14 +1524,32 @@
         ]
       },
       "metadata": {
-        "qgis:expression": "(\"kind\" IS 'living_street') AND (\"tunnel\" IS TRUE)",
-        "qgis:expression-failed": true
+        "qgis:expression": "(\"kind\" IS 'living_street') AND (\"tunnel\" IS TRUE)"
       }
     },
     {
       "id": "tunnel-street-residential_line",
       "source": "openmaptiles",
       "source-layer": "streets",
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "get",
+            "kind"
+          ],
+          "residential"
+        ],
+        [
+          "==",
+          [
+            "get",
+            "tunnel"
+          ],
+          true
+        ]
+      ],
       "type": "line",
       "layout": {
         "line-cap": "round",
@@ -1400,14 +1565,32 @@
         ]
       },
       "metadata": {
-        "qgis:expression": "(\"kind\" IS 'residential') AND (\"tunnel\" IS TRUE)",
-        "qgis:expression-failed": true
+        "qgis:expression": "(\"kind\" IS 'residential') AND (\"tunnel\" IS TRUE)"
       }
     },
     {
       "id": "tunnel-street-unclassified_line",
       "source": "openmaptiles",
       "source-layer": "streets",
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "get",
+            "kind"
+          ],
+          "unclassified"
+        ],
+        [
+          "==",
+          [
+            "get",
+            "tunnel"
+          ],
+          true
+        ]
+      ],
       "type": "line",
       "layout": {
         "line-cap": "round",
@@ -1423,14 +1606,40 @@
         ]
       },
       "metadata": {
-        "qgis:expression": "(\"kind\" IS 'unclassified') AND (\"tunnel\" IS TRUE)",
-        "qgis:expression-failed": true
+        "qgis:expression": "(\"kind\" IS 'unclassified') AND (\"tunnel\" IS TRUE)"
       }
     },
     {
       "id": "tunnel-street-track-bicycle_line",
       "source": "openmaptiles",
       "source-layer": "streets",
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "get",
+            "kind"
+          ],
+          "track"
+        ],
+        [
+          "==",
+          [
+            "get",
+            "bicycle"
+          ],
+          "designated"
+        ],
+        [
+          "==",
+          [
+            "get",
+            "tunnel"
+          ],
+          true
+        ]
+      ],
       "type": "line",
       "layout": {
         "line-cap": "round",
@@ -1446,14 +1655,40 @@
         ]
       },
       "metadata": {
-        "qgis:expression": "(\"kind\" IS 'track') AND (\"bicycle\" IS 'designated') AND (\"tunnel\" IS TRUE)",
-        "qgis:expression-failed": true
+        "qgis:expression": "(\"kind\" IS 'track') AND (\"bicycle\" IS 'designated') AND (\"tunnel\" IS TRUE)"
       }
     },
     {
       "id": "tunnel-street-pedestrian-bicycle_line",
       "source": "openmaptiles",
       "source-layer": "streets",
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "get",
+            "kind"
+          ],
+          "pedestrian"
+        ],
+        [
+          "==",
+          [
+            "get",
+            "bicycle"
+          ],
+          "designated"
+        ],
+        [
+          "==",
+          [
+            "get",
+            "tunnel"
+          ],
+          true
+        ]
+      ],
       "type": "line",
       "layout": {
         "line-cap": "round",
@@ -1469,14 +1704,40 @@
         ]
       },
       "metadata": {
-        "qgis:expression": "(\"kind\" IS 'pedestrian') AND (\"bicycle\" IS 'designated') AND (\"tunnel\" IS TRUE)",
-        "qgis:expression-failed": true
+        "qgis:expression": "(\"kind\" IS 'pedestrian') AND (\"bicycle\" IS 'designated') AND (\"tunnel\" IS TRUE)"
       }
     },
     {
       "id": "tunnel-street-service-bicycle_line",
       "source": "openmaptiles",
       "source-layer": "streets",
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "get",
+            "kind"
+          ],
+          "service"
+        ],
+        [
+          "==",
+          [
+            "get",
+            "bicycle"
+          ],
+          "designated"
+        ],
+        [
+          "==",
+          [
+            "get",
+            "tunnel"
+          ],
+          true
+        ]
+      ],
       "type": "line",
       "layout": {
         "line-cap": "round",
@@ -1492,14 +1753,40 @@
         ]
       },
       "metadata": {
-        "qgis:expression": "(\"kind\" IS 'service') AND (\"bicycle\" IS 'designated') AND (\"tunnel\" IS TRUE)",
-        "qgis:expression-failed": true
+        "qgis:expression": "(\"kind\" IS 'service') AND (\"bicycle\" IS 'designated') AND (\"tunnel\" IS TRUE)"
       }
     },
     {
       "id": "tunnel-street-livingstreet-bicycle_line",
       "source": "openmaptiles",
       "source-layer": "streets",
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "get",
+            "kind"
+          ],
+          "living_street"
+        ],
+        [
+          "==",
+          [
+            "get",
+            "bicycle"
+          ],
+          "designated"
+        ],
+        [
+          "==",
+          [
+            "get",
+            "tunnel"
+          ],
+          true
+        ]
+      ],
       "type": "line",
       "layout": {
         "line-cap": "round",
@@ -1515,14 +1802,40 @@
         ]
       },
       "metadata": {
-        "qgis:expression": "(\"kind\" IS 'living_street') AND (\"bicycle\" IS 'designated') AND (\"tunnel\" IS TRUE)",
-        "qgis:expression-failed": true
+        "qgis:expression": "(\"kind\" IS 'living_street') AND (\"bicycle\" IS 'designated') AND (\"tunnel\" IS TRUE)"
       }
     },
     {
       "id": "tunnel-street-residential-bicycle_line",
       "source": "openmaptiles",
       "source-layer": "streets",
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "get",
+            "kind"
+          ],
+          "residential"
+        ],
+        [
+          "==",
+          [
+            "get",
+            "bicycle"
+          ],
+          "designated"
+        ],
+        [
+          "==",
+          [
+            "get",
+            "tunnel"
+          ],
+          true
+        ]
+      ],
       "type": "line",
       "layout": {
         "line-cap": "round",
@@ -1538,14 +1851,40 @@
         ]
       },
       "metadata": {
-        "qgis:expression": "(\"kind\" IS 'residential') AND (\"bicycle\" IS 'designated') AND (\"tunnel\" IS TRUE)",
-        "qgis:expression-failed": true
+        "qgis:expression": "(\"kind\" IS 'residential') AND (\"bicycle\" IS 'designated') AND (\"tunnel\" IS TRUE)"
       }
     },
     {
       "id": "tunnel-street-unclassified-bicycle_line",
       "source": "openmaptiles",
       "source-layer": "streets",
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "get",
+            "kind"
+          ],
+          "unclassified"
+        ],
+        [
+          "==",
+          [
+            "get",
+            "bicycle"
+          ],
+          "designated"
+        ],
+        [
+          "==",
+          [
+            "get",
+            "tunnel"
+          ],
+          true
+        ]
+      ],
       "type": "line",
       "layout": {
         "line-cap": "round",
@@ -1561,8 +1900,7 @@
         ]
       },
       "metadata": {
-        "qgis:expression": "(\"kind\" IS 'unclassified') AND (\"bicycle\" IS 'designated') AND (\"tunnel\" IS TRUE)",
-        "qgis:expression-failed": true
+        "qgis:expression": "(\"kind\" IS 'unclassified') AND (\"bicycle\" IS 'designated') AND (\"tunnel\" IS TRUE)"
       }
     },
     {
@@ -2450,6 +2788,14 @@
             "tunnel"
           ],
           true
+        ],
+        [
+          "==",
+          [
+            "get",
+            "kind"
+          ],
+          "pedestrian"
         ]
       ],
       "type": "fill",
@@ -2665,6 +3011,33 @@
       "id": "street-track_line",
       "source": "openmaptiles",
       "source-layer": "streets",
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "get",
+            "kind"
+          ],
+          "track"
+        ],
+        [
+          "!=",
+          [
+            "get",
+            "bridge"
+          ],
+          true
+        ],
+        [
+          "!=",
+          [
+            "get",
+            "tunnel"
+          ],
+          true
+        ]
+      ],
       "type": "line",
       "layout": {
         "line-cap": "round",
@@ -2680,14 +3053,40 @@
         ]
       },
       "metadata": {
-        "qgis:expression": "(\"kind\" IS 'track') AND (\"bridge\" IS NOT TRUE) AND (\"tunnel\" IS NOT TRUE)",
-        "qgis:expression-failed": true
+        "qgis:expression": "(\"kind\" IS 'track') AND (\"bridge\" IS NOT TRUE) AND (\"tunnel\" IS NOT TRUE)"
       }
     },
     {
       "id": "street-pedestrian_line",
       "source": "openmaptiles",
       "source-layer": "streets",
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "get",
+            "kind"
+          ],
+          "pedestrian"
+        ],
+        [
+          "!=",
+          [
+            "get",
+            "bridge"
+          ],
+          true
+        ],
+        [
+          "!=",
+          [
+            "get",
+            "tunnel"
+          ],
+          true
+        ]
+      ],
       "type": "line",
       "layout": {
         "line-cap": "round",
@@ -2703,14 +3102,40 @@
         ]
       },
       "metadata": {
-        "qgis:expression": "(\"kind\" IS 'pedestrian') AND (\"bridge\" IS NOT TRUE) AND (\"tunnel\" IS NOT TRUE)",
-        "qgis:expression-failed": true
+        "qgis:expression": "(\"kind\" IS 'pedestrian') AND (\"bridge\" IS NOT TRUE) AND (\"tunnel\" IS NOT TRUE)"
       }
     },
     {
       "id": "street-service_line",
       "source": "openmaptiles",
       "source-layer": "streets",
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "get",
+            "kind"
+          ],
+          "service"
+        ],
+        [
+          "!=",
+          [
+            "get",
+            "bridge"
+          ],
+          true
+        ],
+        [
+          "!=",
+          [
+            "get",
+            "tunnel"
+          ],
+          true
+        ]
+      ],
       "type": "line",
       "layout": {
         "line-cap": "round",
@@ -2726,14 +3151,40 @@
         ]
       },
       "metadata": {
-        "qgis:expression": "(\"kind\" IS 'service') AND (\"bridge\" IS NOT TRUE) AND (\"tunnel\" IS NOT TRUE)",
-        "qgis:expression-failed": true
+        "qgis:expression": "(\"kind\" IS 'service') AND (\"bridge\" IS NOT TRUE) AND (\"tunnel\" IS NOT TRUE)"
       }
     },
     {
       "id": "street-livingstreet_line",
       "source": "openmaptiles",
       "source-layer": "streets",
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "get",
+            "kind"
+          ],
+          "living_street"
+        ],
+        [
+          "!=",
+          [
+            "get",
+            "bridge"
+          ],
+          true
+        ],
+        [
+          "!=",
+          [
+            "get",
+            "tunnel"
+          ],
+          true
+        ]
+      ],
       "type": "line",
       "layout": {
         "line-cap": "round",
@@ -2749,14 +3200,40 @@
         ]
       },
       "metadata": {
-        "qgis:expression": "(\"kind\" IS 'living_street') AND (\"bridge\" IS NOT TRUE) AND (\"tunnel\" IS NOT TRUE)",
-        "qgis:expression-failed": true
+        "qgis:expression": "(\"kind\" IS 'living_street') AND (\"bridge\" IS NOT TRUE) AND (\"tunnel\" IS NOT TRUE)"
       }
     },
     {
       "id": "street-residential_line",
       "source": "openmaptiles",
       "source-layer": "streets",
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "get",
+            "kind"
+          ],
+          "residential"
+        ],
+        [
+          "!=",
+          [
+            "get",
+            "bridge"
+          ],
+          true
+        ],
+        [
+          "!=",
+          [
+            "get",
+            "tunnel"
+          ],
+          true
+        ]
+      ],
       "type": "line",
       "layout": {
         "line-cap": "round",
@@ -2772,14 +3249,40 @@
         ]
       },
       "metadata": {
-        "qgis:expression": "(\"kind\" IS 'residential') AND (\"bridge\" IS NOT TRUE) AND (\"tunnel\" IS NOT TRUE)",
-        "qgis:expression-failed": true
+        "qgis:expression": "(\"kind\" IS 'residential') AND (\"bridge\" IS NOT TRUE) AND (\"tunnel\" IS NOT TRUE)"
       }
     },
     {
       "id": "street-unclassified_line",
       "source": "openmaptiles",
       "source-layer": "streets",
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "get",
+            "kind"
+          ],
+          "unclassified"
+        ],
+        [
+          "!=",
+          [
+            "get",
+            "bridge"
+          ],
+          true
+        ],
+        [
+          "!=",
+          [
+            "get",
+            "tunnel"
+          ],
+          true
+        ]
+      ],
       "type": "line",
       "layout": {
         "line-cap": "round",
@@ -2795,14 +3298,48 @@
         ]
       },
       "metadata": {
-        "qgis:expression": "(\"kind\" IS 'unclassified') AND (\"bridge\" IS NOT TRUE) AND (\"tunnel\" IS NOT TRUE)",
-        "qgis:expression-failed": true
+        "qgis:expression": "(\"kind\" IS 'unclassified') AND (\"bridge\" IS NOT TRUE) AND (\"tunnel\" IS NOT TRUE)"
       }
     },
     {
       "id": "street-track-bicycle_line",
       "source": "openmaptiles",
       "source-layer": "streets",
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "get",
+            "kind"
+          ],
+          "track"
+        ],
+        [
+          "==",
+          [
+            "get",
+            "bicycle"
+          ],
+          "designated"
+        ],
+        [
+          "!=",
+          [
+            "get",
+            "bridge"
+          ],
+          true
+        ],
+        [
+          "!=",
+          [
+            "get",
+            "tunnel"
+          ],
+          true
+        ]
+      ],
       "type": "line",
       "layout": {
         "line-cap": "round",
@@ -2818,14 +3355,48 @@
         ]
       },
       "metadata": {
-        "qgis:expression": "(\"kind\" IS 'track') AND (\"bicycle\" IS 'designated') AND (\"bridge\" IS NOT TRUE) AND (\"tunnel\" IS NOT TRUE)",
-        "qgis:expression-failed": true
+        "qgis:expression": "(\"kind\" IS 'track') AND (\"bicycle\" IS 'designated') AND (\"bridge\" IS NOT TRUE) AND (\"tunnel\" IS NOT TRUE)"
       }
     },
     {
       "id": "street-pedestrian-bicycle_line",
       "source": "openmaptiles",
       "source-layer": "streets",
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "get",
+            "kind"
+          ],
+          "pedestrian"
+        ],
+        [
+          "==",
+          [
+            "get",
+            "bicycle"
+          ],
+          "designated"
+        ],
+        [
+          "!=",
+          [
+            "get",
+            "bridge"
+          ],
+          true
+        ],
+        [
+          "!=",
+          [
+            "get",
+            "tunnel"
+          ],
+          true
+        ]
+      ],
       "type": "line",
       "layout": {
         "line-cap": "round",
@@ -2841,14 +3412,48 @@
         ]
       },
       "metadata": {
-        "qgis:expression": "(\"kind\" IS 'pedestrian') AND (\"bicycle\" IS 'designated') AND (\"bridge\" IS NOT TRUE) AND (\"tunnel\" IS NOT TRUE)",
-        "qgis:expression-failed": true
+        "qgis:expression": "(\"kind\" IS 'pedestrian') AND (\"bicycle\" IS 'designated') AND (\"bridge\" IS NOT TRUE) AND (\"tunnel\" IS NOT TRUE)"
       }
     },
     {
       "id": "street-service-bicycle_line",
       "source": "openmaptiles",
       "source-layer": "streets",
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "get",
+            "kind"
+          ],
+          "service"
+        ],
+        [
+          "==",
+          [
+            "get",
+            "bicycle"
+          ],
+          "designated"
+        ],
+        [
+          "!=",
+          [
+            "get",
+            "bridge"
+          ],
+          true
+        ],
+        [
+          "!=",
+          [
+            "get",
+            "tunnel"
+          ],
+          true
+        ]
+      ],
       "type": "line",
       "layout": {
         "line-cap": "round",
@@ -2864,14 +3469,48 @@
         ]
       },
       "metadata": {
-        "qgis:expression": "(\"kind\" IS 'service') AND (\"bicycle\" IS 'designated') AND (\"bridge\" IS NOT TRUE) AND (\"tunnel\" IS NOT TRUE)",
-        "qgis:expression-failed": true
+        "qgis:expression": "(\"kind\" IS 'service') AND (\"bicycle\" IS 'designated') AND (\"bridge\" IS NOT TRUE) AND (\"tunnel\" IS NOT TRUE)"
       }
     },
     {
       "id": "street-livingstreet-bicycle_line",
       "source": "openmaptiles",
       "source-layer": "streets",
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "get",
+            "kind"
+          ],
+          "living_street"
+        ],
+        [
+          "==",
+          [
+            "get",
+            "bicycle"
+          ],
+          "designated"
+        ],
+        [
+          "!=",
+          [
+            "get",
+            "bridge"
+          ],
+          true
+        ],
+        [
+          "!=",
+          [
+            "get",
+            "tunnel"
+          ],
+          true
+        ]
+      ],
       "type": "line",
       "layout": {
         "line-cap": "round",
@@ -2887,14 +3526,48 @@
         ]
       },
       "metadata": {
-        "qgis:expression": "(\"kind\" IS 'living_street') AND (\"bicycle\" IS 'designated') AND (\"bridge\" IS NOT TRUE) AND (\"tunnel\" IS NOT TRUE)",
-        "qgis:expression-failed": true
+        "qgis:expression": "(\"kind\" IS 'living_street') AND (\"bicycle\" IS 'designated') AND (\"bridge\" IS NOT TRUE) AND (\"tunnel\" IS NOT TRUE)"
       }
     },
     {
       "id": "street-residential-bicycle_line",
       "source": "openmaptiles",
       "source-layer": "streets",
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "get",
+            "kind"
+          ],
+          "residential"
+        ],
+        [
+          "==",
+          [
+            "get",
+            "bicycle"
+          ],
+          "designated"
+        ],
+        [
+          "!=",
+          [
+            "get",
+            "bridge"
+          ],
+          true
+        ],
+        [
+          "!=",
+          [
+            "get",
+            "tunnel"
+          ],
+          true
+        ]
+      ],
       "type": "line",
       "layout": {
         "line-cap": "round",
@@ -2910,14 +3583,48 @@
         ]
       },
       "metadata": {
-        "qgis:expression": "(\"kind\" IS 'residential') AND (\"bicycle\" IS 'designated') AND (\"bridge\" IS NOT TRUE) AND (\"tunnel\" IS NOT TRUE)",
-        "qgis:expression-failed": true
+        "qgis:expression": "(\"kind\" IS 'residential') AND (\"bicycle\" IS 'designated') AND (\"bridge\" IS NOT TRUE) AND (\"tunnel\" IS NOT TRUE)"
       }
     },
     {
       "id": "street-unclassified-bicycle_line",
       "source": "openmaptiles",
       "source-layer": "streets",
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "get",
+            "kind"
+          ],
+          "unclassified"
+        ],
+        [
+          "==",
+          [
+            "get",
+            "bicycle"
+          ],
+          "designated"
+        ],
+        [
+          "!=",
+          [
+            "get",
+            "bridge"
+          ],
+          true
+        ],
+        [
+          "!=",
+          [
+            "get",
+            "tunnel"
+          ],
+          true
+        ]
+      ],
       "type": "line",
       "layout": {
         "line-cap": "round",
@@ -2933,8 +3640,7 @@
         ]
       },
       "metadata": {
-        "qgis:expression": "(\"kind\" IS 'unclassified') AND (\"bicycle\" IS 'designated') AND (\"bridge\" IS NOT TRUE) AND (\"tunnel\" IS NOT TRUE)",
-        "qgis:expression-failed": true
+        "qgis:expression": "(\"kind\" IS 'unclassified') AND (\"bicycle\" IS 'designated') AND (\"bridge\" IS NOT TRUE) AND (\"tunnel\" IS NOT TRUE)"
       }
     },
     {
@@ -4180,6 +4886,25 @@
       "id": "bridge-street-track_bridge_line",
       "source": "openmaptiles",
       "source-layer": "streets",
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "get",
+            "kind"
+          ],
+          "track"
+        ],
+        [
+          "==",
+          [
+            "get",
+            "bridge"
+          ],
+          true
+        ]
+      ],
       "type": "line",
       "layout": {
         "line-cap": "butt",
@@ -4195,14 +4920,32 @@
         ]
       },
       "metadata": {
-        "qgis:expression": "(\"kind\" IS 'track') AND (\"bridge\" IS TRUE)",
-        "qgis:expression-failed": true
+        "qgis:expression": "(\"kind\" IS 'track') AND (\"bridge\" IS TRUE)"
       }
     },
     {
       "id": "bridge-street-pedestrian_bridge_line",
       "source": "openmaptiles",
       "source-layer": "streets",
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "get",
+            "kind"
+          ],
+          "pedestrian"
+        ],
+        [
+          "==",
+          [
+            "get",
+            "bridge"
+          ],
+          true
+        ]
+      ],
       "type": "line",
       "layout": {
         "line-cap": "butt",
@@ -4218,14 +4961,32 @@
         ]
       },
       "metadata": {
-        "qgis:expression": "(\"kind\" IS 'pedestrian') AND (\"bridge\" IS TRUE)",
-        "qgis:expression-failed": true
+        "qgis:expression": "(\"kind\" IS 'pedestrian') AND (\"bridge\" IS TRUE)"
       }
     },
     {
       "id": "bridge-street-service_bridge_line",
       "source": "openmaptiles",
       "source-layer": "streets",
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "get",
+            "kind"
+          ],
+          "service"
+        ],
+        [
+          "==",
+          [
+            "get",
+            "bridge"
+          ],
+          true
+        ]
+      ],
       "type": "line",
       "layout": {
         "line-cap": "butt",
@@ -4241,14 +5002,32 @@
         ]
       },
       "metadata": {
-        "qgis:expression": "(\"kind\" IS 'service') AND (\"bridge\" IS TRUE)",
-        "qgis:expression-failed": true
+        "qgis:expression": "(\"kind\" IS 'service') AND (\"bridge\" IS TRUE)"
       }
     },
     {
       "id": "bridge-street-livingstreet_bridge_line",
       "source": "openmaptiles",
       "source-layer": "streets",
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "get",
+            "kind"
+          ],
+          "living_street"
+        ],
+        [
+          "==",
+          [
+            "get",
+            "bridge"
+          ],
+          true
+        ]
+      ],
       "type": "line",
       "layout": {
         "line-cap": "butt",
@@ -4264,14 +5043,32 @@
         ]
       },
       "metadata": {
-        "qgis:expression": "(\"kind\" IS 'living_street') AND (\"bridge\" IS TRUE)",
-        "qgis:expression-failed": true
+        "qgis:expression": "(\"kind\" IS 'living_street') AND (\"bridge\" IS TRUE)"
       }
     },
     {
       "id": "bridge-street-residential_bridge_line",
       "source": "openmaptiles",
       "source-layer": "streets",
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "get",
+            "kind"
+          ],
+          "residential"
+        ],
+        [
+          "==",
+          [
+            "get",
+            "bridge"
+          ],
+          true
+        ]
+      ],
       "type": "line",
       "layout": {
         "line-cap": "butt",
@@ -4287,14 +5084,32 @@
         ]
       },
       "metadata": {
-        "qgis:expression": "(\"kind\" IS 'residential') AND (\"bridge\" IS TRUE)",
-        "qgis:expression-failed": true
+        "qgis:expression": "(\"kind\" IS 'residential') AND (\"bridge\" IS TRUE)"
       }
     },
     {
       "id": "bridge-street-unclassified_bridge_line",
       "source": "openmaptiles",
       "source-layer": "streets",
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "get",
+            "kind"
+          ],
+          "unclassified"
+        ],
+        [
+          "==",
+          [
+            "get",
+            "bridge"
+          ],
+          true
+        ]
+      ],
       "type": "line",
       "layout": {
         "line-cap": "butt",
@@ -4310,8 +5125,7 @@
         ]
       },
       "metadata": {
-        "qgis:expression": "(\"kind\" IS 'unclassified') AND (\"bridge\" IS TRUE)",
-        "qgis:expression-failed": true
+        "qgis:expression": "(\"kind\" IS 'unclassified') AND (\"bridge\" IS TRUE)"
       }
     },
     {
@@ -4813,12 +5627,23 @@
       "source": "openmaptiles",
       "source-layer": "street_polygons",
       "filter": [
-        "==",
+        "all",
         [
-          "get",
-          "bridge"
+          "==",
+          [
+            "get",
+            "bridge"
+          ],
+          true
         ],
-        true
+        [
+          "==",
+          [
+            "get",
+            "kind"
+          ],
+          "pedestrian"
+        ]
       ],
       "type": "fill",
       "paint": {
@@ -5002,6 +5827,25 @@
       "id": "bridge-street-track_line",
       "source": "openmaptiles",
       "source-layer": "streets",
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "get",
+            "kind"
+          ],
+          "track"
+        ],
+        [
+          "==",
+          [
+            "get",
+            "bridge"
+          ],
+          true
+        ]
+      ],
       "type": "line",
       "layout": {
         "line-cap": "butt",
@@ -5017,14 +5861,32 @@
         ]
       },
       "metadata": {
-        "qgis:expression": "(\"kind\" IS 'track') AND (\"bridge\" IS TRUE)",
-        "qgis:expression-failed": true
+        "qgis:expression": "(\"kind\" IS 'track') AND (\"bridge\" IS TRUE)"
       }
     },
     {
       "id": "bridge-street-pedestrian_line",
       "source": "openmaptiles",
       "source-layer": "streets",
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "get",
+            "kind"
+          ],
+          "pedestrian"
+        ],
+        [
+          "==",
+          [
+            "get",
+            "bridge"
+          ],
+          true
+        ]
+      ],
       "type": "line",
       "layout": {
         "line-cap": "butt",
@@ -5040,14 +5902,32 @@
         ]
       },
       "metadata": {
-        "qgis:expression": "(\"kind\" IS 'pedestrian') AND (\"bridge\" IS TRUE)",
-        "qgis:expression-failed": true
+        "qgis:expression": "(\"kind\" IS 'pedestrian') AND (\"bridge\" IS TRUE)"
       }
     },
     {
       "id": "bridge-street-service_line",
       "source": "openmaptiles",
       "source-layer": "streets",
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "get",
+            "kind"
+          ],
+          "service"
+        ],
+        [
+          "==",
+          [
+            "get",
+            "bridge"
+          ],
+          true
+        ]
+      ],
       "type": "line",
       "layout": {
         "line-cap": "butt",
@@ -5063,14 +5943,32 @@
         ]
       },
       "metadata": {
-        "qgis:expression": "(\"kind\" IS 'service') AND (\"bridge\" IS TRUE)",
-        "qgis:expression-failed": true
+        "qgis:expression": "(\"kind\" IS 'service') AND (\"bridge\" IS TRUE)"
       }
     },
     {
       "id": "bridge-street-livingstreet_line",
       "source": "openmaptiles",
       "source-layer": "streets",
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "get",
+            "kind"
+          ],
+          "living_street"
+        ],
+        [
+          "==",
+          [
+            "get",
+            "bridge"
+          ],
+          true
+        ]
+      ],
       "type": "line",
       "layout": {
         "line-cap": "butt",
@@ -5086,14 +5984,32 @@
         ]
       },
       "metadata": {
-        "qgis:expression": "(\"kind\" IS 'living_street') AND (\"bridge\" IS TRUE)",
-        "qgis:expression-failed": true
+        "qgis:expression": "(\"kind\" IS 'living_street') AND (\"bridge\" IS TRUE)"
       }
     },
     {
       "id": "bridge-street-residential_line",
       "source": "openmaptiles",
       "source-layer": "streets",
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "get",
+            "kind"
+          ],
+          "residential"
+        ],
+        [
+          "==",
+          [
+            "get",
+            "bridge"
+          ],
+          true
+        ]
+      ],
       "type": "line",
       "layout": {
         "line-cap": "butt",
@@ -5109,14 +6025,32 @@
         ]
       },
       "metadata": {
-        "qgis:expression": "(\"kind\" IS 'residential') AND (\"bridge\" IS TRUE)",
-        "qgis:expression-failed": true
+        "qgis:expression": "(\"kind\" IS 'residential') AND (\"bridge\" IS TRUE)"
       }
     },
     {
       "id": "bridge-street-unclassified_line",
       "source": "openmaptiles",
       "source-layer": "streets",
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "get",
+            "kind"
+          ],
+          "unclassified"
+        ],
+        [
+          "==",
+          [
+            "get",
+            "bridge"
+          ],
+          true
+        ]
+      ],
       "type": "line",
       "layout": {
         "line-cap": "butt",
@@ -5132,14 +6066,40 @@
         ]
       },
       "metadata": {
-        "qgis:expression": "(\"kind\" IS 'unclassified') AND (\"bridge\" IS TRUE)",
-        "qgis:expression-failed": true
+        "qgis:expression": "(\"kind\" IS 'unclassified') AND (\"bridge\" IS TRUE)"
       }
     },
     {
       "id": "bridge-street-track-bicycle_line",
       "source": "openmaptiles",
       "source-layer": "streets",
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "get",
+            "kind"
+          ],
+          "track"
+        ],
+        [
+          "==",
+          [
+            "get",
+            "bicycle"
+          ],
+          "designated"
+        ],
+        [
+          "==",
+          [
+            "get",
+            "bridge"
+          ],
+          true
+        ]
+      ],
       "type": "line",
       "layout": {
         "line-cap": "butt",
@@ -5155,14 +6115,40 @@
         ]
       },
       "metadata": {
-        "qgis:expression": "(\"kind\" IS 'track') AND (\"bicycle\" IS 'designated') AND (\"bridge\" IS TRUE)",
-        "qgis:expression-failed": true
+        "qgis:expression": "(\"kind\" IS 'track') AND (\"bicycle\" IS 'designated') AND (\"bridge\" IS TRUE)"
       }
     },
     {
       "id": "bridge-street-pedestrian-bicycle_line",
       "source": "openmaptiles",
       "source-layer": "streets",
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "get",
+            "kind"
+          ],
+          "pedestrian"
+        ],
+        [
+          "==",
+          [
+            "get",
+            "bicycle"
+          ],
+          "designated"
+        ],
+        [
+          "==",
+          [
+            "get",
+            "bridge"
+          ],
+          true
+        ]
+      ],
       "type": "line",
       "layout": {
         "line-cap": "round",
@@ -5178,14 +6164,40 @@
         ]
       },
       "metadata": {
-        "qgis:expression": "(\"kind\" IS 'pedestrian') AND (\"bicycle\" IS 'designated') AND (\"bridge\" IS TRUE)",
-        "qgis:expression-failed": true
+        "qgis:expression": "(\"kind\" IS 'pedestrian') AND (\"bicycle\" IS 'designated') AND (\"bridge\" IS TRUE)"
       }
     },
     {
       "id": "bridge-street-service-bicycle_line",
       "source": "openmaptiles",
       "source-layer": "streets",
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "get",
+            "kind"
+          ],
+          "service"
+        ],
+        [
+          "==",
+          [
+            "get",
+            "bicycle"
+          ],
+          "designated"
+        ],
+        [
+          "==",
+          [
+            "get",
+            "bridge"
+          ],
+          true
+        ]
+      ],
       "type": "line",
       "layout": {
         "line-cap": "butt",
@@ -5201,14 +6213,40 @@
         ]
       },
       "metadata": {
-        "qgis:expression": "(\"kind\" IS 'service') AND (\"bicycle\" IS 'designated') AND (\"bridge\" IS TRUE)",
-        "qgis:expression-failed": true
+        "qgis:expression": "(\"kind\" IS 'service') AND (\"bicycle\" IS 'designated') AND (\"bridge\" IS TRUE)"
       }
     },
     {
       "id": "bridge-street-livingstreet-bicycle_line",
       "source": "openmaptiles",
       "source-layer": "streets",
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "get",
+            "kind"
+          ],
+          "living_street"
+        ],
+        [
+          "==",
+          [
+            "get",
+            "bicycle"
+          ],
+          "designated"
+        ],
+        [
+          "==",
+          [
+            "get",
+            "bridge"
+          ],
+          true
+        ]
+      ],
       "type": "line",
       "layout": {
         "line-cap": "round",
@@ -5224,14 +6262,40 @@
         ]
       },
       "metadata": {
-        "qgis:expression": "(\"kind\" IS 'living_street') AND (\"bicycle\" IS 'designated') AND (\"bridge\" IS TRUE)",
-        "qgis:expression-failed": true
+        "qgis:expression": "(\"kind\" IS 'living_street') AND (\"bicycle\" IS 'designated') AND (\"bridge\" IS TRUE)"
       }
     },
     {
       "id": "bridge-street-residential-bicycle_line",
       "source": "openmaptiles",
       "source-layer": "streets",
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "get",
+            "kind"
+          ],
+          "residential"
+        ],
+        [
+          "==",
+          [
+            "get",
+            "bicycle"
+          ],
+          "designated"
+        ],
+        [
+          "==",
+          [
+            "get",
+            "bridge"
+          ],
+          true
+        ]
+      ],
       "type": "line",
       "layout": {
         "line-cap": "round",
@@ -5247,14 +6311,40 @@
         ]
       },
       "metadata": {
-        "qgis:expression": "(\"kind\" IS 'residential') AND (\"bicycle\" IS 'designated') AND (\"bridge\" IS TRUE)",
-        "qgis:expression-failed": true
+        "qgis:expression": "(\"kind\" IS 'residential') AND (\"bicycle\" IS 'designated') AND (\"bridge\" IS TRUE)"
       }
     },
     {
       "id": "bridge-street-unclassified-bicycle_line",
       "source": "openmaptiles",
       "source-layer": "streets",
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "get",
+            "kind"
+          ],
+          "unclassified"
+        ],
+        [
+          "==",
+          [
+            "get",
+            "bicycle"
+          ],
+          "designated"
+        ],
+        [
+          "==",
+          [
+            "get",
+            "bridge"
+          ],
+          true
+        ]
+      ],
       "type": "line",
       "layout": {
         "line-cap": "round",
@@ -5270,8 +6360,7 @@
         ]
       },
       "metadata": {
-        "qgis:expression": "(\"kind\" IS 'unclassified') AND (\"bicycle\" IS 'designated') AND (\"bridge\" IS TRUE)",
-        "qgis:expression-failed": true
+        "qgis:expression": "(\"kind\" IS 'unclassified') AND (\"bicycle\" IS 'designated') AND (\"bridge\" IS TRUE)"
       }
     },
     {
@@ -6284,6 +7373,41 @@
       "id": "boundary-country_outline_line",
       "source": "openmaptiles",
       "source-layer": "boundaries",
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "get",
+            "admin_level"
+          ],
+          2
+        ],
+        [
+          "!=",
+          [
+            "get",
+            "maritime"
+          ],
+          true
+        ],
+        [
+          "!=",
+          [
+            "get",
+            "disputed"
+          ],
+          true
+        ],
+        [
+          "!=",
+          [
+            "get",
+            "coastline"
+          ],
+          true
+        ]
+      ],
       "type": "line",
       "layout": {
         "line-cap": "round",
@@ -6299,14 +7423,48 @@
         ]
       },
       "metadata": {
-        "qgis:expression": "(\"admin_level\" IS 2) AND (\"maritime\" IS NOT TRUE) AND (\"disputed\" IS NOT TRUE) AND (\"coastline\" IS NOT TRUE)",
-        "qgis:expression-failed": true
+        "qgis:expression": "(\"admin_level\" IS 2) AND (\"maritime\" IS NOT TRUE) AND (\"disputed\" IS NOT TRUE) AND (\"coastline\" IS NOT TRUE)"
       }
     },
     {
       "id": "boundary-country-disputed_outline_line",
       "source": "openmaptiles",
       "source-layer": "boundaries",
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "get",
+            "admin_level"
+          ],
+          2
+        ],
+        [
+          "==",
+          [
+            "get",
+            "disputed"
+          ],
+          true
+        ],
+        [
+          "!=",
+          [
+            "get",
+            "maritime"
+          ],
+          true
+        ],
+        [
+          "!=",
+          [
+            "get",
+            "coastline"
+          ],
+          true
+        ]
+      ],
       "type": "line",
       "layout": {
         "line-cap": "butt",
@@ -6322,14 +7480,48 @@
         ]
       },
       "metadata": {
-        "qgis:expression": "(\"admin_level\" IS 2) AND (\"disputed\" IS TRUE) AND (\"maritime\" IS NOT TRUE) AND (\"coastline\" IS NOT TRUE)",
-        "qgis:expression-failed": true
+        "qgis:expression": "(\"admin_level\" IS 2) AND (\"disputed\" IS TRUE) AND (\"maritime\" IS NOT TRUE) AND (\"coastline\" IS NOT TRUE)"
       }
     },
     {
       "id": "boundary-state_outline_line",
       "source": "openmaptiles",
       "source-layer": "boundaries",
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "get",
+            "admin_level"
+          ],
+          4
+        ],
+        [
+          "!=",
+          [
+            "get",
+            "maritime"
+          ],
+          true
+        ],
+        [
+          "!=",
+          [
+            "get",
+            "disputed"
+          ],
+          true
+        ],
+        [
+          "!=",
+          [
+            "get",
+            "coastline"
+          ],
+          true
+        ]
+      ],
       "type": "line",
       "layout": {
         "line-cap": "round",
@@ -6345,14 +7537,48 @@
         ]
       },
       "metadata": {
-        "qgis:expression": "(\"admin_level\" IS 4) AND (\"maritime\" IS NOT TRUE) AND (\"disputed\" IS NOT TRUE) AND (\"coastline\" IS NOT TRUE)",
-        "qgis:expression-failed": true
+        "qgis:expression": "(\"admin_level\" IS 4) AND (\"maritime\" IS NOT TRUE) AND (\"disputed\" IS NOT TRUE) AND (\"coastline\" IS NOT TRUE)"
       }
     },
     {
       "id": "boundary-country_line",
       "source": "openmaptiles",
       "source-layer": "boundaries",
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "get",
+            "admin_level"
+          ],
+          2
+        ],
+        [
+          "!=",
+          [
+            "get",
+            "maritime"
+          ],
+          true
+        ],
+        [
+          "!=",
+          [
+            "get",
+            "disputed"
+          ],
+          true
+        ],
+        [
+          "!=",
+          [
+            "get",
+            "coastline"
+          ],
+          true
+        ]
+      ],
       "type": "line",
       "layout": {
         "line-cap": "round",
@@ -6368,14 +7594,48 @@
         ]
       },
       "metadata": {
-        "qgis:expression": "(\"admin_level\" IS 2) AND (\"maritime\" IS NOT TRUE) AND (\"disputed\" IS NOT TRUE) AND (\"coastline\" IS NOT TRUE)",
-        "qgis:expression-failed": true
+        "qgis:expression": "(\"admin_level\" IS 2) AND (\"maritime\" IS NOT TRUE) AND (\"disputed\" IS NOT TRUE) AND (\"coastline\" IS NOT TRUE)"
       }
     },
     {
       "id": "boundary-country-disputed_line",
       "source": "openmaptiles",
       "source-layer": "boundaries",
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "get",
+            "admin_level"
+          ],
+          2
+        ],
+        [
+          "==",
+          [
+            "get",
+            "disputed"
+          ],
+          true
+        ],
+        [
+          "!=",
+          [
+            "get",
+            "maritime"
+          ],
+          true
+        ],
+        [
+          "!=",
+          [
+            "get",
+            "coastline"
+          ],
+          true
+        ]
+      ],
       "type": "line",
       "layout": {
         "line-cap": "square",
@@ -6387,14 +7647,48 @@
         "line-opacity": 1
       },
       "metadata": {
-        "qgis:expression": "(\"admin_level\" IS 2) AND (\"disputed\" IS TRUE) AND (\"maritime\" IS NOT TRUE) AND (\"coastline\" IS NOT TRUE)",
-        "qgis:expression-failed": true
+        "qgis:expression": "(\"admin_level\" IS 2) AND (\"disputed\" IS TRUE) AND (\"maritime\" IS NOT TRUE) AND (\"coastline\" IS NOT TRUE)"
       }
     },
     {
       "id": "boundary-state_line",
       "source": "openmaptiles",
       "source-layer": "boundaries",
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "get",
+            "admin_level"
+          ],
+          4
+        ],
+        [
+          "!=",
+          [
+            "get",
+            "maritime"
+          ],
+          true
+        ],
+        [
+          "!=",
+          [
+            "get",
+            "disputed"
+          ],
+          true
+        ],
+        [
+          "!=",
+          [
+            "get",
+            "coastline"
+          ],
+          true
+        ]
+      ],
       "type": "line",
       "layout": {
         "line-cap": "round",
@@ -6410,8 +7704,7 @@
         ]
       },
       "metadata": {
-        "qgis:expression": "(\"admin_level\" IS 4) AND (\"maritime\" IS NOT TRUE) AND (\"disputed\" IS NOT TRUE) AND (\"coastline\" IS NOT TRUE)",
-        "qgis:expression-failed": true
+        "qgis:expression": "(\"admin_level\" IS 4) AND (\"maritime\" IS NOT TRUE) AND (\"disputed\" IS NOT TRUE) AND (\"coastline\" IS NOT TRUE)"
       }
     },
     {
